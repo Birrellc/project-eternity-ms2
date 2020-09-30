@@ -74,3 +74,13 @@
     text-orientation: upright;
     letter-spacing: 10px;
 }
+
+/*ABOUT US*/
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-us-images {
+    padding: 15px;
+}
