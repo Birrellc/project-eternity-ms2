@@ -1,8 +1,12 @@
 function initMap() {
-
-    var uluru = {lat: -25.344, lng: 131.036};
-
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 4, center: uluru});
-    var marker = new google.maps.Marker({position: uluru, map: map});
+    const myLatLng = { lat: 54.971829, lng: -1.608997 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 10,
+      center: myLatLng,
+    });
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+      title: "Eternity Restaurant",
+    });
   }
