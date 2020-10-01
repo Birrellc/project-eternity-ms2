@@ -133,17 +133,30 @@
                         <h1 class="about-us-heading text-uppercase">About Us</h1>
                     </div>
                     <p class="about-us-text">
-                        
+
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
+                    <div class="map" id="map">
+                        <script>
+                            function initMap(){
+                                var options ={
+                                    zoom:8,
+                                    center:{lat:54.9755,lng:1.6152}
+                                }
+                                var map = new google.maps.Map(document.getElementById('map'), options)
+                            }
+                        </script>
+
+                    </div>
                     <img class="img-fluid about-us-images" src="assets/images/about-us-1.jpg" alt="About us image 1">
                 </div>
             </div>
         </div>
     </section>
 
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLAXyF5QlqkkOp1Uw5JfIGhsVCuLrF3pI&callback=initMap"
+        type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

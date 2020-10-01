@@ -166,3 +166,10 @@ body, html{
 .reservations{
     padding-top: 50px;
 }
+
+/*Contact*/
+
+#map{
+    height: 400px;
+    width: 100%;
+}
