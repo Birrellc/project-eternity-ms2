@@ -1,6 +1,6 @@
 /* GLOBAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body, html{
     overflow-x:hidden;
@@ -77,11 +77,13 @@ body, html{
     text-align: center;
 }
 
-.heading {
+.heading h1{
     writing-mode: vertical-rl;
-    text-orientation: upright;
-    letter-spacing: 15px;   
+    text-orientation: upright;   
     font-family: "Cairo", sans-serif;
+    float: right;
+    font-weight: 600;
+    font-size: 2.4rem;
 }
 
 /*ABOUT US*/
@@ -130,7 +132,7 @@ body, html{
 .heading-div-1{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    letter-spacing: 5px;   
+    letter-spacing: 0px;   
     font-family: "Cairo", sans-serif;
     float:left
 }
@@ -138,21 +140,15 @@ body, html{
 .heading-div-2{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    letter-spacing: 5px;   
-    font-family: "Cairo", sans-serif;
+    letter-spacing: 0px;
+    font-family: "cairo",sans-serif;   
     float:right
 }
 
 /*MENU*/
 
-hr{
-    padding-top: 16px;
-    border-top: 2px solid rgba(219, 205, 12, 0.5);
-    width: 60%;
-}
-
 .menu{
-    padding-bottom: 16px;
+    padding-bottom: 50px;
 }
 
 .menu-images{
@@ -165,4 +161,8 @@ hr{
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 4px;
+}
+
+.reservations{
+    padding-top: 50px;
 }
