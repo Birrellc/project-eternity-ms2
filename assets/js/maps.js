@@ -1,13 +1,8 @@
 function initMap() {
-    const locationNewcastle = { lat: 54.9754904, lng: -1.6173998 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 13,
-      center: locationNewcastle,
-      gestureHandling: "cooperative",
-    });
-    new google.maps.Marker({
-      position: locationNewcastle,
-      map,
-      title: "Hello World!",
-    });
+
+    var uluru = {lat: -25.344, lng: 131.036};
+
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});
   }
