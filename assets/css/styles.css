@@ -165,9 +165,25 @@
     padding-top: 50px;
 }
 
-/*Contact*/
+/*Reservations*/
 
 #map{
-    height: 400px;
-    width: 100%;
+    height: 350px;
+    width: 600px;
+    text-align: center;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.cta-btn {
+
+    font-size: 1.1rem;
+    background-color: #000;
+    color: white;
+    transition: background-color .5s;
 }
