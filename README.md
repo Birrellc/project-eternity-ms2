@@ -1,41 +1,42 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+![picture](/assets/images/eternity-readme-logo.png)
 
-Welcome USER_NAME,
+## Description
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+*this is a ficticious business created for my milestone project 2 with the code institute*
 
-## Gitpod Reminders
+A luxuary minimalistic restaurant website designed to convey upper market fine dining experience with high quality food and service.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+*Frontend only - backend to be added as i progress during the course*
 
-`python3 -m http.server`
+## UX
 
-A blue button should appear to click: *Make Public*,
+### User Stories
 
-Another blue button should appear to click: *Open Browser*.
+User:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* As a user of this website i would like to be able to browse what food is available before going to the premises so that i would not be wasting my time if there was no options i wanted.
+* As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone incase my issue is urgent or not so urgent.
+* As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area incase i choose to eat her in the summer.
+* As a user, i would like the option to book food online and by telephone so i can make a reservation in whichever manner is convenient to me.
+* As a user, i would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out (coronavirus 2020)
+* As a user, i would like to have information about the history of the restaurant available on the website.
 
-A blue button should appear to click: *Make Public*,
+Owner:
 
-Another blue button should appear to click: *Open Browser*.
+* As the owner of this website  we would like to show images of our menu to allow customers to see the quality of food and options available.
+* As the owner, i would like there to be an option for customers to reach us by email to provide us with any feedback and also have a contact telephone number available for those who prefer.
+* As the owner, i would like images to be displayed throughout the site displaying our restaurant environment and also the outdoor area so that customers know they can enjoy an outdoor meal depending on the weather.
+* As the owner, i would like there to be a booking form which emails ourselves and the user with details of their reservation as well as a contact number option for booking so customers can book in whichever way is more convenient for them but also to stop clogging up the phones during busy hours.
+* As the owner, i would like there to be an option for delivery to help boost sales with customers who are currently prefering to isolate at home rather than eat out in public due to coronavirus 2020.
+* As the owner, i would like a section showing our history and who we are as a business to help build a connection with our potential customers.
+* As the owner, i would like the website to convey the essence of the business which is luxury & elegent fine dining. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
+## Technologies
+The technologies i have used for this project are:
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+* HTML5
+* CSS3
+* Bootstrap 4
+* Javascript
+* jQuery
