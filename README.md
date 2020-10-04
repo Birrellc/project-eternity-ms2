@@ -1,4 +1,4 @@
-![picture](/assets/images/eternity-readme-logo.png)
+![picture](assets/images/eternity-readme-logo.png)
 
 ## Description
 
@@ -38,5 +38,6 @@ The technologies i have used for this project are:
 * HTML5
 * CSS3
 * Bootstrap 4
+* Google Maps Api
 * Javascript
 * jQuery
