@@ -81,7 +81,14 @@
     font-family: "Cairo", sans-serif;
     float: right;
     font-weight: 600;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+}
+
+.sub-heading {
+    float:right;
+    font-family: "Cairo", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 15px;
 }
 
 /*ABOUT US*/
