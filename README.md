@@ -1,4 +1,4 @@
-![picture](assets/images/eternity-readme-logo.png)
+![picture](assets/images/eternity-logo.png)
 
 ## Description
 
@@ -7,6 +7,10 @@
 A luxuary minimalistic restaurant website designed to convey upper market fine dining experience with high quality food and service.
 
 *Frontend only - backend to be added as i progress during the course*
+
+## Wireframe
+
+The completed wireframes for this project can be accesed by clicking [Wireframes](https://github.com/Birrellc/ms2-ci/tree/master/assets/wireframes)
 
 ## UX
 
