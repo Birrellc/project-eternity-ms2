@@ -225,4 +225,16 @@
 
 .contact-section h1{
     font-family: "Cairo", sans-serif;
+    padding-bottom: 50px;
+}
+
+.contact-form {
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    padding:40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
 }
