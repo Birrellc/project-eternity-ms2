@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/71aaf157b7.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -216,8 +218,8 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="cta-modal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="cta-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -227,15 +229,33 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="container">
+                        <div class="row form-inline">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                            data-target="#datetimepicker1" />
+                                        <div class="input-group-append" data-target="#datetimepicker1"
+                                            data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
+
+
 
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
@@ -243,6 +263,9 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLAXyF5QlqkkOp1Uw5JfIGhsVCuLrF3pI&callback=initMap"
         type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment-with-locales.min.js"
+        integrity="sha512-EATaemfsDRVs6gs1pHbvhc6+rKFGv8+w4Wnxk4LmkC0fzdVoyWb+Xtexfrszd1YuUMBEhucNuorkf8LpFBhj6w=="
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -252,8 +275,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tempusdominus-bootstrap-4@5.1.2/build/js/tempusdominus-bootstrap-4.js">
+    </script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <script src="assets/js/maps.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment-with-locales.min.js"
+        integrity="sha512-EATaemfsDRVs6gs1pHbvhc6+rKFGv8+w4Wnxk4LmkC0fzdVoyWb+Xtexfrszd1YuUMBEhucNuorkf8LpFBhj6w=="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
