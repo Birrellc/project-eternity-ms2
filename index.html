@@ -218,41 +218,57 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="cta-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
+    <div class="modal fade" id="cta-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Make A Reservation:</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="container">
-                        <div class="row form-inline">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            data-target="#datetimepicker1" />
-                                        <div class="input-group-append" data-target="#datetimepicker1"
-                                            data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                        </div>
-                                    </div>
+                    <div class="modal-body">
+                        <form role="form" method="POST" action="">
+                            <input type="hidden" name="_token" value="">
+                            <div class="form-group">
+                                <label class="control-label">Full Name</label>
+                                <div>
+                                    <input type="text" class="form-control input-lg" name="fullname">
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Book Now</button>
-                        </div>
+                            <div class="form-group">
+                                <label class="control-label">E-Mail Address</label>
+                                <div>
+                                    <input type="email" class="form-control input-lg" name="email" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Table Size</label>
+                                <div>
+                                    <input type="text" class="form-control input-lg" name="name" value="">
+                                </div>
+                            </div>
+                            <div class="form-group"><label class="control-label">Date & Time</label>
+                            </div>
+                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                    data-target="#datetimepicker1" />
+                                <div class="input-group-append" data-target="#datetimepicker1"
+                                    data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Book Now</button>
+                            </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
 
 
 
