@@ -201,7 +201,7 @@ address a{
     text-transform: uppercase;
     letter-spacing: 2px;
     margin:auto;
-    margin-bottom:50px;
+    
 }
 
 .cta-btn {
@@ -210,6 +210,7 @@ address a{
     background-color: #000;
     color: white;
     transition: background-color .5s;
+    margin-bottom:50px;
 }
 
 .reservations-heading{
@@ -241,7 +242,7 @@ address a{
 
 .contact-section h1{
     font-family: "Cairo", sans-serif;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
 }
 
 .contact-form {
@@ -249,8 +250,15 @@ address a{
     display:flex;
     flex-direction: column;
     text-align: center;
-    width: 60%;
-    padding:40px;
+    width: 100%;
+    padding:10px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-btn {
+    font-size: 1.1rem;
+    background-color: #000;
+    color: white;
+    transition: background-color .5s;
 }
