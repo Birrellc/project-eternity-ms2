@@ -6,7 +6,6 @@ li {
     list-style: none;
 }
 
-
 address a{
     color: #000;
 }
@@ -40,6 +39,10 @@ address a{
     font-size: 25px;
 }
 
+.fa-times {
+    color:white;
+}
+
 .hamburger-toggle .fa-times {
     display: none;
 }
@@ -68,9 +71,23 @@ address a{
     opacity: 0;
 }
 
+.nav-list a {
+    color:#fff;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2.5rem;  
+}
+
+.nav-list a:hover{
+    color:gold;
+    text-decoration: underline;
+}
+
 .nav-list.open {
     opacity: 1;
 }
+
 
 /* HERO SECTION */
 

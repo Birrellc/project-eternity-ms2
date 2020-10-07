@@ -5,8 +5,17 @@ $(function(){
     {
         $('.toggle').toggleClass('open');
         $('.nav-list').toggleClass('open');
-        $('#map').toggle();
+        $('#map').toggleClass();
     });
+});
+
+$(function(){
+  $('.nav-list').on('click', function()
+  {
+      $('.toggle').removeClass('open');
+      $('.nav-list').removeClass('open');
+      $('#map').toggleClass();
+  });
 });
 
 $('#datetimepicker1').datetimepicker();
