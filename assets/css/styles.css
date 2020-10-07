@@ -6,6 +6,10 @@ li {
     list-style: none;
 }
 
+btn{
+    z-index: 50;
+}
+
 address a{
     color: #000;
 }
@@ -15,6 +19,7 @@ address a{
 }
 
 /* NAV SECTION */
+
 
 .navbar-brand {
     position: absolute;
@@ -57,7 +62,7 @@ address a{
 }
 
 .nav-list {
-    background-color: rgba(0, 0, 2, 1);
+    background-color: rgba(0, 0, 2, 0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -209,6 +214,8 @@ address a{
     margin-top: 50px;
     z-index: 25;
 }
+
+
 
 
 .address-details{

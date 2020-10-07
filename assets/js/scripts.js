@@ -9,13 +9,6 @@ $(function(){
     });
 });
 
-$(function(){
-  $('.nav-list').on('click', function()
-  {
-      $('.toggle').removeClass('open');
-      $('.nav-list').removeClass('open');
-      $('#map').toggleClass();
-  });
-});
+
 
 $('#datetimepicker1').datetimepicker();
