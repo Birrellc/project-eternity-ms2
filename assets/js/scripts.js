@@ -5,15 +5,8 @@ $(function(){
     {
         $('.toggle').toggleClass('open');
         $('.nav-list').toggleClass('open');
+        $('#map').toggle();
     });
 });
 
 $('#datetimepicker1').datetimepicker();
-
-$('#btnViewDate').click(function() {
-  $('#datetimepicker1').datetimepicker('viewDate', moment('11/21/2018', 'MM/DD/YYYY') );
-});
-
-$('#btnDate').click(function() {
-  $('#datetimepicker1').datetimepicker('date', moment('11/21/2018', 'MM/DD/YYYY') );
-});
