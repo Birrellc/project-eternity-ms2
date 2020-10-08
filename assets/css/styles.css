@@ -30,7 +30,7 @@ address a{
 }
 
 .hamburger-toggle {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 40px;
     height: 40px;
@@ -59,6 +59,18 @@ address a{
 
 .hamburger-toggle .fa-bars.open {
     display: none;
+}
+
+.cart{
+    position: fixed;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    top: 60px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 15;
+    font-size: 1.2rem;
 }
 
 .nav-list {
