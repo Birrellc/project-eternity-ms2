@@ -1,5 +1,3 @@
-
-
 $(function(){
     $('.cart').on('click', function()
     {
