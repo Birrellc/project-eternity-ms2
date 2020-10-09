@@ -6,7 +6,6 @@ function initMap() {
     });
     new google.maps.Marker({
       position: myLatLng,
-      map,
-      title: "Eternity Restaurant",
+      map
     });
   }
