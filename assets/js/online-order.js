@@ -3,7 +3,6 @@ $(function () {
         $('#cartModal').modal('show');
     });
 });
-
 let products = document.querySelectorAll('.menu-btn');
 
 let food = [{
@@ -82,6 +81,7 @@ function setItem(food) {
 
     }
     sessionStorage.setItem("foodInCart", JSON.stringify(cartProducts));
+    updateCart()
 }
 
 function totalCost(food) {
@@ -96,7 +96,7 @@ function totalCost(food) {
     }
 }
 
-function cartDisplay() {
+function updateCart() {
     let cartProducts = sessionStorage.getItem("foodInCart");
     cartProducts = JSON.parse(cartProducts);
     let cartModal = document.querySelector('.product-span');
@@ -107,4 +107,3 @@ function cartDisplay() {
         });
     }
 }
-cartDisplay()
