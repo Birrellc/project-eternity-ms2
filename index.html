@@ -318,7 +318,7 @@
         </div>
     </div>
     <!--CART MODAL-->
-    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal cartModal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -331,9 +331,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-
+                    <div class="product">product: <span class="product-span"></span></div>
+                    <div class="price">price:</div>
                     <div class="d-flex justify-content-end">
-                        <h4>Total: <span id="total-price"class="order-price text-success"></span></h4>
+                        <h4>Total: £ <span id="total-price"class="order-price text-success"></span></h4>
                     </div>
                 </div>
                 <div class="modal-footer border-top-0 d-flex justify-content-between">

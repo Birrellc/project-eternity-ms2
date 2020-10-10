@@ -4,7 +4,7 @@ $(function () {
     });
 });
 
-let items = document.querySelectorAll('.menu-btn');
+let products = document.querySelectorAll('.menu-btn');
 
 let food = [{
         name: 'Menu 1',
@@ -48,8 +48,8 @@ let food = [{
     },
 ]
 
-for (let i = 0; i < items.length; i++) {
-    items[i].addEventListener('click', () => {
+for (let i = 0; i < products.length; i++) {
+    products[i].addEventListener('click', () => {
         itemNumbers(food[i]);
         totalCost(food[i]);
     })
@@ -82,18 +82,29 @@ function setItem(food) {
 
     }
     sessionStorage.setItem("foodInCart", JSON.stringify(cartProducts));
-    console.log("my cartProducts are", cartProducts);
 }
 
 function totalCost(food) {
-    // console.log("product price is", food.price);
-    let cartPrice = sessionStorage.getItem("totalPrice"); 
+    let cartPrice = sessionStorage.getItem("totalPrice");
     console.log("my cartPrice is", cartPrice);
 
-    if(cartPrice != null) {
+    if (cartPrice != null) {
         cartPrice = parseInt(cartPrice);
         sessionStorage.setItem("totalPrice", cartPrice + food.price);
     } else {
         sessionStorage.setItem("totalPrice", food.price);
     }
 }
+
+function cartDisplay() {
+    let cartProducts = sessionStorage.getItem("foodInCart");
+    cartProducts = JSON.parse(cartProducts);
+    let cartModal = document.querySelector('.product-span');
+    if (cartProducts != null) {
+        cartModal.innerHTML = '';
+        Object.values(cartProducts).map(food => {
+            cartModal.innerHTML += `<span class=".product-span">${food.name}</span>`
+        });
+    }
+}
+cartDisplay()
