@@ -99,11 +99,11 @@ function totalCost(food) {
 function updateCart() {
     let cartProducts = sessionStorage.getItem("foodInCart");
     cartProducts = JSON.parse(cartProducts);
-    let cartModal = document.querySelector('.product-span');
+    let cartModal = document.querySelector('.product-1');
     if (cartProducts != null) {
         cartModal.innerHTML = '';
         Object.values(cartProducts).map(food => {
-            cartModal.innerHTML += `<span class=".product-span">${food.name}</span>`
+            cartModal.innerHTML += `<div class=".product-1">${food.name}</div>`
         });
     }
 }
