@@ -13,37 +13,37 @@ let food = [{
     },
     {
         name: 'Menu 2',
-        price: 10,
+        price: 12,
         inCart: 0
     },
     {
         name: 'Menu 3',
-        price: 10,
+        price: 11,
         inCart: 0
     },
     {
         name: 'Menu 4',
-        price: 10,
+        price: 13,
         inCart: 0
     },
     {
         name: 'Menu 5',
-        price: 10,
+        price: 14,
         inCart: 0
     },
     {
         name: 'Menu 6',
-        price: 10,
+        price: 15,
         inCart: 0
     },
     {
         name: 'Menu 7',
-        price: 10,
+        price: 16,
         inCart: 0
     },
     {
         name: 'Menu 8',
-        price: 10,
+        price: 17,
         inCart: 0
     },
 ]
@@ -51,6 +51,7 @@ let food = [{
 for (let i = 0; i < items.length; i++) {
     items[i].addEventListener('click', () => {
         itemNumbers(food[i]);
+        totalCost(food[i]);
     })
 }
 
@@ -82,4 +83,17 @@ function setItem(food) {
     }
     sessionStorage.setItem("foodInCart", JSON.stringify(cartProducts));
     console.log("my cartProducts are", cartProducts);
+}
+
+function totalCost(food) {
+    // console.log("product price is", food.price);
+    let cartPrice = sessionStorage.getItem("totalPrice"); 
+    console.log("my cartPrice is", cartPrice);
+
+    if(cartPrice != null) {
+        cartPrice = parseInt(cartPrice);
+        sessionStorage.setItem("totalPrice", cartPrice + food.price);
+    } else {
+        sessionStorage.setItem("totalPrice", food.price);
+    }
 }
