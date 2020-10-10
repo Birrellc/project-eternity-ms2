@@ -62,7 +62,7 @@ function itemNumbers(food) {
 
 function setItem(food) {
     let cartProducts = sessionStorage.getItem('foodInCart');
-    cartProducts = JSON.parse(cartItems);
+    cartProducts = JSON.parse(cartProducts);
 
     if (cartProducts != null) {
         if (cartProducts[food.name] == undefined) {
