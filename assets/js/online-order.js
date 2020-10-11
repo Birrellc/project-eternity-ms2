@@ -93,10 +93,7 @@ function updateStoreBasket(food) {
         totalCost(food)
     }
     sessionStorage.setItem("foodInCart", JSON.stringify(cartProducts));
-    addProduct()
-    addPrice()
-    addQuantity()
-    totalPrice()
+    updateModal()
 }
 
 function totalCost(food) {
