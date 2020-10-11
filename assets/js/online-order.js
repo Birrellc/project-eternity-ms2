@@ -57,6 +57,11 @@ for (let i = 0; i < products.length; i++) {
 function itemNumbers(food) {
     let menuNumbers = sessionStorage.getItem('itemNumbers');
     menuNumbers = parseInt(menuNumbers);
+    if (menuNumbers){
+        sessionStorage.setItem('itemNumbers', menuNumbers + 1);
+    } else {
+        sessionStorage.setItem('itemNumbers', 1)
+    }
     setItem(food);
 }
 
@@ -100,12 +105,11 @@ function updateCart() {
     let cartProducts = sessionStorage.getItem("foodInCart");
     cartProducts = JSON.parse(cartProducts);
     let cartModalProduct = document.querySelector('.product');
-    let cartModalPrice = document.querySelector('.price');
     if (cartProducts != null) {
         cartModalProduct.innerHTML = '';
         Object.values(cartProducts).map(food => {
-            cartModalProduct.innerHTML += `<div class="product">${food.name}</div>`
-            cartModalPrice.innerHTML += `<div class="price">£${food.price}</div>`
+            cartModalProduct.innerHTML += `<div class="product">${food.name}</div><div class="price">${food.price}</div> 
+            <div class="quantity"><i class="fas fa-minus"></i>£${food.inCart}</div><i class="fas fa-plus"></i>`;
         });
     }
 }
