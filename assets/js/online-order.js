@@ -50,7 +50,6 @@ let food = [{
 for (let i = 0; i < products.length; i++) {
     products[i].addEventListener('click', () => {
         itemNumbers(food[i]);
-        totalCost(food[i]);
     })
 }
 
@@ -68,48 +67,62 @@ function itemNumbers(food) {
 function setItem(food) {
     let cartProducts = sessionStorage.getItem('foodInCart');
     cartProducts = JSON.parse(cartProducts);
-
-    if (cartProducts != null) {
-        if (cartProducts[food.name] == undefined) {
+    if (cartProducts !== null) {
+        if (cartProducts[food.name] === undefined) {
             cartProducts = {
                 ...cartProducts,
                 [food.name]: food
             }
         }
         cartProducts[food.name].inCart += 1;
+        totalCost(food)
     } else {
         food.inCart = 1;
         cartProducts = {
             [food.name]: food
         }
-
-
+        totalCost(food)
     }
     sessionStorage.setItem("foodInCart", JSON.stringify(cartProducts));
     updateCart()
 }
 
 function totalCost(food) {
-    let cartPrice = sessionStorage.getItem("totalPrice");
-    console.log("my cartPrice is", cartPrice);
-
-    if (cartPrice != null) {
-        cartPrice = parseInt(cartPrice);
-        sessionStorage.setItem("totalPrice", cartPrice + food.price);
+    let currentCartPrice = sessionStorage.getItem("totalPrice");
+    console.log("currentCartPrice", currentCartPrice);
+    if (currentCartPrice !== null) {
+        currentCartPrice = parseInt(currentCartPrice);
+        sessionStorage.setItem("totalPrice", currentCartPrice + food.price);
+        console.log('we are updating cart price', currentCartPrice + food.price )
     } else {
         sessionStorage.setItem("totalPrice", food.price);
+        console.log('we are setting cart price')
     }
 }
 
 function updateCart() {
     let cartProducts = sessionStorage.getItem("foodInCart");
     cartProducts = JSON.parse(cartProducts);
+    let totalPriceValue = 0
+    totalPriceValue = sessionStorage.getItem("totalPrice")
     let cartModalProduct = document.querySelector('.product');
+    let cartModalPrice = document.querySelector('.price');
+    let cartModalQuantity = document.querySelector('.quantity');
+    let cartModalTotalPrice = document.querySelector('.total-price')
     if (cartProducts != null) {
         cartModalProduct.innerHTML = '';
         Object.values(cartProducts).map(food => {
-            cartModalProduct.innerHTML += `<div class="product">${food.name}</div><div class="price">${food.price}</div> 
-            <div class="quantity"><i class="fas fa-minus"></i>£${food.inCart}</div><i class="fas fa-plus"></i>`;
+            let productName = `<div class="productName">${food.name}</div>`
+            cartModalProduct.innerHTML = productName;
+
+            let productPrice = `<div class="productPrice">${food.price}</div>`
+            cartModalPrice.innerHTML = productPrice;
+
+            let productQuantity = `<div class="productQuantity">${food.inCart}</div>`
+            cartModalQuantity.innerHTML = productQuantity;
+
+            let totalPrice = `<div class="totalPrice">${totalPriceValue}</div>`
+            cartModalTotalPrice.innerHTML = totalPrice
         });
     }
 }
