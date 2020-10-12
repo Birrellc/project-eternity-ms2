@@ -128,9 +128,9 @@ function updateModal() {
     }
     cart.product.innerHTML = '';
     Object.values(cart.products).map(food => {
-        cart.product.innerHTML = `<div class="product">${food.name}</div>`;
-        cart.price.innerHTML = `<div class="price">${food.price}</div>`;
-        cart.quantity.innerHTML = `<div class="quantity">${food.inCart}</div>`;
-        cart.price.innerHTML = `<div class="total-price">${cart.totalPrice}</div>`
+        cart.product.innerHTML = `<div class="product"><span>${food.name}</span></div>`;
+        cart.price.innerHTML = `<div class="price"><span>${food.price}</span></div>`;
+        cart.quantity.innerHTML = `<div class="quantity"><span>${food.inCart}</span></div>`;
+        cart.totalPrice.innerHTML = `<div class="total-price">${cart.totalPrice}</div>`
     });
 }
