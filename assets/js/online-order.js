@@ -111,29 +111,26 @@ function totalCost(food) {
     }
 }
 
+const getCartData = () => ({
+    products: JSON.parse(sessionStorage.getItem("foodInCart")),
+    priceValue: sessionStorage.getItem("totalPrice") || 0,
+    product: document.querySelector('.product'),
+    price: document.querySelector('.price'),
+    quantity: document.querySelector('.quantity'),
+    totalPrice: document.querySelector('.total-price')
+})
+
+
 function updateModal() {
-    let cartProducts = sessionStorage.getItem("foodInCart");
-    cartProducts = JSON.parse(cartProducts);
-    let totalPriceValue = 0
-    totalPriceValue = sessionStorage.getItem("totalPrice")
-    let cartModalProduct = document.querySelector('.product');
-    let cartModalPrice = document.querySelector('.price');
-    let cartModalQuantity = document.querySelector('.quantity');
-    let cartModalTotalPrice = document.querySelector('.total-price')
-    if (cartProducts !== null) {
-        cartModalProduct.innerHTML = '';
-        Object.values(cartProducts).map(food => {
-            let productName = `<div class="productName">${food.name}</div>`
-            cartModalProduct.innerHTML = productName;
-
-            let productPrice = `<div class="productPrice">${food.price}</div>`
-            cartModalPrice.innerHTML = productPrice;
-
-            let productQuantity = `<div class="productQuantity">${food.inCart}</div>`
-            cartModalQuantity.innerHTML = productQuantity;
-
-            let totalPrice = `<div class="totalPrice">${totalPriceValue}</div>`
-            cartModalTotalPrice.innerHTML = totalPrice
-        });
+    let cart = getCartData()
+    if (cart.products === null) {
+        return false
     }
+    cart.product.innerHTML = '';
+    Object.values(cart.products).map(food => {
+        cart.product.innerHTML = `<div class="product">${food.name}</div>`;
+        cart.price.innerHTML = `<div class="price">${food.price}</div>`;
+        cart.quantity.innerHTML = `<div class="quantity">${food.inCart}</div>`;
+        cart.price.innerHTML = `<div class="total-price">${cart.totalPrice}</div>`
+    });
 }
