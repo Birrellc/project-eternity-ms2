@@ -5,12 +5,12 @@ li {
     list-style: none;
 }
 
-address a{
+address a {
     color: #000;
 }
 
-*{
-    padding:0;
+* {
+    padding: 0;
 }
 
 /* NAV SECTION */
@@ -30,14 +30,14 @@ address a{
     right: 20px;
     cursor: pointer;
     z-index: 1000;
-}    
+}
 
 .hamburger-toggle i {
     font-size: 25px;
 }
 
 .fa-times {
-    color:white;
+    color: white;
 }
 
 .fa-times {
@@ -53,7 +53,7 @@ address a{
     display: none;
 }
 
-.cart{
+.cart {
     position: absolute;
     display: flex;
     top: 45px;
@@ -79,21 +79,21 @@ address a{
 }
 
 .nav-list a {
-    color:gold;
+    color: gold;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 2.5rem;  
+    font-size: 2.5rem;
 }
 
-.nav-list a:hover{
-    color:white;
+.nav-list a:hover {
+    color: white;
     text-decoration: underline;
 }
 
 .nav-list.open {
     opacity: 1;
-    display:flex;
+    display: flex;
 }
 
 /* HERO SECTION */
@@ -108,9 +108,9 @@ address a{
     text-align: center;
 }
 
-.heading h1{
+.heading h1 {
     writing-mode: vertical-rl;
-    text-orientation: upright;   
+    text-orientation: upright;
     font-family: "Cairo", sans-serif;
     float: right;
     font-weight: 600;
@@ -118,15 +118,24 @@ address a{
 }
 
 .sub-heading {
-    float:right;
+    float: right;
     font-family: "Cairo", sans-serif;
     font-size: 1rem;
     letter-spacing: 15px;
 }
 
+.cta-home {
+    font-size: 1.1rem;
+    background-color: #000;
+    color: white;
+    transition: background-color .5s;
+    padding:5
+
+}
+
 /*ABOUT US*/
 
-.about{
+.about {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -135,123 +144,125 @@ address a{
     padding: 15px;
 }
 
-.about-us-heading{
-    font-family:"Cairo", sans-serif;
+.about-us-heading {
+    font-family: "Cairo", sans-serif;
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 2px;
 }
 
-.about-us-text{
-    font-family:"Raleway", sans-serif;
+.about-us-text {
+    font-family: "Raleway", sans-serif;
     font-style: italic;
     letter-spacing: 1.2px;
     line-height: 40px;
 }
 
-/*DIVIDER*/ 
+/*DIVIDER*/
 
-.divider-bg-1{
+.divider-bg-1 {
     background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
 }
 
-.divider-bg-2{
+.divider-bg-2 {
     background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
 }
 
-.divider-section{
+.divider-section {
     min-height: 65vh;
     display: flex;
     align-items: center;
 }
 
-.heading-div-1{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    letter-spacing: 0px;   
-    font-family: "Cairo", sans-serif;
-    float:left
-}
-
-.heading-div-2{
+.heading-div-1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: 0px;
-    font-family: "cairo",sans-serif;   
-    float:right
+    font-family: "Cairo", sans-serif;
+    float: left
+}
+
+.heading-div-2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 0px;
+    font-family: "cairo", sans-serif;
+    float: right
 }
 
 /*MENU*/
 
-.menu{
+.menu {
     padding-bottom: 50px;
 }
 
-.menu-images{
+.menu-images {
     width: 100%;
     height: 100%;
 }
 
-.menu-heading{
-    font-family:"Cairo", sans-serif;
+.menu-heading {
+    font-family: "Cairo", sans-serif;
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 4px;
 }
 
-.menu-delivery-text{
-    font-family: "Raleway",sans-serif;
-    font-style:italic;
+.menu-delivery-text {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
     font-size: 0.7rem;
 }
 
 .card {
-    margin:auto;
-    border:none;
+    margin: auto;
+    border: none;
 }
-.card-body p{
+
+.card-body p {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
 }
 
-.menu-btn{
+.menu-btn {
     font-size: 1.1rem;
     background-color: #000;
     color: white;
     transition: background-color .5s;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
+
 /*Reservations*/
 
-.reservations{
+.reservations {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.map{
+.map {
     height: 350px;
     width: 100%;
     text-align: center;
-    margin:auto;
+    margin: auto;
     margin-top: 50px;
     z-index: 0;
 }
 
-.address-details{
+.address-details {
     font-family: "cairo", sans-serif;
 }
-.address-heading h5{
+
+.address-heading h5 {
     text-decoration: underline;
 }
 
 .btn {
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin:auto;
-    
+    margin: auto;
 }
 
 .cta-btn {
@@ -259,24 +270,24 @@ address a{
     background-color: #000;
     color: white;
     transition: background-color .5s;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
-.reservations-heading{
+.reservations-heading {
 
-        font-family:"Cairo", sans-serif;
-        font-size: 40px;
-        font-weight: 500;
-        letter-spacing: 2px;
+    font-family: "Cairo", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
-    
-.reservations-text{
 
-        font-family:"Raleway", sans-serif;
-        font-style: italic;
-        letter-spacing: 1.5px;
-        line-height: 40px;
-        font-size: 16px
+.reservations-text {
+
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    font-size: 16px
 }
 
 /*CONTACT PAGE*/
@@ -289,18 +300,18 @@ address a{
     padding-top: 15px;
 }
 
-.contact-section h1{
+.contact-section h1 {
     font-family: "Cairo", sans-serif;
     padding-bottom: 15px;
 }
 
 .contact-form {
-    margin:auto;
-    display:flex;
+    margin: auto;
+    display: flex;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    padding:10px;
+    padding: 10px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -314,9 +325,9 @@ address a{
 
 /* CTA MODAL*/
 .modal-dialog {
-    padding:0px;
-    color:#000000;
-    text-align:center;
+    padding: 0px;
+    color: #000000;
+    text-align: center;
 }
 
 /* CART MODAL*/
@@ -324,46 +335,50 @@ address a{
 /* MEDIA QUERIES*/
 
 @media screen and (min-width: 320px) {
-    .heading h1{
+    .heading h1 {
+        padding-top: 50px;
         font-weight: 300;
         font-size: 1.7rem;
     }
-    .sub-heading h5{
+
+    .sub-heading h5 {
         font-size: 1rem;
-        letter-spacing: 12px;
+        letter-spacing: 10px;
     }
 }
 
 @media screen and (min-width: 375px) {
-    .heading h1{
+    .heading h1 {
         font-weight: 400;
         font-size: 2.1rem;
     }
-    .sub-heading h5{
+
+    .sub-heading h5 {
         font-size: 1.2rem;
         letter-spacing: 15px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .heading h1{
+    .heading h1 {
         font-weight: 600;
         font-size: 2.6rem;
         letter-spacing: 15px;
     }
-    .sub-heading h5{
+
+    .sub-heading h5 {
         font-size: 1.8rem;
         letter-spacing: 16px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .heading h1{
-        font-weight: 600;
+    .heading h1 {
         font-size: 2.8rem;
         letter-spacing: 18px;
     }
-    .sub-heading h5{
+
+    .sub-heading h5 {
         font-size: 1.8rem;
         letter-spacing: 18px;
     }
