@@ -15,7 +15,6 @@ address a{
 
 /* NAV SECTION */
 
-
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -41,16 +40,16 @@ address a{
     color:white;
 }
 
-.hamburger-toggle .fa-times {
+.fa-times {
     display: none;
 }
 
-.hamburger-toggle .fa-times.open {
+.fa-times.open {
     display: block;
     position: fixed;
 }
 
-.hamburger-toggle .fa-bars.open {
+.fa-bars.open {
     display: none;
 }
 
@@ -96,7 +95,6 @@ address a{
     opacity: 1;
     display:flex;
 }
-
 
 /* HERO SECTION */
 
