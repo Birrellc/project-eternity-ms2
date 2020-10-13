@@ -13,6 +13,7 @@ address a {
     padding: 0;
 }
 
+
 /* NAV SECTION */
 
 .navbar-brand {
@@ -263,6 +264,10 @@ address a {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: auto;
+}
+
+.btn:hover{
+    color:gold;
 }
 
 .cta-btn {
