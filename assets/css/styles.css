@@ -327,7 +327,7 @@ address a{
 
 @media screen and (min-width: 320px) {
     .heading h1{
-        font-weight: 600;
+        font-weight: 300;
         font-size: 1.7rem;
     }
     .sub-heading h5{
@@ -338,22 +338,12 @@ address a{
 
 @media screen and (min-width: 375px) {
     .heading h1{
-        font-weight: 600;
+        font-weight: 400;
         font-size: 2.1rem;
     }
     .sub-heading h5{
         font-size: 1.2rem;
         letter-spacing: 15px;
-    }
-}
-
-@media screen and (min-width: 411px) {
-    .heading h1{
-        font-size: 2.4rem;
-    }
-    .sub-heading h5{
-        font-size: 1.4rem;
-        letter-spacing: 17px;
     }
 }
 
@@ -365,7 +355,7 @@ address a{
     }
     .sub-heading h5{
         font-size: 1.8rem;
-        letter-spacing: 18px;
+        letter-spacing: 16px;
     }
 }
 
