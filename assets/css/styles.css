@@ -27,7 +27,7 @@ address a{
 .hamburger-toggle {
     position: absolute;
     display: flex;
-    top: 25px;
+    top: 15px;
     right: 20px;
     cursor: pointer;
     z-index: 1000;
@@ -57,7 +57,7 @@ address a{
 .cart{
     position: absolute;
     display: flex;
-    top: 60px;
+    top: 45px;
     right: 20px;
     cursor: pointer;
     z-index: 1;
@@ -322,3 +322,61 @@ address a{
 }
 
 /* CART MODAL*/
+
+/* MEDIA QUERIES*/
+
+@media screen and (min-width: 320px) {
+    .heading h1{
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+    .sub-heading h5{
+        font-size: 1rem;
+        letter-spacing: 12px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .heading h1{
+        font-weight: 600;
+        font-size: 2.1rem;
+    }
+    .sub-heading h5{
+        font-size: 1.2rem;
+        letter-spacing: 15px;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .heading h1{
+        font-size: 2.4rem;
+    }
+    .sub-heading h5{
+        font-size: 1.4rem;
+        letter-spacing: 17px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heading h1{
+        font-weight: 600;
+        font-size: 2.6rem;
+        letter-spacing: 15px;
+    }
+    .sub-heading h5{
+        font-size: 1.8rem;
+        letter-spacing: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heading h1{
+        font-weight: 600;
+        font-size: 2.8rem;
+        letter-spacing: 18px;
+    }
+    .sub-heading h5{
+        font-size: 1.8rem;
+        letter-spacing: 18px;
+    }
+}
