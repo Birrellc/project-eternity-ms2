@@ -285,10 +285,33 @@ address a {
 
     font-family: "Raleway", sans-serif;
     font-style: italic;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     line-height: 40px;
-    font-size: 16px
 }
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-us-images {
+    padding: 15px;
+}
+
+.about-us-heading {
+    font-family: "Cairo", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.about-us-text {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    letter-spacing: 1.2px;
+    line-height: 40px;
+}
+
 
 /*CONTACT PAGE*/
 
