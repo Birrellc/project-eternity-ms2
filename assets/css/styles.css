@@ -354,11 +354,25 @@ address a {
     transition: background-color .5s;
 }
 
-/* CTA MODAL*/
+/* BOOKING MODAL*/
 .modal-dialog {
     padding: 0px;
     color: #000000;
     text-align: center;
+}
+
+.booking-modal {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent), url("../images/cta-modal-bg.jpg")no-repeat;
+}
+
+.booking-modal-text{
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+}
+
+.booking-modal-head{
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
 }
 
 /* CART MODAL*/
@@ -438,6 +452,6 @@ address a {
 
     .sub-heading h5 {
         font-size: 1.6rem;
-        letter-spacing: 12px;
+        letter-spacing: 11px;
     }
 }
