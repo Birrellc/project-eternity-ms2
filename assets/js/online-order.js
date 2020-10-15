@@ -6,7 +6,9 @@ $(function () {
 
 let addToBasket = document.querySelectorAll('.menu-btn');
 
-
+let foodIndex = 0;
+let totalPrice = 0;
+let cartItem = [];
 let food = [{
         name: 'lamb',
         price: 10,
@@ -50,9 +52,12 @@ let food = [{
 ]
 // This adds onClick events to each food item in the list
 for (let i = 0; i < addToBasket.length; i++) {
-    addToBasket[i].addEventListener('click', () => {
-        // Use new name for function  i.e. addItemToCart()
-        addItemToBasket(food[i]);
+    addToBasket[i].addEventListener('click', (e) => {  
+        foodIndex = i;
+        if(!cartItem.includes(foodIndex)){
+        	cartItem.push(foodIndex);
+        	addItemToBasket(food[i]);
+        }
     })
 }
 
@@ -98,16 +103,13 @@ function updateStoreBasket(food) {
 
 function totalCost(food) {
     let currentCartPrice = sessionStorage.getItem("totalPrice");
-    console.log("currentCartPrice", currentCartPrice);
     // If we have a current cart price
     if (currentCartPrice !== null) {
         currentCartPrice = parseInt(currentCartPrice);
         sessionStorage.setItem("totalPrice", currentCartPrice + food.price);
-        console.log('we are updating cart price', currentCartPrice + food.price)
     } else {
         // If we have no current cart price
         sessionStorage.setItem("totalPrice", food.price);
-        console.log('we are setting cart price')
     }
 }
 
@@ -123,14 +125,16 @@ const getCartData = () => ({
 
 function updateModal() {
     let cart = getCartData()
-    if (cart.products === null) {
+    if (cart.products == null) {
         return false
     }
-    cart.product.innerHTML = '';
-    Object.values(cart.products).map(food => {
-        cart.product.innerHTML = `<div class="product"><span>${food.name}</span></div>`;
-        cart.price.innerHTML = `<div class="price"><span>${food.price}</span></div>`;
-        cart.quantity.innerHTML = `<div class="quantity"><span>${food.inCart}</span></div>`;
-        cart.totalPrice.innerHTML = `<div class="total-price">${cart.totalPrice}</div>`
-    });
+    let foodItem = food[foodIndex];
+    if(foodItem!==undefined){
+    	totalPrice += foodItem.price;
+      cart.product.insertAdjacentHTML("beforeend", `<div class="productName">${foodItem.name}</div>`);
+      cart.price.insertAdjacentHTML("beforeend", `<div class="productPrice">${foodItem.price}</div>`);
+      cart.quantity.insertAdjacentHTML("beforeend", `<div class="productQuantity">${foodItem.inCart}</div>`);
+      cart.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`
+    }
+    
 }
