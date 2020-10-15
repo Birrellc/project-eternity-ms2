@@ -58,10 +58,11 @@
                 <div class="sub-heading text-uppercase">
                     <h5>Fine Dining</h5>
                     <div class="div">
-                        <button class="btn cta-home" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
+                        <button class="btn cta-home" data-toggle="modal" data-target="#cta-modal">BOOK NOW</button>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!--ABOUT-->
     <section id="about" class="about">
@@ -91,7 +92,9 @@
     <!--DIVIDER #1-->
     <section class="divider-section divider-bg-1">
         <div class="container">
-            <h1 class="heading-div-1 text-uppercase">ELEGENT</h1>
+            <div class="">
+                <h1 class="heading-div-1 text-uppercase">ELEGENT</h1>
+            </div>
         </div>
     </section>
     <!--MENU-->
@@ -173,6 +176,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!--DIVIDER #2-->
     <section class="divider-section divider-bg-2">
@@ -197,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row address-details  text-center">
+            <div class="row address-details d-flex align-items-center text-center">
                 <div class="col-12 col-md-4">
                     <h5 class="address-heading ">TEL & E-MAIL:</h5>
                     <address>
@@ -205,6 +209,9 @@
                         <a href="tel:+00000000000">Tel: 0000 0000000</a>
                     </address>
                     <br>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn cta-btn" data-toggle="modal" data-target="#cta-modal">BOOK NOW</button>
                 </div>
                 <div class="col-12 col-md-4">
                     <h5 class="address-heading ">ADDRESS:</h5>
@@ -216,19 +223,6 @@
                             <li>NE1 6BJ</li>
                         </ul>
                     </address>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h5 class="address-heading">OPENING HOURS:</h5>
-                    <ul>
-                        <li>DAYS: WED-SUN</li>
-                        <li>TIMES: 16:00-01:00</li>
-                    </ul>
-                    <br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <button class="btn cta-btn" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -272,107 +266,97 @@
                 </div>
             </form>
         </div>
-        </div>
     </section>
 
-    <!--BOOKING MODAL-->
-    <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog">
+    <!--CTA MODAL-->
+    <div class="modal fade" id="cta-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content booking-modal">
-                <div class="modal-header  text-uppercase booking-modal-head">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Make A Reservation:</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-body text-uppercase booking-modal-text">
+                    <div class="modal-body">
                         <form role="form" method="POST" action="">
                             <input type="hidden" name="_token" value="">
                             <div class="form-group">
-                                <label class="control-label">Full Name:</label>
+                                <label class="control-label">Full Name</label>
                                 <div>
-                                    <input type="text" class="form-control input-lg" name="fullname"
-                                        placeholder="John Smith">
+                                    <input type="text" class="form-control input-lg" name="fullname">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label">E-Mail Address:</label>
+                                <label class="control-label">E-Mail Address</label>
                                 <div>
-                                    <input type="email" class="form-control input-lg" name="email" value=""
-                                        placeholder="johnsmith@email.com">
+                                    <input type="email" class="form-control input-lg" name="email" value="">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="tablesizeselect" class="control-label">Table Size:</label>
-                                <select class="form-control" id="tablesizeselect">
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Date & Time:</label>
-                                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input"
-                                        data-target="#datetimepicker1" />
-                                    <div class="input-group-append" data-target="#datetimepicker1"
-                                        data-toggle="datetimepicker">
-                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Book Now</button>
+                                <label class="control-label">Table Size</label>
+                                <div>
+                                    <input type="text" class="form-control input-lg" name="name" value="">
                                 </div>
                             </div>
-                        </form>
+                            <div class="form-group"><label class="control-label">Date & Time</label>
+                            </div>
+                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                    data-target="#datetimepicker1" />
+                                <div class="input-group-append" data-target="#datetimepicker1"
+                                    data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Book Now</button>
+                            </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <!--CART MODAL-->
-        <div class="modal cartModal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content col-12">
-                    <div class="modal-header border-bottom-0">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                            Your Food Order:
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row  cart-headings">
-                            <div class="col-4">
-                                <div class="cart-col-heading">Product:
-                                    <div class="product"></div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="cart-col-heading">Price:
-                                    <div class="price"></div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="cart-col-heading">Quantity:
-                                    <div class="quantity"></div>
-                                </div>
-                            </div>
-                            <div class="col-4 cart-col-heading">Total: £
-                                <div class="total-price"></div>
+    </div>
+    <!--CART MODAL-->
+    <div class="modal cartModal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content col-12">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Your Food Order:
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row  cart-headings">
+                        <div class="col-4">
+                            <div class="cart-col-heading">Product:
+                                <div class="product"></div>
                             </div>
                         </div>
+                        <div class="col-4">
+                            <div class="cart-col-heading">Price:
+                                <div class="price"></div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="cart-col-heading">Quantity:
+                                <div class="quantity"></div>
+                            </div>
+                        </div>
+                        <div class="col-4 cart-col-heading">Total: £
+                            <div class="total-price"></div>
+                        </div>
                     </div>
-                    <div class="modal-footer col-12 border-top-0 justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-success">Checkout</button>
-                    </div>
+                </div>
+                <div class="modal-footer col-12 border-top-0 justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Checkout</button>
                 </div>
             </div>
         </div>
