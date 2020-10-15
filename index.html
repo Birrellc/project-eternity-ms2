@@ -58,7 +58,7 @@
                 <div class="sub-heading text-uppercase">
                     <h5>Fine Dining</h5>
                     <div class="div">
-                        <button class="btn cta-home" data-toggle="modal" data-target="#cta-modal">BOOK NOW</button>
+                        <button class="btn cta-home" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row address-details d-flex align-items-center text-center">
+            <div class="row address-details  text-center">
                 <div class="col-12 col-md-4">
                     <h5 class="address-heading ">TEL & E-MAIL:</h5>
                     <address>
@@ -209,9 +209,6 @@
                         <a href="tel:+00000000000">Tel: 0000 0000000</a>
                     </address>
                     <br>
-                </div>
-                <div class="col-12 col-md-4">
-                    <button class="btn cta-btn" data-toggle="modal" data-target="#cta-modal">BOOK NOW</button>
                 </div>
                 <div class="col-12 col-md-4">
                     <h5 class="address-heading ">ADDRESS:</h5>
@@ -223,6 +220,19 @@
                             <li>NE1 6BJ</li>
                         </ul>
                     </address>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="address-heading">OPENING HOURS:</h5>
+                    <ul>
+                        <li>DAYS: WED-SUN</li>
+                        <li>TIMES: 16:00-01:00</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn cta-btn" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -268,53 +278,62 @@
         </div>
     </section>
 
-    <!--CTA MODAL-->
-    <div class="modal fade" id="cta-modal" tabindex="-1" role="dialog">
+    <!--BOOKING MODAL-->
+    <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content booking-modal">
+                <div class="modal-header text-uppercase booking-modal-head">
                     <h5 class="modal-title" id="exampleModalLongTitle">Make A Reservation:</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-body">
+                    <div class="modal-body text-uppercase booking-modal-text">
                         <form role="form" method="POST" action="">
                             <input type="hidden" name="_token" value="">
                             <div class="form-group">
-                                <label class="control-label">Full Name</label>
+                                <label class="control-label">Full Name:</label>
                                 <div>
-                                    <input type="text" class="form-control input-lg" name="fullname">
+                                    <input type="text" class="form-control input-lg" name="fullname"
+                                        placeholder="John Smith">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label">E-Mail Address</label>
+                                <label class="control-label">E-Mail Address:</label>
                                 <div>
-                                    <input type="email" class="form-control input-lg" name="email" value="">
+                                    <input type="email" class="form-control input-lg" name="email" value=""
+                                        placeholder="johnsmith@email.com">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label">Table Size</label>
-                                <div>
-                                    <input type="text" class="form-control input-lg" name="name" value="">
-                                </div>
+                                <label for="tablesizeselect" class="control-label">Table Size:</label>
+                                <select class="form-control" id="tablesizeselect">
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                </select>
                             </div>
-                            <div class="form-group"><label class="control-label">Date & Time</label>
-                            </div>
-                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input"
-                                    data-target="#datetimepicker1" />
-                                <div class="input-group-append" data-target="#datetimepicker1"
-                                    data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            <div class="form-group">
+                                <label class="control-label">Date & Time:</label>
+                                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        data-target="#datetimepicker1" />
+                                    <div class="input-group-append" data-target="#datetimepicker1"
+                                        data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary">Book Now</button>
                             </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
