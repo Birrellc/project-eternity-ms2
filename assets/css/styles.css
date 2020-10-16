@@ -13,6 +13,11 @@ address a {
     padding: 0;
 }
 
+hr.line-light {
+    border-top: 2px solid #5e503f;
+    width: 50%;
+}
+
 
 /* NAV SECTION */
 
@@ -294,32 +299,16 @@ address a {
     letter-spacing: 1.2px;
     line-height: 40px;
     font-size: 0.7rem;
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
-.about {
-    padding-top: 50px;
-    padding-bottom: 50px;
+hr.line-light-address{
+    border-top: 2px solid #5e503f;
+    width: 30%;
 }
-
-.about-us-images {
-    padding: 15px;
-}
-
-.about-us-heading {
-    font-family: "Cairo", sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-.about-us-text {
-    font-family: "Raleway", sans-serif;
-    font-style: italic;
-    letter-spacing: 1.2px;
-    line-height: 40px;
-}
-
-
 /*CONTACT PAGE*/
 
 .contact-section {
@@ -332,7 +321,6 @@ address a {
 
 .contact-section h1 {
     font-family: "Cairo", sans-serif;
-    padding-bottom: 15px;
 }
 
 .contact-form {
