@@ -16,7 +16,7 @@ The completed wireframes for this project can be accesed by clicking [Wireframes
 
 ### Landing Page
 
-The landing page design i have chosen follows a minimalist approach which will follow throughout the website due to current trends i find minimalism conveys luxuary very well. This will consist of a simple image background for both light and dark modes which there will be a button in place to toggle between both modes to provide comfort to the viewers/users preference. A title displayed vertically to capture interest with a horizontal sub heading to draw contrast from the heading with a call to action button to book a table below. There will be 3 bar navigation button (hamburger menu) to allow users to open a navigation menu to explore the website or they could scroll down with smooth scrolling and also this allows 
+The landing page design i have chosen follows a minimalist approach which will follow throughout the website due to current trends i find minimalism conveys luxuary very well. This will consist of a simple image background with a linear gradient over to top of it to not be so overpowering for the user for both light and dark modes which there will be a button in place to toggle between both modes to provide comfort to the viewers/users preference. A title displayed vertically to capture interest with a horizontal sub heading to draw contrast from the heading with a call to action button to book a table below. There will be 3 bar navigation button (hamburger menu) to allow users to open a navigation menu to explore the website or they could scroll down with smooth scrolling and also this allows 
 users to best experience the website and it's animation effects.
 
 ### About Us
@@ -34,6 +34,10 @@ The Reservations page is kept very minimalistic but informative of all the infor
 ### Contact Us
 
 This page is a simple form with an image behind it with another linear gradient over to top of it to not be so overpowering for the user, the form on this page will allow the user to contact the restaurant with any complaints, suggestions or questions they may have for the restaurant.
+
+### Dividers 
+
+The divider pages are used to show more imagery of the restaurant while also breaking up the website to help keep the flow clean and not clutter the experience of the user while also listing words that describe the principles of the restaurant.
 
 ### User Stories
 
@@ -56,6 +60,47 @@ Owner:
 * As the owner, i would like a section showing our history and who we are as a business to help build a connection with our potential customers.
 * As the owner, i would like the website to convey the essence of the business which is luxury & elegent fine dining. 
 
+### Strategy Plane
+
+The purpose of the website created is to entice more customers to the restaurant while displaying the restaurant's core concepts of sophisticated, luxury and elegence to current and new users.
+
+* Showcase the restaurant and its 3 key principles of sophistication, luxury and elegence.
+* Showcase the high quality food available at the restaurant - I spoke to a friend whos worked as a Chef in many restaurants throughout the UK/Europe and one of the key comments he made for attracting fine dining customers is quality of food and presentation that stands out from chain restaurants.
+* Offer an easy to use online booking form to allow users to reserve a table quickly and efficiently to increase sales & provide phone booking for people who prefer.
+* Display social media for proofing and trust from potential customers.
+* Obtain user email information via newletter subscription to increase user database and potentially earn more repeat customers through offers and events.
+* Design an easy to use website with a minimalism approach to help entice customers through less distractions [Source](https://pos.toasttab.com/blog/on-the-line/restaurant-design-minimalist-design)
+* Design mobile responsive website - 81% of customers have searched for a restaurant on a mobile device [Source](https://blogs.constantcontact.com/restaurants-most-searched-industry-by-consumers-on-mobile-devices-and-other-hot-topics/)
+* Incorperate an online menu to increase business sales - (51% of customers use a restaurant's website to order food [Image](https://github.com/Birrellc/ms2-ci/tree/master/assets/images/readme-images/online-orders-stats.png) [Source](https://pos.toasttab.com/resources/restaurant-success-industry-report))
+* Provide an area for feedback, suggestions & questions through a contact form.
+* Display the restaurant environment through images displayed throughout the website.
+* Display key information for increasing customer interest with location map, address, and opening hours.
+
+
+### Scope
+
+* The website will provide a clean UX / UI for users to use effectivley.
+* The website will be minimalist, professional and luxury themed to present the business correctly to build trust with current and new clients while creating a solid web foundation for the business to further increase reputation.
+* All booking and forms regarding user data must be validated for efficiency and professionalism.
+* Project will contain imagery throughout the website to advertise the business throughout.
+
+### Structure
+
+* The website is designed to allow viewers/users to quickly understand and view the information displayed without causing distraction which may lead to failure to draw action from the user. 
+
+* The information throughout the website will be short and concise to allow the user to quickly navigate the the area they wish to view without distraction while still providing the information they want.
+
+* Areas of user interaction will be clearly displayed to allow higher interation and potentially increased sales.
+
+### Skeleton
+
+* Minimal Theme Navigation - Navigation will be done throuh scrolling the pages or by use of a small navigation button (hamburger button)
+* Design - Each section will have a slight contrast from the previous in order to provide clear seperation.
+* Dividers - Dividers are used to help split information so as to not over clutter the UX.
+* Pages - There will be a Homepage, About page, Menu page, Reservation page & a contact section in that order
+* Api - A google map api will be used to display restaurant location
+
+### Surface
 
 ## Technologies
 The technologies i have used for this project are:
