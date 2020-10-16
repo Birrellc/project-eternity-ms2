@@ -36,6 +36,7 @@ hr.line-light {
     right: 20px;
     cursor: pointer;
     z-index: 1000;
+    color:#a9927d;
 }
 
 .hamburger-toggle i {
@@ -67,6 +68,7 @@ hr.line-light {
     cursor: pointer;
     z-index: 100;
     font-size: 1.2rem;
+    color:#a9927d;
 }
 
 .nav-list {

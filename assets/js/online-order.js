@@ -5,7 +5,6 @@ $(function () {
 });
 
 let addToBasket = document.querySelectorAll('.menu-btn');
-
 let foodIndex = 0;
 let totalPrice = 0;
 let cartItem = [];
