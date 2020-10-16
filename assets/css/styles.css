@@ -30,7 +30,7 @@ hr.line-light {
 }
 
 .hamburger-toggle {
-    position: absolute;
+    position: fixed;
     display: flex;
     top: 15px;
     right: 20px;
@@ -60,12 +60,12 @@ hr.line-light {
 }
 
 .cart {
-    position: absolute;
+    position: fixed;
     display: flex;
     top: 45px;
     right: 20px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 100;
     font-size: 1.2rem;
 }
 
