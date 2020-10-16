@@ -134,7 +134,7 @@ hr.line-light {
 
 .cta-home {
     font-size: 1.1rem;
-    background-color: #000;
+    background-color: #49111c;
     color: white;
     transition: background-color .5s;
     padding:5
@@ -238,7 +238,7 @@ hr.line-light {
 
 .menu-btn {
     font-size: 1.1rem;
-    background-color: #000;
+    background-color: #49111c;
     color: white;
     transition: background-color .5s;
     margin-bottom: 50px;
@@ -280,7 +280,7 @@ hr.line-light {
 
 .cta-btn {
     font-size: 1.1rem;
-    background-color: #000;
+    background-color: #49111c;
     color: white;
     transition: background-color .5s;
     margin-bottom: 50px;
@@ -339,7 +339,7 @@ hr.line-light-address{
 .contact-btn {
     margin-top: 15px;
     font-size: 1.1rem;
-    background-color: #000;
+    background-color: #49111c;
     color: white;
     transition: background-color .5s;
 }
