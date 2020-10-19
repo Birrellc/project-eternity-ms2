@@ -17,17 +17,21 @@ hr.line-light {
     border-top: 2px solid #5e503f;
     width: 50%;
 }
+/* LIGHT MODE */
 
+.light-mode{
+    background-color: #f2f4f3;
+    color: #0a0908;
+}
+
+.dark-mode{
+    background-color: #0a0908;
+    color: #a9927d;
+}
+
+/* DARK MODE */
 
 /* NAV SECTION */
-
-.navbar-brand {
-    position: absolute;
-    width: 100%;
-    max-width: 100px;
-    top: 10px;
-    left: 50%;
-}
 
 .hamburger-toggle {
     position: fixed;
@@ -36,15 +40,17 @@ hr.line-light {
     right: 20px;
     cursor: pointer;
     z-index: 1000;
-    color:#a9927d;
 }
 
 .hamburger-toggle i {
     font-size: 25px;
+    color:#5e503f
 }
 
 .fa-times {
-    color: white;
+    right: 22px;
+    font-size: 25px;
+
 }
 
 .fa-times {
@@ -68,7 +74,18 @@ hr.line-light {
     cursor: pointer;
     z-index: 100;
     font-size: 1.2rem;
-    color:#a9927d;
+    color:#5e503f;
+}
+
+.dark-mode-btn { 
+        position: absolute;
+        display: flex;
+        top: 17px;
+        right: 50px;
+        cursor: pointer;
+        z-index: 100;
+        font-size: 1.4rem;
+        color: #5e503f;
 }
 
 .nav-list {
@@ -107,7 +124,17 @@ hr.line-light {
 /* HERO SECTION */
 
 .hero-light {
-    background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent), url("../images/background-1.jpg") center no-repeat;
+    background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-dark {
+    background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     background-size: cover;
     display: flex;
     width: 100%;
@@ -169,13 +196,23 @@ hr.line-light {
 
 /*DIVIDER*/
 
-.divider-bg-1 {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
+.divider-bg-1-light {
+    background: linear-gradient(to right,  rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
 }
 
-.divider-bg-2 {
-    background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
+.divider-bg-1-dark {
+    background: linear-gradient(to right,  rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.divider-bg-2-light {
+    background: linear-gradient(to left,  rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.divider-bg-2-dark {
+    background: linear-gradient(to left,  rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -228,6 +265,14 @@ hr.line-light {
 .card {
     margin: auto;
     border: none;
+}
+
+.card-light {
+    background-color: #f2f4f3;
+}
+
+.card-dark {
+    background-color: #0a0908;
 }
 
 .card-body p {
@@ -313,15 +358,23 @@ hr.line-light-address{
 }
 /*CONTACT PAGE*/
 
-.contact-section {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
+.contact-section-light {
+    background: linear-gradient(to bottom,  rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
     padding-top: 20px;
 }
 
-.contact-section h1 {
+.contact-section-dark {
+    background: linear-gradient(to bottom,  rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.contact-section-light h1, .contact-section-dark h1{
     font-family: "Cairo", sans-serif;
 }
 
@@ -353,7 +406,7 @@ hr.line-light-address{
 
 /* BOOKING MODAL*/
 .booking-modal {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.699), transparent)
+    background: linear-gradient(to bottom, rgba(242, 244, 243, 0.699), transparent)
 }
 
 .booking-modal-text{
@@ -393,7 +446,10 @@ hr.line-light-address{
         font-size: 1.2rem;
         letter-spacing: 15px;
     }
-    .contact-section h1{
+    .contact-section-light h1{
+        padding-bottom: 50px;
+    }
+    .contact-section-dark h1{
         padding-bottom: 50px;
     }
 }
@@ -408,7 +464,10 @@ hr.line-light-address{
         font-size: 1.8rem;
         letter-spacing: 14px;
     }
-    .contact-section h1{
+    .contact-section-light h1{
+        padding-bottom: 100px;
+    }
+    .contact-section-dark h1{
         padding-bottom: 100px;
     }
     .contact-form {
