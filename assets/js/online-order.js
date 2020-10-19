@@ -51,15 +51,14 @@ let food = [{
 ]
 // This adds onClick events to each food item in the list
 for (let i = 0; i < addToBasket.length; i++) {
-    addToBasket[i].addEventListener('click', (e) => {  
+    addToBasket[i].addEventListener('click', (e) => {
         foodIndex = i;
-        if(!cartItem.includes(foodIndex)){
-        	cartItem.push(foodIndex);
-        	addItemToBasket(food[i]);
+        if (!cartItem.includes(foodIndex)) {
+            cartItem.push(foodIndex);
+            addItemToBasket(food[i]);
         }
     })
 }
-
 
 function addItemToBasket(food) {
     let menuNumbers = sessionStorage.getItem('addItemToBasket');
@@ -112,28 +111,61 @@ function totalCost(food) {
     }
 }
 
-const getCartData = () => ({
-    products: JSON.parse(sessionStorage.getItem("foodInCart")),
-    priceValue: sessionStorage.getItem("totalPrice") || 0,
-    product: document.querySelector('.product'),
-    price: document.querySelector('.price'),
-    quantity: document.querySelector('.quantity'),
-    totalPrice: document.querySelector('.total-price')
-})
+function getCartData() {
+    return {
+        products: JSON.parse(sessionStorage.getItem("foodInCart")),
+        priceValue: sessionStorage.getItem("totalPrice") || 0,
+        product: document.querySelector('.product'),
+        price: document.querySelector('.price'),
+        quantity: document.querySelector('.quantity'),
+        totalPrice: document.querySelector('.total-price')
+    }
+}
 
 
 function updateModal() {
     let cart = getCartData()
-    if (cart.products == null) {
+    if (cart.products === null) {
         return false
     }
     let foodItem = food[foodIndex];
-    if(foodItem!==undefined){
-    	totalPrice += foodItem.price;
-      cart.product.insertAdjacentHTML("beforeend", `<div class="productName">${foodItem.name}</div>`);
-      cart.price.insertAdjacentHTML("beforeend", `<div class="productPrice">${foodItem.price}</div>`);
-      cart.quantity.insertAdjacentHTML("beforeend", `<div class="productQuantity">${foodItem.inCart}</div>`);
-      cart.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`
+    if (foodItem !== undefined) {
+        totalPrice += foodItem.price;
+        cart.product.insertAdjacentHTML("beforeend", `<div class="productName">${foodItem.name}</div>`);
+        cart.price.insertAdjacentHTML("beforeend", `<div class="productPrice">${foodItem.price}</div>`);
+        let incrementButton = document.createElement('i')
+        incrementButton.className = 'fas fa-plus'
+        incrementButton.addEventListener('click', () => incrementQuantity(foodItem.inCart))
+        cart.quantity.insertAdjacentHTML("beforeend", `<div class="productQuantity"><i class="fas fa-minus"></i<span>${foodItem.inCart}</span></div>`);
+        cart.quantity.appendChild(incrementButton)
+        cart.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`
     }
-    
 }
+
+    function incrementQuantity(food) {
+    let increase = document.querySelector("fa-plus")
+    let currentCart = sessionStorage.getItem('foodInCart');
+    currentCart = JSON.parse(currentCart);
+    if ([food.name] == [food.name]){
+        currentCart[food.inCart] ++;}
+
+
+
+
+
+
+
+
+    // This would then need to update the cart in sessionStorage
+    // So get current cart object string out
+    // Parse to object
+    // let existingCart = sstorage.get('existingCart)
+    // let existingFoodItem = existingCart[foodName]
+    // let existingQuantity = existingFoodItem.quantity
+    // let updatedCart = {
+    // ...existingCart,
+    // { ...existingFoodItem,
+    //  quantity: existingQuantity + 1 
+    // }
+    // }
+    }
