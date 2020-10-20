@@ -6,7 +6,7 @@ li {
 }
 
 address a {
-    color: #000;
+    color:  #a9927d;
 }
 
 * {
@@ -37,7 +37,7 @@ hr.line-light {
     position: fixed;
     display: flex;
     top: 15px;
-    right: 20px;
+    right: 8px;
     cursor: pointer;
     z-index: 1000;
 }
@@ -48,7 +48,7 @@ hr.line-light {
 }
 
 .fa-times {
-    right: 22px;
+    right: 9px;
     font-size: 25px;
 
 }
@@ -70,7 +70,7 @@ hr.line-light {
     position: fixed;
     display: flex;
     top: 45px;
-    right: 20px;
+    right: 8px;
     cursor: pointer;
     z-index: 100;
     font-size: 1.2rem;
@@ -192,7 +192,11 @@ hr.line-light {
     font-size: 0.7rem;
     letter-spacing: 1.2px;
     line-height: 40px;
+    width: 300px;
+    margin: auto;
+
 }
+
 
 /*DIVIDER*/
 
@@ -289,6 +293,14 @@ hr.line-light {
     margin-bottom: 50px;
 }
 
+.view-basket-btn{
+    font-size: 1.1rem;
+    background-color: #49111c;
+    color: white;
+    transition: background-color .5s;
+    margin-bottom: 50px;
+}
+
 /*Reservations*/
 
 .reservations {
@@ -348,7 +360,6 @@ hr.line-light {
     font-size: 0.7rem;
     width: 300px;
     max-width: 100%;
-    position: relative;
     margin: auto;
 }
 
