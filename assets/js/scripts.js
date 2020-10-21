@@ -1,4 +1,4 @@
-// jQuery hamburger menu toggler
+// jQuery - hamburger menu toggler
 
 $(function(){
     $('.hamburger-toggle').on('click', function()
@@ -8,8 +8,14 @@ $(function(){
         $('#map').toggleClass();
     });
 });
+// jQuery - toggle shopping cart modal when clicking cart icon
 
-
+$(function () {
+    $(".cart").on("click", function () {
+        $("#cartModal").modal("show");
+    });
+});
+// jQuery - Allows user to select date and time for booking only on open days/hours and no previous date or time allowed
 
 $('#datetimepicker1').datetimepicker({  
     format:'YYYY-MM-DD HH:mm',
