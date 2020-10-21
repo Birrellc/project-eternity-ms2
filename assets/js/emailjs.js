@@ -15,3 +15,22 @@ function sendMail(bookingForm) {
     );
     return false;
 }
+
+
+function sendMailContact(contactForm) {
+    emailjs.send("gmail", "eternity-contact",{
+        "from_name": contactForm.fullname.value,
+        "from_email": contactForm.email.value,
+        "subject": contactForm.subject.value,
+        "message": contactForm.message.value
+    })
+    .then(
+        function(response) {
+            console.log("SUCCESS", response);
+        },
+        function(error) {
+            console.log("FAILED", error);
+        }
+    );
+    return false;
+}

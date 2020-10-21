@@ -272,7 +272,7 @@
             </div>
         </div>
         <div class="col-12 text-center align-items-center justify-content-center">
-            <form class="contact-form" method="POST" action="https://formdump.codeinstitute.net/">
+            <form class="contact-form" onsubmit="return sendMailContact(this)" method="POST" action="" id="contact-form">
                 <div class="form-group">
                     <label for="fullname">Your Name:</label>
                     <input type="text" class="form-control" id="fullname" name="fullname" placeholder="eg. john smith"
@@ -280,12 +280,12 @@
                 </div>
                 <div class="form-group">
                     <label for="emailaddress">Email Address:</label>
-                    <input type="email" class="form-control" id="emailaddress" placeholder="eg. johnsmith@email.com"
+                    <input type="email" class="form-control" id="email" placeholder="eg. johnsmith@email.com"
                         name="email" required />
                 </div>
                 <div class="form-group">
                     <label for="">Subject:</label>
-                    <input type="text" class="form-control" id="" placeholder="" name="" required />
+                    <input type="text" class="form-control" id="subject" placeholder="RE:Feedback" name="subject" required />
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
@@ -308,7 +308,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-body text-uppercase booking-modal-text">
-                        <form role="form" onsubmit="return sendMail(this)" method="POST" action="">
+                        <form role="form" onsubmit="return sendMail(this)" method="POST" action="" id="booking-form">
                             <div class="form-group">
                                 <label class="control-label">Full Name:</label>
                                 <div>
