@@ -1,171 +1,170 @@
-$(function () {
-    $('.cart').on('click', function () {
-        $('#cartModal').modal('show');
-    });
-});
-
-let addToBasket = document.querySelectorAll('.menu-btn');
+let addToBasket = document.querySelectorAll(".menu-btn");
 let foodIndex = 0;
 let totalPrice = 0;
-let cartItem = [];
+let basketItem = [];
 let food = [{
-        name: 'lamb',
+        name: "lamb",
         price: 10,
-        inCart: 0
+        inBasket: 0
     },
     {
-        name: 'burger',
+        name: "burger",
         price: 11,
-        inCart: 0
+        inBasket: 0
     },
     {
-        name: 'avacado',
+        name: "avacado",
         price: 12,
-        inCart: 0
+        inBasket: 0
     },
     {
-        name: 'steak',
+        name: "steak",
         price: 13,
-        inCart: 0
+        inBasket: 0
     },
     {
-        name: 'prawns',
+        name: "prawns",
         price: 14,
-        inCart: 0
+        inBasket: 0
     },
     {
-        name: 'toast',
+        name: "toast",
         price: 15,
-        inCart: 0
+        inBasket: 0
     },
     {
-        name: 'kebab',
+        name: "kebab",
         price: 16,
-        inCart: 0
+        inBasket: 0
     },
     {
-        name: 'pizza',
+        name: "pizza",
         price: 17,
-        inCart: 0
-    },
-]
+        inBasket: 0
+    }
+];
 // This adds onClick events to each food item in the list
 for (let i = 0; i < addToBasket.length; i++) {
-    addToBasket[i].addEventListener('click', (e) => {
+    addToBasket[i].addEventListener("click", e => {
         foodIndex = i;
-        if (!cartItem.includes(foodIndex)) {
-            cartItem.push(foodIndex);
-            addItemToBasket(food[i]);
+        if (!basketItem.includes(foodIndex)) {
+            basketItem.push(foodIndex);
+            addItemToBasket(food[i], i);
         }
-    })
+    });
 }
-
-function addItemToBasket(food) {
-    let menuNumbers = sessionStorage.getItem('addItemToBasket');
+// This adds item to basket
+function addItemToBasket(food, itemIndex) {
+    let menuNumbers = sessionStorage.getItem("addItemToBasket");
     menuNumbers = parseInt(menuNumbers);
     if (menuNumbers) {
-        sessionStorage.setItem('addItemToBasket', menuNumbers + 1);
-    } else {
-        sessionStorage.setItem('addItemToBasket', 1)
+        sessionStorage.setItem("addItemToBasket", +1);
     }
-    updateStoreBasket(food);
+    updateStoreBasket(food, itemIndex);
 }
 
-
-function updateStoreBasket(food) {
-    let cartProducts = sessionStorage.getItem('foodInCart');
-    cartProducts = JSON.parse(cartProducts);
-    // If the cart has products
-    if (cartProducts !== null) {
-        // If this item of food isnt in the cart already then..
-        if (cartProducts[food.name] === undefined) {
-            // Update the cart with the existing items and add our new item into it
-            cartProducts = {
-                ...cartProducts,
+function updateStoreBasket(food, itemIndex) {
+    let basketProducts = sessionStorage.getItem("foodInBasket");
+    basketProducts = JSON.parse(basketProducts);
+    // If the basket has products
+    if (basketProducts !== null) {
+        // If this item of food isnt in the basket already then..
+        if (basketProducts[food.name] === undefined) {
+            // Update the basket with the existing items and add our new item into it
+            basketProducts = {
+                ...basketProducts,
                 [food.name]: food
-            }
+            };
         }
         // Regardless if the item was there before or not we want to increase the quantity by 1
-        cartProducts[food.name].inCart += 1;
-        totalCost(food)
+        basketProducts[food.name].inBasket += 1;
+        totalCost(food);
     } else {
-        food.inCart = 1;
-        cartProducts = {
+        food.inBasket = 1;
+        basketProducts = {
             [food.name]: food
-        }
-        totalCost(food)
+        };
+        totalCost(food);
     }
-    sessionStorage.setItem("foodInCart", JSON.stringify(cartProducts));
-    updateModal()
+    sessionStorage.setItem("foodInBasket", JSON.stringify(basketProducts));
+    updateModal(itemIndex);
 }
 
 function totalCost(food) {
-    let currentCartPrice = sessionStorage.getItem("totalPrice");
-    // If we have a current cart price
-    if (currentCartPrice !== null) {
-        currentCartPrice = parseInt(currentCartPrice);
-        sessionStorage.setItem("totalPrice", currentCartPrice + food.price);
+    let currentBasketPrice = sessionStorage.getItem("totalPrice");
+    // If we have a current Basket price
+    if (currentBasketPrice !== null) {
+        currentBasketPrice = parseInt(currentBasketPrice);
+        sessionStorage.setItem("totalPrice", currentBasketPrice + food.price);
     } else {
-        // If we have no current cart price
+        // If we have no current Basket price
         sessionStorage.setItem("totalPrice", food.price);
     }
 }
 
-function getCartData() {
+function getBasketData() {
     return {
-        products: JSON.parse(sessionStorage.getItem("foodInCart")),
+        products: JSON.parse(sessionStorage.getItem("foodInBasket")),
         priceValue: sessionStorage.getItem("totalPrice") || 0,
-        product: document.querySelector('.product'),
-        price: document.querySelector('.price'),
-        quantity: document.querySelector('.quantity'),
-        totalPrice: document.querySelector('.total-price')
-    }
+        product: document.querySelector(".product"),
+        price: document.querySelector(".price"),
+        quantity: document.querySelector(".quantity"),
+        totalPrice: document.querySelector(".total-price")
+    };
 }
 
-
-function updateModal() {
-    let cart = getCartData()
-    if (cart.products === null) {
-        return false
+function updateModal(itemIndex) {
+    let basket = getBasketData();
+    if (basket.products === null) {
+        return false;
     }
-    let foodItem = food[foodIndex];
+    let foodItem = food[itemIndex];
     if (foodItem !== undefined) {
         totalPrice += foodItem.price;
-        cart.product.insertAdjacentHTML("beforeend", `<div class="productName">${foodItem.name}</div>`);
-        cart.price.insertAdjacentHTML("beforeend", `<div class="productPrice">${foodItem.price}</div>`);
-        let incrementButton = document.createElement('i')
-        incrementButton.className = 'fas fa-plus'
-        incrementButton.addEventListener('click', () => incrementQuantity(foodItem.inCart))
-        cart.quantity.insertAdjacentHTML("beforeend", `<div class="productQuantity"><i class="fas fa-minus"></i<span>${foodItem.inCart}</span></div>`);
-        cart.quantity.appendChild(incrementButton)
-        cart.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`
+        basket.product.insertAdjacentHTML("beforeend",
+            `<div class="productName">${foodItem.name}</div>`
+        );
+        basket.price.insertAdjacentHTML("beforeend",
+            `<div class="productPrice">${foodItem.price}</div>`
+        );
+        basket.quantity.insertAdjacentHTML("beforeend",
+            `<div class="productQuantity"data-itemIndex=${itemIndex}><i class="fas fa-minus"></i><span class="item-quantity">
+            ${foodItem.inBasket}</span><i class="fas fa-plus"></i></div>`);
+        basket.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
     }
 }
 
-    function incrementQuantity(food) {
-    let increase = document.querySelector("fa-plus")
-    let currentCart = sessionStorage.getItem('foodInCart');
-    currentCart = JSON.parse(currentCart);
-    if ([food.name] == [food.name]){
-        currentCart[food.inCart] ++;}
-
-
-
-
-
-
-
-
-    // This would then need to update the cart in sessionStorage
-    // So get current cart object string out
-    // Parse to object
-    // let existingCart = sstorage.get('existingCart)
-    // let existingFoodItem = existingCart[foodName]
-    // let existingQuantity = existingFoodItem.quantity
-    // let updatedCart = {
-    // ...existingCart,
-    // { ...existingFoodItem,
-    //  quantity: existingQuantity + 1 
-    // }
-    // }
+Element.prototype.parents = function (selector) {
+    let parents = [];
+    let currentParent = this.parentNode;
+    if (selector === undefined && currentParent === undefined); {
+        parents.push(currentParent);
+        currentParent = currentParent.parentNode;
     }
+    parents.push(currentParent);
+    return parents;
+};
+
+document.querySelector(".quantity").addEventListener("click", function (e) {
+    // Get index of the item of which the quantity icons were clicked
+    const itemIndex = e.target
+        .parents(".productQuantity")[0]
+        .getAttribute("data-itemIndex");
+    const item = food[itemIndex];
+    // when clicked on plus icon
+    if (e.target.classList.contains("fa-plus")) {
+        // increasing the quantity by 1 in item object and in DOM
+        item.inBasket++;
+        e.target.parentNode.querySelector(".item-quantity").innerText = item.inBasket;
+        totalPrice += item.price;
+        // When clicked on minus icon
+    } else if (e.target.classList.contains("fa-minus") && item.inBasket > 1) {
+        // decreasing the quantity by 1 in item object and in DOM
+        item.inBasket--;
+        e.target.parentNode.querySelector(".item-quantity").innerText = item.inBasket;
+        totalPrice -= item.price;
+    }
+    document.querySelector(
+        ".total-price"
+    ).innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
+});
