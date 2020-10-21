@@ -95,7 +95,7 @@
         </div>
     </section>
     <!--DIVIDER #1-->
-    <section id="divider-1"class="divider-section divider-bg-1-light">
+    <section id="divider-1" class="divider-section divider-bg-1-light">
         <div class="container">
             <div class="">
                 <h1 class="heading-div-1 text-uppercase">ELEGENT</h1>
@@ -188,7 +188,7 @@
         </div>
     </section>
     <!--DIVIDER #2-->
-    <section id="divider-2"class="divider-section divider-bg-2-light">
+    <section id="divider-2" class="divider-section divider-bg-2-light">
         <div class="container">
             <div class="">
                 <h1 class="heading-div-2 text-uppercase ">LUXURY</h1>
@@ -216,7 +216,7 @@
             <div class="row address-details text-center">
                 <div class="col-12 col-md-4">
                     <h5 class="address-heading ">TEL & E-MAIL:</h5>
-                    <hr class="line-light-address"> 
+                    <hr class="line-light-address">
                     <address>
                         <a href="mailto:eternity@email.com">Eternity@email.com</a><br>
                         <a href="tel:+00000000000">Tel: 0000 0000000</a>
@@ -308,25 +308,24 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-body text-uppercase booking-modal-text">
-                        <form role="form" method="POST" action="">
-                            <input type="hidden" name="_token" value="">
+                        <form role="form" onsubmit="return sendMail(this)" method="POST" action="">
                             <div class="form-group">
                                 <label class="control-label">Full Name:</label>
                                 <div>
-                                    <input type="text" class="form-control input-lg" name="fullname"
+                                    <input type="text" class="form-control input-lg" name="fullname" id="fullname"
                                         placeholder="John Smith">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">E-Mail Address:</label>
                                 <div>
-                                    <input type="email" class="form-control input-lg" name="email" value=""
+                                    <input type="email" class="form-control input-lg" name="email" id="email" value=""
                                         placeholder="johnsmith@email.com">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="tablesizeselect" class="control-label">Table Size:</label>
-                                <select class="form-control" id="tablesizeselect">
+                                <select class="form-control" name="tablesizeselect" id="tablesizeselect">
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
@@ -340,7 +339,7 @@
                                 <label class="control-label">Date & Time:</label>
                                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                                     <input type="text" class="form-control datetimepicker-input"
-                                        data-target="#datetimepicker1" />
+                                        data-target="#datetimepicker1" name="date_time" id="date_time">
                                     <div class="input-group-append" data-target="#datetimepicker1"
                                         data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
@@ -348,7 +347,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Book Now</button>
+                                <button type="submit" class="btn btn-primary">Book Now</button>
                             </div>
                         </form>
                     </div>
@@ -424,6 +423,14 @@
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/online-order.js"></script>
     <script src="assets/js/color-scheme.js"></script>
+    <script src="assets/js/emailjs.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_xrOgiNw9CKYMi03cSsdU3");
+        })();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment-with-locales.min.js"
         integrity="sha512-EATaemfsDRVs6gs1pHbvhc6+rKFGv8+w4Wnxk4LmkC0fzdVoyWb+Xtexfrszd1YuUMBEhucNuorkf8LpFBhj6w=="
         crossorigin="anonymous"></script>
