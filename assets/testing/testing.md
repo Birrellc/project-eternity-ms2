@@ -24,6 +24,6 @@ This project has been tested throughout with use of preview, devtools, manual te
 ### RESPONSIVE TEST
 
 * For the responsive test i used an app called [Responsivley App](https://responsively.app/) which allowed me to view my website with multiple device sizes \(iPhone 5/5se 320px, iPhone X 375px, Ipad 768px, and a generic laptop size of 1280px\)
-* ![picture](assets/images/testing-images/responsive-test-part1.gif)
-* ![picture](assets/images/testing-images/responsive-test-part2.gif)
-* i have also tested responsiveness of site and forms fully via use of devtools on my IDE preview and also on my deployed github page showing no issues with the viewports of \(320px, 375px, 414px,  768px, 1024px, 1440px, 1920px)
+* ![picture](../images/testing-images/responsive-test-part1.gif)
+* ![picture](../images/testing-images/responsive-test-part2.gif)
+* I have also tested responsiveness of site and forms fully via use of devtools on my IDE preview and also on my deployed github page showing no issues with the viewports of \(320px, 375px, 414px,  768px, 1024px, 1440px, 1920px)
