@@ -164,8 +164,7 @@ hr.line-light {
     background-color: #49111c;
     color: white;
     transition: background-color .5s;
-    padding:5
-
+    padding:5px;
 }
 
 /*ABOUT US*/
@@ -457,12 +456,6 @@ hr.line-light-address{
         font-size: 1.2rem;
         letter-spacing: 15px;
     }
-    .contact-section-light h1{
-        padding-bottom: 50px;
-    }
-    .contact-section-dark h1{
-        padding-bottom: 50px;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -475,12 +468,7 @@ hr.line-light-address{
         font-size: 1.8rem;
         letter-spacing: 14px;
     }
-    .contact-section-light h1{
-        padding-bottom: 100px;
-    }
-    .contact-section-dark h1{
-        padding-bottom: 100px;
-    }
+
     .contact-form {
         width: 80%;
         padding: 50px;
