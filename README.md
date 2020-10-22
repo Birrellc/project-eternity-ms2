@@ -111,3 +111,13 @@ The technologies i have used for this project are:
 * Google Maps Api
 * Javascript
 * jQuery
+
+## External Resources
+
+* [W3C HTML Validator](https://validator.w3.org/) - Used to test HTML code on the website.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code on the website.
+* [Pexels](https://https://www.pexels.com/) - Stock image resource.
+* [Tinypng](http://https://tinypng.com/) - Website used to compress my images to allow for faster loading times.
+* [Font Awesome](https://fontawesome.com/) - Used to provide small icons for the website. eg. Testimonial quotes section.
+* [Stack Overflow](https://fonts.google.com/) - Resource whcih provided the 3 fonts: Anton, Arvo & Montserrat for the website.
+* [GT Metrix - Speed test](https://gtmetrix.com//) - Used to test the loading speed of the website.
