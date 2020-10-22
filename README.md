@@ -120,4 +120,4 @@ The technologies i have used for this project are:
 * [Tinypng](http://https://tinypng.com/) - Website used to compress my images to allow for faster loading times.
 * [Font Awesome](https://fontawesome.com/) - Used to provide small icons for the website. eg. Testimonial quotes section.
 * [Stack Overflow](https://fonts.google.com/) - Resource whcih provided the 3 fonts: Anton, Arvo & Montserrat for the website.
-* [GT Metrix - Speed test](https://gtmetrix.com/) - Used to test the loading speed of the website.
+* [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - Used to test the loading speed of the website.
