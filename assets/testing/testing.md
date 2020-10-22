@@ -15,3 +15,8 @@ This project has been tested throughout with use of preview, devtools, manual te
 
 * I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * No Errors recieved [No Error Found Image](https://github.com/Birrellc/ms2-ci/tree/master/assets/images/testing-images/css-validator-1.png/)
+
+### SPEED TEST
+
+* I ran a speed test on the live github page of my website via [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+* The results recieved we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before project is fully live [Speed test results](https://github.com/Birrellc/ms2-ci/tree/master/assets/images/testing-images/initial-speed-test.png)
