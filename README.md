@@ -87,9 +87,7 @@ The purpose of the website created is to entice more customers to the restaurant
 ### Structure
 
 * The website is designed to allow viewers/users to quickly understand and view the information displayed without causing distraction which may lead to failure to draw action from the user. 
-
 * The information throughout the website will be short and concise to allow the user to quickly navigate the the area they wish to view without distraction while still providing the information they want.
-
 * Areas of user interaction will be clearly displayed to allow higher interation and potentially increased sales.
 
 ### Skeleton
@@ -102,7 +100,48 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ### Surface
 
+* Inspiration for the surfact design of the website came from [Pinterest - Food & Restaurant UI/UX](https://www.pinterest.co.uk/sdgates/web-food-restaurant-ui-ux/)
+
+#### Color Scheme
+
+* My color scheme inspiration came from an article about restaurant website color schemes [Website](https://abhijitrawool.com/restaurant-website-color-palettes/)
+
+![picture](assets/images/readme-images/color-scheme.png)
+
+* I picked this color scheme as it supported the website theme of the restaurant which is minimalist & luxury, also with a contrast of light and dark colours allows me to use just one pallete for both my light and dark themes on the website.
+
+#### Site Images
+
+* All of my images were taken from [Pexels](https://pexels.com) with a contrast of light and dark images to interchange for my light and dark mode themes, luxury food items for my menu, clean stylish indoor and outdoor images of restaurants for my dividers \(this is used to display restaurant environment to users\) and also images of food being prepared and served to generate interest from the user.
+
+#### Fonts
+
+* The chosen fonts were originally "Cairo" a sans-serif font & "Parisienne" a cursive font - In the early stages i found the cursive font "Parisienne" to conflict with the minimalism aim for the website which lead me to experiment with alternative secondary fonts for paragraphs in which i decided to test "Oswald", "Leto" & "Raleway" and in the end i chose "Raleway" to be my secondary font for its similarities to "cairo" while still keeping subtle differences.
+
+## Features
+
+#### Features
+
+* Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact)
+* 2 User Interactive Forms With Validation - Booking form\(modal\) & Contact form.
+* Interactive Map - Map taken from google maps api showing restaurant location to help makes the business more accessible to customers.
+* Online Menu - An online menu has been setup with a JavaScript shopping cart \(items can be added to cart from menu page via buttons then quantity can be adjusted in the shopping cart modal with total price being calculated but due to my lack of skillset the there is no paywall / checkout feature functioning yet but will be added as my skills improve\)
+* Animations - Throughout the website their will be animations as the pages switch.
+* Social Media - Social media icons will be present on all pages.
+* Light / Dark mode - Dark mode option is available due to growing trend of preference.
+
+#### Features to be Implemented in Future
+
+* Fully functioning booking form database system to replace the form in place at the moment
+* Fully functioning checkout system to add to the shopping cart for successful online orders
+* The ability to update and alternate menu's with ease
+* Newsletter system with automated response & database to store subscriber email addresses
+* Alternative system to emailJS for sending emails.
+* Improve on the features already in place to be more optimal e.g the time and date part of the booking form could self made instead of relying on a plugin
+
+
 ## Technologies
+
 The technologies i have used for this project are:
 
 * HTML5
@@ -111,6 +150,9 @@ The technologies i have used for this project are:
 * Google Maps Api
 * Javascript
 * jQuery
+* EmailJS
+* MomentJs Plugin
+* TempusDominus Time & Date Plugin
 
 ## External Resources
 
