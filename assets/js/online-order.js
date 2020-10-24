@@ -1,7 +1,9 @@
+
 let addToBasket = document.querySelectorAll(".menu-btn");
 let foodIndex = 0;
 let totalPrice = 0;
 let basketItem = [];
+
 let food = [{
         name: "lamb",
         price: 10,
@@ -101,7 +103,7 @@ function totalCost(food) {
         sessionStorage.setItem("totalPrice", food.price);
     }
 }
-
+// recieve object from DOM and assign variables to div classes
 function getBasketData() {
     return {
         products: JSON.parse(sessionStorage.getItem("foodInBasket")),
@@ -112,7 +114,7 @@ function getBasketData() {
         totalPrice: document.querySelector(".total-price")
     };
 }
-
+// push objects from localstorage array into dynamic div's on the DOM
 function updateModal(itemIndex) {
     let basket = getBasketData();
     if (basket.products === null) {
@@ -133,15 +135,14 @@ function updateModal(itemIndex) {
         basket.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
     }
 }
-
+// allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
 Element.prototype.parents = function (selector) {
     let parents = [];
     let currentParent = this.parentNode;
-    if (selector === undefined && currentParent === undefined); {
+    if (selector === undefined || currentParent === undefined); {
         parents.push(currentParent);
         currentParent = currentParent.parentNode;
     }
-    parents.push(currentParent);
     return parents;
 };
 
@@ -164,7 +165,7 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
         e.target.parentNode.querySelector(".item-quantity").innerText = item.inBasket;
         totalPrice -= item.price;
     }
-    document.querySelector(
+    document.querySelector( 
         ".total-price"
     ).innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
 });
