@@ -24,12 +24,12 @@ hr.line-light {
     color: #0a0908;
 }
 
+/* DARK MODE */
+
 .dark-mode{
     background-color: #0a0908;
     color: #a9927d;
 }
-
-/* DARK MODE */
 
 /* NAV SECTION */
 
@@ -193,7 +193,6 @@ hr.line-light {
     line-height: 40px;
     width: 300px;
     margin: auto;
-
 }
 
 
@@ -351,7 +350,6 @@ hr.line-light {
 }
 
 .reservations-text {
-
     font-family: "Raleway", sans-serif;
     font-style: italic;
     letter-spacing: 1.2px;
@@ -366,6 +364,7 @@ hr.line-light-address{
     border-top: 2px solid #5e503f;
     width: 30%;
 }
+
 /*CONTACT PAGE*/
 
 .contact-section-light {
