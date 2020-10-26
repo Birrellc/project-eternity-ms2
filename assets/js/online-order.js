@@ -136,10 +136,10 @@ function updateModal(itemIndex) {
     }
 }
 // allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
-Element.prototype.parents = function (selector) {
+Element.prototype.parents = function() {
     let parents = [];
     let currentParent = this.parentNode;
-    if (selector === undefined || currentParent === undefined); {
+    if (currentParent === undefined); {
         parents.push(currentParent);
         currentParent = currentParent.parentNode;
     }
