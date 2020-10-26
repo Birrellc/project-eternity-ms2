@@ -5,43 +5,43 @@ let totalPrice = 0;
 let basketItem = [];
 
 let food = [{
-        name: "lamb",
-        price: 10,
+        name: "Rack of Lamb",
+        price: 40,
         inBasket: 0
     },
     {
-        name: "burger",
-        price: 11,
+        name: "Stacked Burger",
+        price: 18,
         inBasket: 0
     },
     {
-        name: "avacado",
-        price: 12,
+        name: "Poached Egg & Avacado en Croute",
+        price: 20,
         inBasket: 0
     },
     {
-        name: "steak",
-        price: 13,
+        name: "Sirloin Steak",
+        price: 40,
         inBasket: 0
     },
     {
-        name: "prawns",
-        price: 14,
+        name: "Moqueca",
+        price: 25,
         inBasket: 0
     },
     {
-        name: "toast",
+        name: "Avacado Salad & Toast",
         price: 15,
         inBasket: 0
     },
     {
-        name: "kebab",
-        price: 16,
+        name: "Skewered Kebab",
+        price: 35,
         inBasket: 0
     },
     {
         name: "pizza",
-        price: 17,
+        price: 24,
         inBasket: 0
     }
 ];
