@@ -67,7 +67,7 @@ hr.line-light {
     display: none;
 }
 
-.cart {
+.basket {
     position: fixed;
     display: flex;
     top: 45px;
