@@ -458,17 +458,17 @@ hr.line-light-address {
 
 /* BOOKING MODAL*/
 .close {
-    color: #49111c; 
+    color: #49111c;
     opacity: 1;
     text-shadow: none;
 }
 
 .close:hover {
-    color: #f2f4f3; 
+    color: #f2f4f3;
 }
 
 .booking-modal {
-    background-color: #0a0908; 
+    background-color: #0a0908;
     color: #a9927d
 }
 

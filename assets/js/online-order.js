@@ -165,7 +165,7 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
         e.target.parentNode.querySelector(".item-quantity").innerText = item.inBasket;
         totalPrice -= item.price;
     }
-    document.querySelector( 
+    document.querySelector(
         ".total-price"
     ).innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
 });
