@@ -408,13 +408,24 @@ hr.line-light-address {
 /* BOTH MODALS*/
 .modal-dialog {
     padding: 0px;
-    color: #000000;
+    color: #0a0908;
     text-align: center;
 }
 
 /* BOOKING MODAL*/
+.close {
+    color: #49111c; 
+    opacity: 1;
+    text-shadow: none;
+}
+
+.close:hover {
+    color: #f2f4f3; 
+}
+
 .booking-modal {
-    background: linear-gradient(to bottom, rgba(242, 244, 243, 0.699), transparent)
+    background-color: #0a0908; 
+    color: #a9927d
 }
 
 .booking-modal-text {
