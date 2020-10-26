@@ -55,7 +55,6 @@ h1,h2,h3,h4,h5 {
 .fa-times {
     right: 9px;
     font-size: 25px;
-
 }
 
 .fa-times {
@@ -69,28 +68,6 @@ h1,h2,h3,h4,h5 {
 
 .fa-bars.open {
     display: none;
-}
-
-.basket {
-    position: fixed;
-    display: flex;
-    top: 45px;
-    right: 8px;
-    cursor: pointer;
-    z-index: 100;
-    font-size: 1.2rem;
-    color: #5e503f;
-}
-
-.dark-mode-btn {
-    position: absolute;
-    display: flex;
-    top: 17px;
-    right: 50px;
-    cursor: pointer;
-    z-index: 100;
-    font-size: 1.4rem;
-    color: #5e503f;
 }
 
 .nav-list {
@@ -125,6 +102,74 @@ h1,h2,h3,h4,h5 {
     opacity: 1;
     display: flex;
 }
+
+.dark-mode-btn {
+    position: fixed;
+    display: flex;
+    top: 45px;
+    right: 8px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 1.2rem;
+    color: #5e503f;
+}
+
+.basket {
+    position: fixed;
+    display: flex;
+    top: 70px;
+    right: 8px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 1.2rem;
+    color: #5e503f;
+}
+
+.social-media {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover{
+    color: #5e503f;
+}
+
+.instagram {
+    position: fixed;
+    display: flex;
+    top: 130px;
+    right: 7px;
+    color: #49111c;
+    z-index: 100;
+}
+
+.twitter {
+    position: fixed;
+    display: flex;
+    top: 155px;
+    right: 7px;
+    color: #49111c;
+    z-index: 100;
+}
+
+.facebook {
+    position: fixed;
+    display: flex;
+    top: 180px;
+    right: 7px;
+    color: #49111c;
+    z-index: 100;
+}
+
+.linkedin {
+    position: fixed;
+    display: flex;
+    top: 205px;
+    right: 7px;
+    color: #49111c;;
+    z-index: 100;
+}
+
 
 /* HERO SECTION */
 
@@ -345,7 +390,6 @@ h1,h2,h3,h4,h5 {
 }
 
 .reservations-heading {
-
     font-family: "Cairo", sans-serif;
     font-size: 40px;
     font-weight: 500;
