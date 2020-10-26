@@ -15,7 +15,7 @@ let food = [{
         inBasket: 0
     },
     {
-        name: "Poached Egg & Avacado en Croute",
+        name: "Avacado & Egg",
         price: 20,
         inBasket: 0
     },
@@ -30,7 +30,7 @@ let food = [{
         inBasket: 0
     },
     {
-        name: "Avacado Salad & Toast",
+        name: "Avacado & Toast",
         price: 15,
         inBasket: 0
     },
