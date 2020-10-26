@@ -134,8 +134,6 @@ function updateModal(itemIndex) {
             ${foodItem.inBasket}</span><i class="fas fa-plus"></i></div>`);
         basket.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
     }
-    quantityIncrements()
-    updateStoreBasket()
 }
 // allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
 Element.prototype.parents = function (selector) {
@@ -147,7 +145,7 @@ Element.prototype.parents = function (selector) {
     }
     return parents;
 };
-function quantityIncrements () {
+
 document.querySelector(".quantity").addEventListener("click", function (e) {
     // Get index of the item of which the quantity icons were clicked
     const itemIndex = e.target
@@ -170,4 +168,4 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
     document.querySelector( 
         ".total-price"
     ).innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
-})};
+});
