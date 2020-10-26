@@ -18,6 +18,10 @@ hr.line-light {
     width: 50%;
 }
 
+h1,h2,h3,h4,h5 {
+    font-family: "Cairo", sans-serif;
+}
+
 /* LIGHT MODE */
 
 .light-mode {
@@ -147,7 +151,6 @@ hr.line-light {
 .heading h1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-family: "Cairo", sans-serif;
     float: right;
     font-weight: 600;
     font-size: 2.2rem;
@@ -382,11 +385,6 @@ hr.line-light-address {
     width: 100%;
     height: 100vh;
     padding-top: 20px;
-}
-
-.contact-section-light h1,
-.contact-section-dark h1 {
-    font-family: "Cairo", sans-serif;
 }
 
 .contact-form {
