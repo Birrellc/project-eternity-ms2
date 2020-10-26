@@ -40,7 +40,7 @@ let food = [{
         inBasket: 0
     },
     {
-        name: "pizza",
+        name: "Pizza",
         price: 24,
         inBasket: 0
     }
