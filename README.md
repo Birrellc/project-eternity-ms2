@@ -164,3 +164,7 @@ The technologies i have used for this project are:
 * [Stack Overflow](https://fonts.google.com/) - Resource whcih provided the 3 fonts: Anton, Arvo & Montserrat for the website.
 * [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - Used to test the loading speed of the website.
 * [Responsivley App](https://responsively.app/) - Used to test responsive web apps.
+
+## Testing
+
+Testing is done in its own section [Here](assets/testing/testing.md)
