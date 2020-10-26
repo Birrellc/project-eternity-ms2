@@ -1,8 +1,7 @@
 // jQuery - hamburger menu toggler
 
-$(function(){
-    $('.hamburger-toggle').on('click', function()
-    {
+$(function () {
+    $('.hamburger-toggle').on('click', function () {
         $('.toggle').toggleClass('open');
         $('.nav-list').toggleClass('open');
         $('#map').toggleClass();
@@ -17,11 +16,29 @@ $(function () {
 });
 // jQuery - Allows user to select date and time for booking only on open days/hours and no previous date or time allowed
 
-$('#datetimepicker1').datetimepicker({  
-    format:'YYYY-MM-DD HH:mm',
-    minDate:new Date(),
+$('#datetimepicker1').datetimepicker({
+    format: 'YYYY-MM-DD HH:mm',
+    minDate: new Date(),
     sideBySide: true,
     daysOfWeekDisabled: [1, 2],
-    stepping:15,
-    enabledHours: [16, 17, 18, 19, 20, 21, 22, 23   ]
+    stepping: 15,
+    enabledHours: [16, 17, 18, 19, 20, 21, 22, 23]
+});
+
+
+(function () {
+    $(".menu-btn").on("click", function () {
+
+        var $this = $(this),
+            oldText = $this.text();
+
+        $this.text("Item added");
+        $this.attr("disabled", "disabled");
+
+        setTimeout(function () {
+            $this.text(oldText);
+            $this.removeAttr("disabled");
+        }, 5000);
+
     });
+})();
