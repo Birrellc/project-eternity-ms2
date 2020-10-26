@@ -132,7 +132,7 @@ function updateModal(itemIndex) {
         basket.quantity.insertAdjacentHTML("beforeend",
             `<div class="productQuantity"data-itemIndex=${itemIndex}><i class="fas fa-minus"></i><span class="item-quantity">
             ${foodItem.inBasket}</span><i class="fas fa-plus"></i></div>`);
-        basket.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
+        basket.totalPrice.innerHTML = `<div class="totalPrice">£${totalPrice}</div>`;
     }
 }
 // allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
