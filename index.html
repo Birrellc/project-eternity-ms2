@@ -15,7 +15,9 @@
 </head>
 
 <body class="light-mode">
+
     <!--NAV-->
+    
     <section id="home">
         <div class="container">
             <div class="hamburger-toggle">
@@ -80,7 +82,9 @@
             </div>
         </div>
     </section>
+
     <!--ABOUT-->
+
     <section id="about" class="about">
         <div class="container">
             <div class="row align-items-center">
@@ -115,7 +119,9 @@
             </div>
         </div>
     </section>
+
     <!--MENU-->
+
     <section id="menu" class="menu">
         <div class="container-fluid">
             <div class="row">
@@ -200,7 +206,9 @@
             </div>
         </div>
     </section>
+
     <!--DIVIDER #2-->
+
     <section id="divider-2" class="divider-section divider-bg-2-light">
         <div class="container">
             <div class="">
@@ -208,7 +216,9 @@
             </div>
         </div>
     </section>
+
     <!--RESERVATIONS-->
+
     <section id="reservations" class="reservations">
         <div class="container">
             <div class="row text-center">
@@ -272,7 +282,9 @@
             </div>
         </div>
     </section>
+
     <!--CONTACT-->
+
     <section id="contact" class="contact-section-light">
         <div class="container">
             <div class="row">
@@ -311,6 +323,7 @@
     </section>
 
     <!--BOOKING MODAL-->
+
     <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content booking-modal">
@@ -408,6 +421,81 @@
                         <div class="col-3 basket-col-heading">
                             <h5>Total:</h5>
                             <div class="total-price"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="fullNameBasket">Full Name:</label>
+                            <input type="text" class="form-control" id="fullNameBasket" name="fullNameBasket"
+                                placeholder="eg: John" required />
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="emailAddressBasket">Email</label>
+                            <input type="email" class="form-control" id="emailAddressBasket" name="EmailAddressBasket"
+                                placeholder="you@example.com" required />
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="addressBasket">Address</label>
+                        <input type="text" class="form-control" id="addressBasket" name="Address"
+                            placeholder="1234 Main St" required />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="postcode">Postcode </label>
+                            <input type="text" class="form-control" id="postcode" name="Postcode" placeholder="NE1 62F"
+                                required />
+                        </div>
+
+                        <div class="col-md-6 mb-2">
+                            <label for="country">Country </label>
+                            <input type="text" class="form-control" id="country" name="Country"
+                                placeholder="United Kingdom" required />
+                        </div>
+                    </div>
+                    <br>
+                    <h5 class="mb-3">Payment</h5>
+                    <div class="d-flex">
+                        <div class="col-4 custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" value="Credit Card"
+                                class="custom-control-input" checked required />
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="col-4 custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" value="Debit Card"
+                                class="custom-control-input" required />
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="col-4 custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" value="Paypal"
+                                class="custom-control-input" required />
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="cc-name">Name on card</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required />
+                            <small class="text-muted">Full name as displayed on card</small>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="cc-number">Credit card number</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required />
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="cc-expiration">Expiration</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required />
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required />
                         </div>
                     </div>
                 </div>
