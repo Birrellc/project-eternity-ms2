@@ -71,11 +71,11 @@ h5 {
 }
 
 .fa-times {
-    display: none;
+    display: none !important;
 }
 
 .fa-times.open {
-    display: block;
+    display: block !important;
     position: fixed;
 }
 
