@@ -16,6 +16,14 @@ This project has been tested throughout with use of preview, devtools, manual te
 * I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * No Errors recieved [No Error Found Image](https://github.com/Birrellc/ms2-ci/tree/master/assets/images/testing-images/css-validator-1.png/)
 
+### JavaScript
+
+* All function's were tested for individual purpose manually via console.log & dev tools through my IDE's Live Preview.
+* All function's were then further tested collectivley by pushing live to my deployed page to see if any issues appeared on the live version or if any of the functions caused issues with each other.
+
+* By combining these processes of i have been able to track issues created via my code through the commit log of my repository allowing the ability to navigate back through code to identify any errors and if necessary rolling back the code which i did on atleast 1 occasion.
+
+
 ### SPEED TEST
 
 * I ran a speed test on the live github page of my website via [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
