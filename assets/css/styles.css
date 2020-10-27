@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -18,7 +25,11 @@ hr.line-light {
     width: 50%;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Cairo", sans-serif;
 }
 
@@ -40,6 +51,8 @@ h1,h2,h3,h4,h5 {
 
 .hamburger-toggle {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 15px;
     right: 8px;
@@ -80,7 +93,12 @@ h1,h2,h3,h4,h5 {
     list-style: none;
     z-index: 1;
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     opacity: 0;
 }
@@ -100,11 +118,15 @@ h1,h2,h3,h4,h5 {
 
 .nav-list.open {
     opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .dark-mode-btn {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 45px;
     right: 8px;
@@ -116,6 +138,8 @@ h1,h2,h3,h4,h5 {
 
 .basket {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 70px;
     right: 8px;
@@ -130,12 +154,14 @@ h1,h2,h3,h4,h5 {
     font-size: 1.5rem;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     color: #5e503f;
 }
 
 .instagram {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 130px;
     right: 7px;
@@ -145,6 +171,8 @@ h1,h2,h3,h4,h5 {
 
 .twitter {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 155px;
     right: 7px;
@@ -154,6 +182,8 @@ h1,h2,h3,h4,h5 {
 
 .facebook {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 180px;
     right: 7px;
@@ -163,10 +193,13 @@ h1,h2,h3,h4,h5 {
 
 .linkedin {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 205px;
     right: 7px;
-    color: #49111c;;
+    color: #49111c;
+    ;
     z-index: 100;
 }
 
@@ -174,27 +207,42 @@ h1,h2,h3,h4,h5 {
 /* HERO SECTION */
 
 .hero-light {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/background-light-home.jpg") center no-repeat;
+    background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
 }
 
 .hero-dark {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
+    background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
 }
 
 .heading h1 {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
     text-orientation: upright;
     float: right;
     font-weight: 600;
@@ -212,6 +260,8 @@ h1,h2,h3,h4,h5 {
     font-size: 1.1rem;
     background-color: #49111c;
     color: #f2f4f3;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
     transition: background-color .5s;
 }
 
@@ -247,33 +297,48 @@ h1,h2,h3,h4,h5 {
 /*DIVIDER*/
 
 .divider-bg-1-light {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
+    background: -o-linear-gradient(left, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
 }
 
 .divider-bg-1-dark {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
+    background: -o-linear-gradient(left, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
 }
 
 .divider-bg-2-light {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
+    background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
 }
 
 .divider-bg-2-dark {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
+    background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
 }
 
 .divider-section {
     min-height: 65vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .heading-div-1 {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
     text-orientation: upright;
     letter-spacing: 0px;
     font-family: "Cairo", sans-serif;
@@ -281,7 +346,10 @@ h1,h2,h3,h4,h5 {
 }
 
 .heading-div-2 {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
     text-orientation: upright;
     letter-spacing: 0px;
     font-family: "cairo", sans-serif;
@@ -335,6 +403,8 @@ h1,h2,h3,h4,h5 {
     font-size: 1.1rem;
     background-color: #49111c;
     color: #f2f4f3;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
     transition: background-color .5s;
     margin-bottom: 50px;
 }
@@ -343,6 +413,8 @@ h1,h2,h3,h4,h5 {
     font-size: 1.1rem;
     background-color: #49111c;
     color: #f2f4f3;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
     transition: background-color .5s;
     margin-bottom: 50px;
 }
@@ -385,6 +457,8 @@ h1,h2,h3,h4,h5 {
     font-size: 1.1rem;
     background-color: #49111c;
     color: #f2f4f3;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
     transition: background-color .5s;
     margin-bottom: 50px;
 }
@@ -415,6 +489,8 @@ hr.line-light-address {
 /*CONTACT PAGE*/
 
 .contact-section-light {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/contactbg.jpg") center no-repeat;
+    background: -o-linear-gradient(top, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
@@ -423,6 +499,8 @@ hr.line-light-address {
 }
 
 .contact-section-dark {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/contact-us-dark.jpg") center no-repeat;
+    background: -o-linear-gradient(top, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
@@ -432,7 +510,12 @@ hr.line-light-address {
 
 .contact-form {
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     width: 90%;
@@ -446,6 +529,8 @@ hr.line-light-address {
     font-size: 1.1rem;
     background-color: #49111c;
     color: #f2f4f3;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
     transition: background-color .5s;
 }
 
@@ -484,7 +569,7 @@ hr.line-light-address {
 
 /* BASKET MODAL*/
 
-.basket-modal{
+.basket-modal {
     font-family: "Raleway", sans-serif;
     font-size: 0.8rem;
     letter-spacing: 0px;
@@ -532,7 +617,8 @@ hr.line-light-address {
         width: 80%;
         padding: 50px;
     }
-    .basket-modal{
+
+    .basket-modal {
         font-size: 1.2rem;
     }
 }
