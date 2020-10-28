@@ -1,4 +1,3 @@
-
 let addToBasket = document.querySelectorAll(".menu-btn");
 let foodIndex = 0;
 let totalPrice = 0;
@@ -55,6 +54,28 @@ for (let i = 0; i < addToBasket.length; i++) {
         }
     });
 }
+
+// show previously stored baket data
+let storedBasketItems =
+    JSON.parse(sessionStorage.getItem("foodInBasket")) || {};
+
+for (const key in storedBasketItems) {
+    // get corresponding food index
+    let foodIndex;
+    food.forEach(function (food, i) {
+        if (food.name == storedBasketItems[key].name) foodIndex = i;
+    });
+
+    if (!basketItem.includes(foodIndex)) {
+        basketItem.push(foodIndex);
+        food[foodIndex].inBasket = storedBasketItems[key].inBasket;
+        basketProducts = {
+            [food[foodIndex].name]: food[foodIndex]
+        };
+        updateModal(foodIndex);
+    }
+}
+
 // This adds item to basket
 function addItemToBasket(food, itemIndex) {
     let menuNumbers = sessionStorage.getItem("addItemToBasket");
@@ -103,9 +124,10 @@ function totalCost(food) {
         sessionStorage.setItem("totalPrice", food.price);
     }
 }
-// recieve object from DOM and assign variables to div classes
+// recieve object from DOM and assign variables to div classes - Template
 function getBasketData() {
     return {
+        delete: document.querySelectorAll(".product far fa-times-circle"),
         products: JSON.parse(sessionStorage.getItem("foodInBasket")),
         priceValue: sessionStorage.getItem("totalPrice") || 0,
         product: document.querySelector(".product"),
@@ -122,21 +144,30 @@ function updateModal(itemIndex) {
     }
     let foodItem = food[itemIndex];
     if (foodItem !== undefined) {
-        totalPrice += foodItem.price;
+        totalPrice += foodItem.price * foodItem.inBasket;
         basket.product.insertAdjacentHTML("beforeend",
-            `<div class="productName">${foodItem.name}</div>`
+            `<div class="productName" data-food="${foodItem.name}">
+                <i class="far fa-times-circle delete-btn"></i>
+                <span>${foodItem.name}</span>
+            </div>`
         );
         basket.price.insertAdjacentHTML("beforeend",
-            `<div class="productPrice">${foodItem.price}</div>`
+            `<div class="productPrice" data-food="${foodItem.name}">
+                ${foodItem.price}
+            </div>`
         );
         basket.quantity.insertAdjacentHTML("beforeend",
-            `<div class="productQuantity"data-itemIndex=${itemIndex}><i class="fas fa-minus"></i><span class="item-quantity">
-            ${foodItem.inBasket}</span><i class="fas fa-plus"></i></div>`);
-        basket.totalPrice.innerHTML = `<div class="totalPrice">£${totalPrice}</div>`;
+            `<div class="productQuantity"data-itemIndex=${itemIndex} data-food="${foodItem.name}">
+                <i class="fas fa-minus"></i>
+                <span class="item-quantity">${foodItem.inBasket}</span>
+                <i class="fas fa-plus"></i>
+            </div>`
+        );
+        basket.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
     }
 }
 // allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
-Element.prototype.parents = function() {
+Element.prototype.parents = function () {
     let parents = [];
     let currentParent = this.parentNode;
     if (currentParent === undefined); {
@@ -156,16 +187,66 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
     if (e.target.classList.contains("fa-plus")) {
         // increasing the quantity by 1 in item object and in DOM
         item.inBasket++;
-        e.target.parentNode.querySelector(".item-quantity").innerText = item.inBasket;
+        e.target.parentNode.querySelector(".item-quantity").innerText =
+            item.inBasket;
         totalPrice += item.price;
+
         // When clicked on minus icon
     } else if (e.target.classList.contains("fa-minus") && item.inBasket > 1) {
         // decreasing the quantity by 1 in item object and in DOM
         item.inBasket--;
-        e.target.parentNode.querySelector(".item-quantity").innerText = item.inBasket;
+        e.target.parentNode.querySelector(".item-quantity").innerText =
+            item.inBasket;
         totalPrice -= item.price;
     }
+    // Allows Data to Remain on page after refresh
+    let cartItems = sessionStorage.getItem("foodInBasket");
+    cartItems = JSON.parse(cartItems);
+    cartItems = {
+        ...cartItems,
+        [item.name]: item
+    };
+    sessionStorage.setItem("foodInBasket", JSON.stringify(cartItems));
+    sessionStorage.setItem("totalPrice", totalPrice);
+
     document.querySelector(
         ".total-price"
     ).innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
 });
+// Function for deleting items in basket through use of a Font awesome icon
+function deleteButtons() {
+    addEventListenerByClass("click", "delete-btn", function (e) {
+        let cartItems = sessionStorage.getItem("foodInBasket");
+        cartItems = JSON.parse(cartItems);
+        let foodName = e.target.parentNode.getAttribute("data-food");
+        let foodItem = cartItems[foodName];
+        totalPrice -= foodItem.price * foodItem.inBasket;
+        let foodIndex;
+        food.forEach(function (food, i) {
+            if (food.name == foodItem.name) foodIndex = i;
+        });
+        foodItem.inBasket = 0;
+        food[foodIndex] = foodItem;
+        delete cartItems[foodName];
+        basketItem.pop(foodIndex);
+        sessionStorage.setItem("foodInBasket", JSON.stringify(cartItems));
+        sessionStorage.setItem("totalPrice", totalPrice);
+        document.querySelector(".total-price").innerHTML = totalPrice;
+        document
+            .querySelectorAll('[data-food="' + foodName + '"]')
+            .forEach(function (el) {
+                el.parentElement.removeChild(el);
+            });
+    });
+}
+
+deleteButtons();
+
+// targeting function used to allow deletion of elements created
+function addEventListenerByClass(event, className, callback) {
+    document.addEventListener(event, function (e) {
+        if (e.target && e.target.classList.contains(className)) {
+            callback(e);
+        }
+    });
+}
