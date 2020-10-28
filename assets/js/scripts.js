@@ -41,3 +41,16 @@ $('#datetimepicker1').datetimepicker({
         }, 5000);
     });
 })();
+
+(function () {
+    $("#submitBtnBooking, #submitBtnContact").on("click", function () {
+        var $this = $(this),
+            oldText = $this.text();
+        $this.text("Submitted!");
+        $this.attr("disabled", "disabled");
+        setTimeout(function () {
+            $this.text(oldText);
+            $this.removeAttr("disabled");
+        }, 4000);
+    });
+})();

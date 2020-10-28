@@ -297,7 +297,7 @@
             </div>
         </div>
         <div class="col-12 text-center align-items-center justify-content-center">
-            <form class="contact-form" onsubmit="return sendMailContact(this)" method="POST" id="contact-form">
+            <form class="contact-form" onsubmit="return sendMailContact(this)" id="contactForm">
                 <div class="form-group">
                     <label for="fullname">Your Name:</label>
                     <input type="text" class="form-control" id="fullname" name="fullname" placeholder="eg. john smith"
@@ -316,7 +316,7 @@
                 <div class="form-group">
                     <label for="message">Message:</label>
                     <textarea class="form-control" id="message" rows="3" name="message" required></textarea>
-                    <button type="submit" value="submit" class="btn contact-btn px-5 btn-red">Submit</button>
+                    <button type="submit" id="submitBtnContact" value="submit" class="btn contact-btn px-5 btn-red">Submit</button>
                 </div>
             </form>
         </div>>
@@ -335,7 +335,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-body text-uppercase booking-modal-text">
-                        <form onsubmit="return sendMail(this)" method="POST" id="booking-form">
+                        <form onsubmit="return sendMailBooking(this)" method id="bookingForm">
                             <div class="form-group">
                                 <label for="fullnamebooking" class="control-label">Full Name:</label>
                                 <div>
@@ -374,7 +374,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Book Now</button>
+                                <button type="submit" id="submitBtnBooking" class="btn btn-primary">Book Now</button>
                             </div>
                         </form>
                     </div>
