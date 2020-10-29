@@ -41,3 +41,10 @@ $('#datetimepicker1').datetimepicker({
         }, 5000);
     });
 })();
+
+// used to initilize animate on scroll library
+
+AOS.init({
+    easing:'ease',
+    duration: 1500,
+});
