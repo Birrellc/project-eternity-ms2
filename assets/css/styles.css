@@ -578,6 +578,15 @@ hr.line-light-address {
     font-weight: 600;
 }
 
+#submitBtnBooking {
+    font-size: 1.1rem;
+    background-color: #49111c;
+    color: #f2f4f3;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
 /* BASKET MODAL*/
 
 .basket-modal {
