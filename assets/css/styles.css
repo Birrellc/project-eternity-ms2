@@ -387,6 +387,11 @@ h1 {
     font-size: 0.7rem;
 }
 
+hr.line-light-menu{
+    border-top: 2px solid #5e503f;
+    width: 20%;
+}
+
 .card {
     margin: auto;
     border: none;
