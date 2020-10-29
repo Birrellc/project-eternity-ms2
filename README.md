@@ -123,7 +123,7 @@ The purpose of the website created is to entice more customers to the restaurant
 #### Features
 
 * Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact)
-* 2 User Interactive Forms With Validation - Booking form\(modal\) & Contact form.
+* 2 User Interactive Forms With HTML Validation - Booking form\(modal\) & Contact form.
 * Interactive Map - Map taken from google maps iframe showing restaurant location to help makes the business more accessible to customers.
 * Online Menu - An online menu has been setup with a JavaScript shopping cart \(items can be added to cart from menu page via buttons then quantity can be adjusted in the shopping cart modal with total price being calculated but due to my lack of skillset the there is no paywall / checkout feature functioning yet but will be added as my skills improve\)
 * Animations - Throughout the website their will be animations as the pages switch.
