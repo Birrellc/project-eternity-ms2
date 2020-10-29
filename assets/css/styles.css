@@ -20,6 +20,10 @@ address a {
     padding: 0;
 }
 
+body,html{
+    overflow-x: hidden;
+}
+
 hr.line-light {
     border-top: 2px solid #5e503f;
     width: 50%;
