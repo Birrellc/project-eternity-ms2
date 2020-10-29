@@ -16,13 +16,16 @@ address a {
     color: #a9927d;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 * {
     padding: 0;
 }
 
-body,html{
-    overflow-x: hidden;
-}
+
 
 hr.line-light {
     border-top: 2px solid #5e503f;
@@ -35,6 +38,10 @@ h3,
 h4,
 h5 {
     font-family: "Cairo", sans-serif;
+}
+
+h1 {
+    font-size: 2.1rem;
 }
 
 /* LIGHT MODE */
@@ -281,8 +288,6 @@ h5 {
 }
 
 .about-us-heading {
-    font-family: "Cairo", sans-serif;
-    font-size: 40px;
     font-weight: 500;
     letter-spacing: 2px;
 }
@@ -293,8 +298,9 @@ h5 {
     font-size: 0.7rem;
     letter-spacing: 1.2px;
     line-height: 40px;
-    width: 300px;
+    width: 250px;
     margin: auto;
+    text-align: center;
 }
 
 
@@ -373,7 +379,6 @@ h5 {
 
 .menu-heading {
     font-family: "Cairo", sans-serif;
-    font-size: 40px;
     font-weight: 500;
     letter-spacing: 4px;
 }
@@ -432,11 +437,12 @@ h5 {
 
 .map {
     height: 350px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin: auto;
-    margin-top: 50px;
-    z-index: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+
 }
 
 .address-details {
@@ -468,8 +474,6 @@ h5 {
 }
 
 .reservations-heading {
-    font-family: "Cairo", sans-serif;
-    font-size: 40px;
     font-weight: 500;
     letter-spacing: 2px;
 }
@@ -480,7 +484,7 @@ h5 {
     letter-spacing: 1.2px;
     line-height: 40px;
     font-size: 0.7rem;
-    width: 300px;
+    width: 280px;
     max-width: 100%;
     margin: auto;
 }
@@ -583,7 +587,8 @@ hr.line-light-address {
     background-color: #0a0908;
     color: #a9927d
 }
-.basket-data{
+
+.basket-data {
     color: #f2f3f4;
 }
 
@@ -638,6 +643,10 @@ hr.line-light-address {
 @media screen and (min-width: 1024px) {
     .sub-heading h5 {
         letter-spacing: 14px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
     }
 }
 
