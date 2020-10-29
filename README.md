@@ -96,7 +96,7 @@ The purpose of the website created is to entice more customers to the restaurant
 * Design - Each section will have a slight contrast from the previous in order to provide clear seperation.
 * Dividers - Dividers are used to help split information so as to not over clutter the UX.
 * Pages - There will be a Homepage, About page, Menu page, Reservation page & a contact section in that order
-* Api - A google map api will be used to display restaurant location
+* Iframe - A google map will be loaded to the page through an iframe, previously this was done with google maps API but due to only one marker being used i deemed relying on the API unnecessary
 
 ### Surface
 
@@ -124,7 +124,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 * Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact)
 * 2 User Interactive Forms With Validation - Booking form\(modal\) & Contact form.
-* Interactive Map - Map taken from google maps api showing restaurant location to help makes the business more accessible to customers.
+* Interactive Map - Map taken from google maps iframe showing restaurant location to help makes the business more accessible to customers.
 * Online Menu - An online menu has been setup with a JavaScript shopping cart \(items can be added to cart from menu page via buttons then quantity can be adjusted in the shopping cart modal with total price being calculated but due to my lack of skillset the there is no paywall / checkout feature functioning yet but will be added as my skills improve\)
 * Animations - Throughout the website their will be animations as the pages switch.
 * Social Media - Social media icons will be present on all pages.
@@ -147,7 +147,6 @@ The technologies i have used for this project are:
 * HTML5
 * CSS3
 * Bootstrap 4
-* Google Maps Api
 * Javascript
 * jQuery
 * EmailJS
