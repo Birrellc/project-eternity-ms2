@@ -17,31 +17,45 @@
 
     <!--NAV-->
 
-    <section id="home">
+    <nav class="d-flex align-items-center justify-content-center">
+        <ul class="nav-list text-center">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#menu" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#reservations" class="nav-link">Reservations</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--HOME-->
+
+    <div id="home" class="hero-light">
         <div class="container">
+            <div class="row">
+                <div class="col-12 text-uppercase heading">
+                    <h1>ETERNITY</h1>
+                </div>
+            </div>
+            <div class="sub-heading text-uppercase">
+                <h5>Fine Dining</h5>
+                <div class="div">
+                    <button class="btn cta-home" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
+                </div>
+            </div>
             <div class="hamburger-toggle">
                 <i class="fas fa-bars toggle"></i>
                 <i class="fas fa-times toggle"></i>
             </div>
-            <nav class="d-flex align-items-center justify-content-center">
-                <ul class="nav-list text-center">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#reservations" class="nav-link">Reservations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
             <!--BASKET-->
             <div class="basket">
                 <i class="fas fa-shopping-cart"></i>
@@ -64,22 +78,7 @@
                 </a>
             </div>
         </div>
-        <!--HERO-->
-        <div id="hero" class="hero-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-uppercase heading">
-                        <h1>ETERNITY</h1>
-                    </div>
-                </div>
-                <div class="sub-heading text-uppercase">
-                    <h5>Fine Dining</h5>
-                    <div class="div">
-                        <button class="btn cta-home" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </section>
 
     <!--ABOUT-->
@@ -359,7 +358,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="tableSizeSelectBooking" class="control-label">Table Size:</label>
-                                <select class="form-control" name="tableSizeSelectBooking" id="tableSizeSelectBooking" required>
+                                <select class="form-control" name="tableSizeSelectBooking" id="tableSizeSelectBooking"
+                                    required>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
