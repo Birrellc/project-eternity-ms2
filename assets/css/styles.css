@@ -591,17 +591,24 @@ hr.line-light-address {
 
 .basket-modal {
     font-family: "Raleway", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.7rem !important;
     letter-spacing: 0px;
 }
 
 .basket-modal {
     background-color: #0a0908;
-    color: #a9927d
+    color: #a9927d;
 }
 
-.basket-data {
+.basket-data{
     color: #f2f3f4;
+}
+.product {
+    text-align:left;
+}
+
+.basket-modal h5{
+    font-size: 1rem;
 }
 
 /* MEDIA QUERIES*/
@@ -648,7 +655,7 @@ hr.line-light-address {
     }
 
     .basket-modal {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
