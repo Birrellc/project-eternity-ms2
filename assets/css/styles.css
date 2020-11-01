@@ -1,24 +1,17 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    overflow-x: hidden;
+}
 
 li {
     list-style: none;
 }
 
-address a {
+address a{
     color: #a9927d;
-}
-
-html,
-body {
-    overflow-x: hidden;
 }
 
 * {
@@ -213,9 +206,9 @@ h1 {
 }
 
 
-/* HERO SECTION */
+/* HOMe SECTION */
 
-.hero-light {
+.home-light {
     background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/background-light-home.jpg") center no-repeat;
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
@@ -231,7 +224,7 @@ h1 {
     text-align: center;
 }
 
-.hero-dark {
+.home-dark {
     background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
     background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
