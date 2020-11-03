@@ -1,4 +1,4 @@
-$(".dark-mode-btn").on('click', function() {
+$(".dark-mode-switch").on('click', function() {
     if ($("body").hasClass("dark-mode")) {
         $("body").removeClass("dark-mode");
         $("#home").removeClass("home-dark");

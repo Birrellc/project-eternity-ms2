@@ -16,51 +16,16 @@
 <body class="light-mode">
 
     <!--NAV-->
-
-    <nav class="d-flex align-items-center justify-content-center">
-        <ul class="nav-list text-center">
-            <li class="nav-item">
-                <a href="#home" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#menu" class="nav-link">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a href="#reservations" class="nav-link">Reservations</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!--HOME-->
-
-    <section id="home" class="home-light">
+    <section class="nav-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-uppercase heading">
-                    <h1>ETERNITY</h1>
-                </div>
-            </div>
-            <div class="sub-heading text-uppercase">
-                <h5>Fine Dining</h5>
-                <div class="div">
-                    <button class="btn cta-home" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
-                </div>
-            </div>
             <div class="hamburger-toggle">
                 <i class="fas fa-bars toggle"></i>
                 <i class="fas fa-times toggle"></i>
             </div>
-            <!--BASKET-->
             <div class="basket">
                 <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="dark-mode-btn">
+            <div class="dark-mode-switch">
                 <i class="fas fa-adjust"></i>
             </div>
             <div class="social-media">
@@ -77,6 +42,43 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
+            <nav class="d-flex align-items-center justify-content-center">
+                <ul class="nav-list text-center">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservations" class="nav-link">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!--HOME-->
+
+    <section id="home" class="home-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-uppercase heading">
+                    <h1>ETERNITY</h1>
+                </div>
+            </div>
+            <div class="sub-heading text-uppercase">
+                <h5 class="sub-heading-text">Fine Dining</h5>
+                <div class="sub-heading-btn">
+                    <button class="btn" data-toggle="modal" data-target="#booking-modal">BOOK NOW</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -89,7 +91,7 @@
                     <div class="about-heading mb-5">
                         <h1 class="about-us-heading text-uppercase" data-aos="fade-right">About Us</h1>
                     </div>
-                    <hr class="line-light">
+                    <hr>
                     <p class="about-us-text" data-aos="fade-right">
                         Welcome to Eternity.
                         <br>
@@ -99,7 +101,7 @@
                         in the world of hospitality providing a high quality experience for all customers accomanied by
                         food of the finest ingredients prepared delicately and presented perfectly.
                     </p>
-                    <hr class="line-light">
+                    <hr>
                 </div>
                 <div class="col-12 col-md-6">
                     <img class="img-fluid about-us-images" src="assets/images/about-us-1.jpg" alt="About us image 1"
@@ -110,6 +112,7 @@
             </div>
         </div>
     </section>
+
     <!--DIVIDER #1-->
     <section id="divider-1" class="divider-section divider-bg-1-light">
         <div class="container">
@@ -135,12 +138,12 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                <div id="menu-cards" class="card card-light text-center col-xs-12 col-md-6 col-lg-3" data-aos="fade">
+                <div class="card card-light text-center col-xs-12 col-md-6 col-lg-3" data-aos="fade">
                     <div class="card-body">
                         <h5 class="card-title">Rack of Lamb</h5>
                         <img class="img-fluid" src="assets/images/menu-1.jpg" alt="">
                         <p class="card-text">£40</p>
-                        <button class="btn menu-btn basket-1">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
                 <div class="card text-center card-light col-xs-12 col-md-6 col-lg-3" data-aos="fade">
@@ -148,7 +151,7 @@
                         <h5 class="card-title">Stacked Burger</h5>
                         <img class="img-fluid" src="assets/images/menu-5.jpg" alt="">
                         <p class="card-text">£18</p>
-                        <button class="btn menu-btn basket-2">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
                 <div class="card text-center card-light col-xs-12 col-md-6 col-lg-3" data-aos="fade">
@@ -156,7 +159,7 @@
                         <h5 class="card-title">Avacado & Egg</h5>
                         <img class="img-fluid" src="assets/images/menu-3.jpg" alt="">
                         <p class="card-text">£20</p>
-                        <button class="btn menu-btn basket-3">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
                 <div class="card text-center card-light col-xs-12 col-md-6 col-lg-3" data-aos="fade">
@@ -164,7 +167,7 @@
                         <h5 class="card-title">Sirloin Steak </h5>
                         <img class="img-fluid" src="assets/images/menu-4.jpg" alt="">
                         <p class="card-text">£40</p>
-                        <button class="btn menu-btn basket-4">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
                 <div class="card text-center card-light col-xs-12 col-md-6 col-lg-3" data-aos="fade">
@@ -172,7 +175,7 @@
                         <h5 class="card-title">Moqueca</h5>
                         <img class="img-fluid" src="assets/images/menu-12.jpeg" alt="">
                         <p class="card-text">£25</p>
-                        <button class="btn menu-btn basket-5">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
                 <div class="card text-center card-light col-xs-12 col-md-6 col-lg-3" data-aos="fade">
@@ -180,7 +183,7 @@
                         <h5 class="card-title">Avacado & Toast</h5>
                         <img class="img-fluid" src="assets/images/menu-2.jpg" alt="">
                         <p class="card-text">£15</p>
-                        <button class="btn menu-btn basket-6">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
                 <div class="card text-center card-light col-xs-12 col-md-6 col-lg-3" data-aos="fade">
@@ -188,7 +191,7 @@
                         <h5 class="card-title">Skewered Kebab</h5>
                         <img class="img-fluid" src="assets/images/menu-9.jpg" alt="">
                         <p class="card-text">£35</p>
-                        <button class="btn menu-btn basket-7">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
                 <div class="card text-center card-light col-xs-12 col-md-6 col-lg-3" data-aos="fade">
@@ -196,7 +199,7 @@
                         <h5 class="card-title">Pizza</h5>
                         <img class="img-fluid" src="assets/images/menu-7.jpg" alt="">
                         <p class="card-text">£24</p>
-                        <button class="btn menu-btn basket-8">Add To Basket</button>
+                        <button class="btn menu-btn">Add To Basket</button>
                     </div>
                 </div>
             </div>
@@ -226,13 +229,13 @@
                         <h1 class="reservations-heading text-uppercase">Reservations</h1>
                     </div>
                     <div class="mb-5 col-12 text-center;">
-                        <hr class="line-light">
+                        <hr>
                         <p class="reservations-text text-center d-flex">
                             For parties of six or more, we recommend making
                             reservations at least two weeks in advance.
                             For walk-ins, we only seat parties on a first come,
                             first served basis.</p>
-                        <hr class="line-light">
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -240,7 +243,7 @@
                 <div class="col-12 col-md-4" data-aos="fade-right">
                     <h5 class="address-heading">TEL & E-MAIL:</h5>
                     <hr class="line-light-address">
-                    <address>
+                    <address class="address-contact">
                         <a href="mailto:eternity@email.com">Eternity@email.com</a><br>
                         <a href="tel:+00000000000">Tel: 0000 0000000</a>
                     </address>
@@ -272,14 +275,17 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <br>
-                    <button class="btn cta-btn" data-aos="fade-bottom" data-toggle="modal"
-                        data-target="#booking-modal">BOOK NOW</button>
+                    <button class="btn" data-aos="fade-bottom" data-toggle="modal" data-target="#booking-modal">BOOK
+                        NOW</button>
                 </div>
             </div>
             <div class="row no-gutters">
                 <div class="col-12">
-                    <!--<div><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36641.20465391892!2d-1.6438374208984556!3d54.9717788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e71e3e533ced7%3A0xd3e94f8e410321bf!2sBar%2052%20Newcastle!5e0!3m2!1sen!2suk!4v1603980836882!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>-->
+                    <div><iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36641.20465391892!2d-1.6438374208984556!3d54.9717788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e71e3e533ced7%3A0xd3e94f8e410321bf!2sBar%2052%20Newcastle!5e0!3m2!1sen!2suk!4v1603980836882!5m2!1sen!2suk"
+                            frameborder="0" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,12 +299,10 @@
                 <div class="col-12 text-center">
                     <div class="text-uppercase">
                         <h1>Contact Us</h1>
-                        <hr class="line-light">
+                        <hr>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
             <div class="col-12 text-center align-items-center justify-content-center">
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
@@ -381,7 +385,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" id="submitBtnBooking" class="btn">Book Now</button>
+                                <button type="submit" id="submitBtnBooking" class="btn submit-btn-booking">Book
+                                    Now</button>
                             </div>
                         </form>
                     </div>
@@ -397,14 +402,14 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content basket-modal col-12">
                 <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="exampleModalLabel">
+                    <h5 class="modal-title text-uppercase">
                         Your Food Order:
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body text-uppercase">
                     <div class="row  basket-headings">
                         <div class="col-6">
                             <div class="basket-col-heading">
@@ -509,8 +514,7 @@
                     </div>
                 </div>
                 <div class="modal-footer col-12 border-top-0 justify-content-between">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-success">Checkout</button>
+                    <button type="button" class="btn">Checkout</button>
                 </div>
             </div>
         </div>

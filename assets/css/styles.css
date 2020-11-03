@@ -1,8 +1,7 @@
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html,
-body {
+html,body {
     overflow-x: hidden;
 }
 
@@ -10,15 +9,11 @@ li {
     list-style: none;
 }
 
-address a{
-    color: #a9927d;
-}
-
 * {
-    padding: 0;
+    padding:0;
 }
 
-hr.line-light {
+hr {
     border-top: 2px solid #5e503f;
     width: 50%;
 }
@@ -34,6 +29,22 @@ h5 {
 h1 {
     font-size: 2.1rem;
 }
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: auto;
+    font-size: 1.1rem;
+    background-color: #49111c;
+    color: #f2f4f3;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+.btn:hover {
+    color: #a9927d;
+  }
 
 /* LIGHT MODE */
 
@@ -102,7 +113,6 @@ h1 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    opacity: 0;
 }
 
 .nav-list a {
@@ -119,13 +129,12 @@ h1 {
 }
 
 .nav-list.open {
-    opacity: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.dark-mode-btn {
+.dark-mode-switch {
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -154,6 +163,7 @@ h1 {
 .social-media {
     cursor: pointer;
     font-size: 1.5rem;
+    color: #5e503f;
 }
 
 .social-media a:hover {
@@ -167,7 +177,7 @@ h1 {
     display: flex;
     top: 130px;
     right: 7px;
-    color: #49111c;
+    color: #5e503f;
     z-index: 100;
 }
 
@@ -178,7 +188,7 @@ h1 {
     display: flex;
     top: 155px;
     right: 7px;
-    color: #49111c;
+    color: #5e503f;
     z-index: 100;
 }
 
@@ -189,7 +199,7 @@ h1 {
     display: flex;
     top: 180px;
     right: 7px;
-    color: #49111c;
+    color: #5e503f;
     z-index: 100;
 }
 
@@ -200,13 +210,12 @@ h1 {
     display: flex;
     top: 205px;
     right: 7px;
-    color: #49111c;
-    ;
+    color: #5e503f;
     z-index: 100;
 }
 
 
-/* HOMe SECTION */
+/* HOME SECTION */
 
 .home-light {
     background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/background-light-home.jpg") center no-repeat;
@@ -253,19 +262,14 @@ h1 {
 
 .sub-heading {
     float: right;
+}
+
+.sub-heading-text {
     font-family: "Cairo", sans-serif;
     font-size: 1rem;
     letter-spacing: 15px;
 }
 
-.cta-home {
-    font-size: 1.1rem;
-    background-color: #49111c;
-    color: #f2f4f3;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s;
-    transition: background-color .5s;
-}
 
 /*ABOUT US*/
 
@@ -294,7 +298,6 @@ h1 {
     text-align: center;
 }
 
-
 /*DIVIDER*/
 
 .divider-bg-1-light {
@@ -302,6 +305,7 @@ h1 {
     background: -o-linear-gradient(left, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
+    margin-right: 30px
 }
 
 .divider-bg-1-dark {
@@ -309,6 +313,7 @@ h1 {
     background: -o-linear-gradient(left, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
+    margin-right: 30px
 }
 
 .divider-bg-2-light {
@@ -316,6 +321,7 @@ h1 {
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
+    margin-right: 30px
 }
 
 .divider-bg-2-dark {
@@ -323,6 +329,7 @@ h1 {
     background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
+    margin-right: 30px
 }
 
 .divider-section {
@@ -404,24 +411,8 @@ hr.line-light-menu{
     font-size: 1.2rem;
 }
 
-.menu-btn {
-    font-size: 1.1rem;
-    background-color: #49111c;
-    color: #f2f4f3;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s;
-    transition: background-color .5s;
-    margin-bottom: 50px;
-}
-
 .view-basket-btn {
-    font-size: 1.1rem;
-    background-color: #49111c;
-    color: #f2f4f3;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s;
-    transition: background-color .5s;
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 /*Reservations*/
@@ -436,37 +427,22 @@ hr.line-light-menu{
     width: 100%;
     text-align: center;
     margin: auto;
+    margin-top: 50px;
     padding-right: 15px;
     padding-left: 15px;
-
 }
 
 .address-details {
-    font-family: "cairo", sans-serif;
+    font-family: "Cairo", sans-serif;
 }
 
 .address-heading h5 {
     text-decoration: underline;
 }
 
-.btn {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: auto;
-}
-
-.btn:hover {
+.address-contact a {
+    text-decoration: underline;
     color: #a9927d;
-}
-
-.cta-btn {
-    font-size: 1.1rem;
-    background-color: #49111c;
-    color: #f2f4f3;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s;
-    transition: background-color .5s;
-    margin-bottom: 50px;
 }
 
 .reservations-heading {
@@ -498,7 +474,7 @@ hr.line-light-address {
     background: linear-gradient(to bottom, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     padding-top: 20px;
 }
 
@@ -508,7 +484,7 @@ hr.line-light-address {
     background: linear-gradient(to bottom, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     padding-top: 20px;
 }
 
@@ -522,20 +498,15 @@ hr.line-light-address {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-    width: 90%;
+    width: 100%;
     padding: 10px;
+    margin-top: 25px;
     color: #f2f4f3;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .contact-btn {
     margin-top: 15px;
-    font-size: 1.1rem;
-    background-color: #49111c;
-    color: #f2f4f3;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s;
-    transition: background-color .5s;
 }
 
 /* BOTH MODALS*/
@@ -545,7 +516,6 @@ hr.line-light-address {
     text-align: center;
 }
 
-/* BOOKING MODAL*/
 .close {
     color: #49111c;
     opacity: 1;
@@ -555,6 +525,8 @@ hr.line-light-address {
 .close:hover {
     color: #f2f4f3;
 }
+
+/* BOOKING MODAL*/
 
 .booking-modal {
     background-color: #0a0908;
@@ -569,15 +541,6 @@ hr.line-light-address {
 .booking-modal-head {
     font-family: "Cairo", sans-serif;
     font-weight: 600;
-}
-
-#submitBtnBooking {
-    font-size: 1.1rem;
-    background-color: #49111c;
-    color: #f2f4f3;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s;
-    transition: background-color .5s;
 }
 
 /* BASKET MODAL*/
@@ -596,12 +559,13 @@ hr.line-light-address {
 .basket-data{
     color: #f2f3f4;
 }
+
 .product {
     text-align:left;
 }
 
 .basket-modal h5{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 /* MEDIA QUERIES*/
@@ -629,6 +593,18 @@ hr.line-light-address {
         font-size: 1.2rem;
         letter-spacing: 15px;
     }
+
+    .contact-form {
+        margin-top: 30px;
+    }
+
+    .contact-section-light {
+        height: 100vh;
+    }
+
+    .contact-section-dark {
+        height: 100vh;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -643,12 +619,21 @@ hr.line-light-address {
     }
 
     .contact-form {
-        width: 80%;
+        margin-top: 100px;
+        width: 100%;
         padding: 50px;
     }
 
     .basket-modal {
         font-size: 1rem;
+    }
+
+    .contact-section-light {
+        height: 100vh;
+    }
+
+    .contact-section-dark {
+        height: 100vh;
     }
 }
 
