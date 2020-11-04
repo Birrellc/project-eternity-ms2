@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -225,8 +232,8 @@ h1 {
 /* HOME SECTION */
 
 .home-light {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/background-light-home.jpg") center no-repeat;
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/background-light-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
     background-size: cover;
     display: -webkit-box;
@@ -241,8 +248,8 @@ h1 {
 }
 
 .home-dark {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
     background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     background-size: cover;
     display: -webkit-box;
@@ -308,32 +315,32 @@ h1 {
 /*DIVIDER*/
 
 .divider-bg-1-light {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
     background: -o-linear-gradient(left, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
     margin-right: 30px
 }
 
 .divider-bg-1-dark {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
     background: -o-linear-gradient(left, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background-size: cover;
     margin-right: 30px
 }
 
 .divider-bg-2-light {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
     margin-right: 30px
 }
 
 .divider-bg-2-dark {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
     background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background-size: cover;
     margin-right: 30px
@@ -477,8 +484,8 @@ hr.line-light-address {
 /*CONTACT PAGE*/
 
 .contact-section-light {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/contactbg.jpg") center no-repeat;
     background: -o-linear-gradient(top, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/contactbg.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
@@ -488,8 +495,8 @@ hr.line-light-address {
 }
 
 .contact-section-dark {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/contact-us-dark.jpg") center no-repeat;
     background: -o-linear-gradient(top, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/contact-us-dark.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
