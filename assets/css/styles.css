@@ -107,13 +107,6 @@ h1 {
     display: none;
 }
 
-.nav-title{
-    font-size:3rem;
-    text-decoration:underline;
-    color:#f2f4f3;
-    letter-spacing: 10px;
-}
-
 .nav-list {
     background-color: rgba(0, 0, 2, 1);
     position: fixed;
