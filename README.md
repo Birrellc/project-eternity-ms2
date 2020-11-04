@@ -71,7 +71,7 @@ The purpose of the website created is to entice more customers to the restaurant
 * Obtain user email information via newletter subscription to increase user database and potentially earn more repeat customers through offers and events.
 * Design an easy to use website with a minimalism approach to help entice customers through less distractions [Source](https://pos.toasttab.com/blog/on-the-line/restaurant-design-minimalist-design)
 * Design mobile responsive website - 81% of customers have searched for a restaurant on a mobile device [Source](https://blogs.constantcontact.com/restaurants-most-searched-industry-by-consumers-on-mobile-devices-and-other-hot-topics/)
-* Incorperate an online menu to increase business sales - (51% of customers use a restaurant's website to order food [Image](https://github.com/Birrellc/ms2-ci/tree/master/assets/images/readme-images/online-orders-stats.png) [Source](https://pos.toasttab.com/resources/restaurant-success-industry-report))
+* Incorperate an online menu to increase business sales - (51% of customers use a restaurant's website to order food [Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/readme-images/online-orders-stats.png) [Source](https://pos.toasttab.com/resources/restaurant-success-industry-report))
 * Provide an area for feedback, suggestions & questions through a contact form.
 * Display the restaurant environment through images displayed throughout the website.
 * Display key information for increasing customer interest with location map, address, and opening hours.
