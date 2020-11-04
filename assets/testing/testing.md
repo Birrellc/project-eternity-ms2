@@ -46,3 +46,18 @@ This project has been tested throughout with use of preview, devtools, manual te
 * I have also tested responsiveness of site and forms fully via use of devtools on my IDE preview and also on my deployed github page showing no issues with the viewports of \(320px, 375px, 414px,  768px, 1024px, 1440px, 1920px)
 
 ## Full Final Testing
+
+### HTML
+
+* I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
+* And recieved 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-before.png/)
+* 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-after.png/)
+* Using the preview feature of my IDE i have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
+
+### CSS
+
+* I ran my code through [Auto Prefixer CSS](https://autoprefixer.github.io) to make sure my CSS has all the correct vendor prefixes.
+* I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and recieved no errors.
+* I applied a red border to all my elements to check for any overflow issues & there are none.
+
+### JavaScript
