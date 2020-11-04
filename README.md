@@ -163,6 +163,8 @@ The technologies i have used for this project are:
 * [Stack Overflow](https://fonts.google.com/) - Resource whcih provided the 3 fonts: Anton, Arvo & Montserrat for the website.
 * [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - Used to test the loading speed of the website.
 * [Responsivley App](https://responsively.app/) - Used to test responsive web apps.
+* [Real Favicon Generator](https://realfavicongenerator.net/) - Used to create my favicon image and also test to see if it was working.
+
 
 ## Testing
 
