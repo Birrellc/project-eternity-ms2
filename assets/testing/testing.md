@@ -30,7 +30,6 @@ This project has been tested throughout with use of preview, devtools, manual te
 
 * All function's were tested for individual purpose manually via console.log & dev tools through my IDE's Live Preview.
 * All function's were then further tested collectivley by pushing live to my deployed page to see if any issues appeared on the live version or if any of the functions caused issues with each other.
-
 * By combining these processes of i have been able to track issues created via my code through the commit log of my repository allowing the ability to navigate back through code to identify any errors and if necessary rolling back the code which i did on atleast 1 occasion.
 
 
@@ -45,3 +44,5 @@ This project has been tested throughout with use of preview, devtools, manual te
 * ![picture](../images/testing-images/responsive-test-part1.gif)
 * ![picture](../images/testing-images/responsive-test-part2.gif)
 * I have also tested responsiveness of site and forms fully via use of devtools on my IDE preview and also on my deployed github page showing no issues with the viewports of \(320px, 375px, 414px,  768px, 1024px, 1440px, 1920px)
+
+## Full Final Testing
