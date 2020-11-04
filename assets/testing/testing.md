@@ -2,6 +2,16 @@
 
 This project has been tested throughout with use of preview, devtools, manual testing and also the website was deployed on github pages very early in development to allow live testing after each commit was made.
 
+## Bugs
+
+* Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
+
+* Issues with Total Cost calculation - I fixed the problem where the total cost was being calculated incorrectly with an if, else statement that would save the current cart price in order for my total cost to be added.
+
+* Google Map API not displaying correct information - To fix this problem after trying various ways to fix i eventually took the example code from the documentation and just switched the coordinates to suit my needs. **No longer using Google Maps API switched to Iframe**
+
+* Overflow - Page overflow was found to be an issue once i added animations which i fixed by adding *overflow-x: hidden to the html* - identified by adding a border to all my elements to detect the leak.
+
 ## Mid Stage Testing Review
 
 ### HTML
