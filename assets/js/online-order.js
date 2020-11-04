@@ -51,13 +51,14 @@ for (let i = 0; i < addToBasket.length; i++) {
         if (!basketItem.includes(foodIndex)) {
             basketItem.push(foodIndex);
             addItemToBasket(food[i], i);
+        } else {
+            return;
         }
     });
 }
 
-// show previously stored baket data
-let storedBasketItems =
-    JSON.parse(sessionStorage.getItem("foodInBasket")) || {};
+// show previously stored basket data
+let storedBasketItems = JSON.parse(sessionStorage.getItem("foodInBasket")) || {};
 
 for (const key in storedBasketItems) {
     // get corresponding food index
@@ -69,11 +70,8 @@ for (const key in storedBasketItems) {
     if (!basketItem.includes(foodIndex)) {
         basketItem.push(foodIndex);
         food[foodIndex].inBasket = storedBasketItems[key].inBasket;
-        basketProducts = {
-            [food[foodIndex].name]: food[foodIndex]
-        };
         updateModal(foodIndex);
-    }
+    } 
 }
 
 // This adds item to basket
