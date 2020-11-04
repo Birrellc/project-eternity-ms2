@@ -1,3 +1,4 @@
+windows.onload = cheese();
 let addToBasket = document.querySelectorAll(".menu-btn");
 let foodIndex = 0;
 let totalPrice = 0;
@@ -45,11 +46,12 @@ let food = [{
     }
 ];
 // This adds onClick events to each food item in the list
+
 for (let i = 0; i < addToBasket.length; i++) {
     addToBasket[i].addEventListener("click", e => {
-        foodIndex = i;
-        if (!basketItem.includes(foodIndex)) {
-            basketItem.push(foodIndex);
+        foodindex = i;
+        if (!basketItem.includes(foodindex)) {
+            basketItem.push(foodindex);
             addItemToBasket(food[i], i);
         } else {
             return;
@@ -58,34 +60,33 @@ for (let i = 0; i < addToBasket.length; i++) {
 }
 
 // show previously stored basket data
-let storedBasketItems = JSON.parse(sessionStorage.getItem("foodInBasket")) || {};
+let storedBasketItems = JSON.parse(localStorage.getItem("foodInBasket")) || {};
 
 for (const key in storedBasketItems) {
     // get corresponding food index
-    let foodIndex;
     food.forEach(function (food, i) {
-        if (food.name == storedBasketItems[key].name) foodIndex = i;
+        if (food.name === storedBasketItems[key].name) foodIndex = i;
     });
 
     if (!basketItem.includes(foodIndex)) {
         basketItem.push(foodIndex);
         food[foodIndex].inBasket = storedBasketItems[key].inBasket;
         updateModal(foodIndex);
-    } 
+    }
 }
 
 // This adds item to basket
 function addItemToBasket(food, itemIndex) {
-    let menuNumbers = sessionStorage.getItem("addItemToBasket");
+    let menuNumbers = localStorage.getItem("addItemToBasket");
     menuNumbers = parseInt(menuNumbers);
     if (menuNumbers) {
-        sessionStorage.setItem("addItemToBasket", +1);
+        localStorage.setItem("addItemToBasket", +1);
     }
     updateStoreBasket(food, itemIndex);
 }
 
 function updateStoreBasket(food, itemIndex) {
-    let basketProducts = sessionStorage.getItem("foodInBasket");
+    let basketProducts = localStorage.getItem("foodInBasket");
     basketProducts = JSON.parse(basketProducts);
     // If the basket has products
     if (basketProducts !== null) {
@@ -107,27 +108,27 @@ function updateStoreBasket(food, itemIndex) {
         };
         totalCost(food);
     }
-    sessionStorage.setItem("foodInBasket", JSON.stringify(basketProducts));
+    localStorage.setItem("foodInBasket", JSON.stringify(basketProducts));
     updateModal(itemIndex);
 }
 
 function totalCost(food) {
-    let currentBasketPrice = sessionStorage.getItem("totalPrice");
+    let currentBasketPrice = localStorage.getItem("totalPrice");
     // If we have a current Basket price
     if (currentBasketPrice !== null) {
         currentBasketPrice = parseInt(currentBasketPrice);
-        sessionStorage.setItem("totalPrice", currentBasketPrice + food.price);
+        localStorage.setItem("totalPrice", currentBasketPrice + food.price);
     } else {
         // If we have no current Basket price
-        sessionStorage.setItem("totalPrice", food.price);
+        localStorage.setItem("totalPrice", food.price);
     }
 }
 // recieve object from DOM and assign variables to div classes - Template
 function getBasketData() {
     return {
         delete: document.querySelectorAll(".product far fa-times-circle"),
-        products: JSON.parse(sessionStorage.getItem("foodInBasket")),
-        priceValue: sessionStorage.getItem("totalPrice") || 0,
+        products: JSON.parse(localStorage.getItem("foodInBasket")),
+        priceValue: localStorage.getItem("totalPrice") || 0,
         product: document.querySelector(".product"),
         price: document.querySelector(".price"),
         quantity: document.querySelector(".quantity"),
@@ -198,14 +199,14 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
         totalPrice -= item.price;
     }
     // Allows Data to Remain on page after refresh
-    let cartItems = sessionStorage.getItem("foodInBasket");
+    let cartItems = localStorage.getItem("foodInBasket");
     cartItems = JSON.parse(cartItems);
     cartItems = {
         ...cartItems,
         [item.name]: item
     };
-    sessionStorage.setItem("foodInBasket", JSON.stringify(cartItems));
-    sessionStorage.setItem("totalPrice", totalPrice);
+    localStorage.setItem("foodInBasket", JSON.stringify(cartItems));
+    localStorage.setItem("totalPrice", totalPrice);
 
     document.querySelector(
         ".total-price"
@@ -214,7 +215,7 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
 // Function for deleting items in basket through use of a Font awesome icon
 function deleteButtons() {
     addEventListenerByClass("click", "delete-btn", function (e) {
-        let cartItems = sessionStorage.getItem("foodInBasket");
+        let cartItems = localStorage.getItem("foodInBasket");
         cartItems = JSON.parse(cartItems);
         let foodName = e.target.parentNode.getAttribute("data-food");
         let foodItem = cartItems[foodName];
@@ -227,8 +228,8 @@ function deleteButtons() {
         food[foodIndex] = foodItem;
         delete cartItems[foodName];
         basketItem.pop(foodIndex);
-        sessionStorage.setItem("foodInBasket", JSON.stringify(cartItems));
-        sessionStorage.setItem("totalPrice", totalPrice);
+        localStorage.setItem("foodInBasket", JSON.stringify(cartItems));
+        localStorage.setItem("totalPrice", totalPrice);
         document.querySelector(".total-price").innerHTML = totalPrice;
         document
             .querySelectorAll('[data-food="' + foodName + '"]')
