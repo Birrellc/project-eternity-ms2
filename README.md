@@ -1,4 +1,4 @@
-![picture](assets/images/eternity-logo.png)
+![picture](assets/images/readme-images/eternity-logo.png)
 
 ## Description
 
