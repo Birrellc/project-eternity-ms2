@@ -12,12 +12,16 @@ body, html {
     overflow-x: hidden;
 }
 
+body.modal-open {
+    overflow: auto;
+}
+
 li {
     list-style: none;
 }
 
 * {
-    padding:0;
+    padding: 0;
 }
 
 hr {
@@ -111,7 +115,7 @@ h1 {
 }
 
 .nav-list {
-    background-color: rgba(0, 0, 2, 0.9);
+    background-color: rgba(0, 0, 2, 1);
     position: fixed;
     top: 0;
     left: 0;

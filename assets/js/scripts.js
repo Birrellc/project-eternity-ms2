@@ -4,7 +4,6 @@ $(function () {
     $('.hamburger-toggle').on('click', function () {
         $('.toggle').toggleClass('open');
         $('.nav-list').toggleClass('open');
-        $('#map').toggleClass();
     });
 });
 
@@ -47,4 +46,11 @@ $('#datetimepicker1').datetimepicker({
 AOS.init({
     easing:'ease',
     duration: 1500,
+});
+
+$(function () {
+    $('.nav-link').on('click', function () {
+        $('.toggle').toggleClass('open');
+        $('.nav-list').toggleClass('open');
+    });
 });
