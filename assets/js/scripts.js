@@ -32,7 +32,7 @@ $('#datetimepicker1').datetimepicker({
     $(".menu-btn").on("click", function () {
         var $this = $(this),
             oldText = $this.text();
-        $this.text("Item added");
+        $this.text("Item Added");
         $this.attr("disabled", "disabled");
         setTimeout(function () {
             $this.text(oldText);
