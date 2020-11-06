@@ -19,7 +19,7 @@ This project has been tested throughout with use of preview, devtools, manual te
 * I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
 * And recieved 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-errors.png/)
 * 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-fixed.png/)
-* Using the preview feature of my IDE i have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS. 
+* Using the preview feature of my IDE i have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
 
 ### CSS
 
@@ -61,3 +61,61 @@ This project has been tested throughout with use of preview, devtools, manual te
 * I applied a red border to all my elements to check for any overflow issues & there are none.
 
 ### JavaScript
+
+#### Overview
+
+* All my JavaScript code was tested via manual testing which was also then used to solve error's i had missed [Example here](../images/testing-images/manual-testing-example.png).
+* When running devtools to inspect the website for errors i found verbose warnings for **Violation Added for non-passive event listener to scroll blocking** - planning to discuss with mentor in final session.
+
+#### NAVIGATION
+
+* Clicked on the **fas fa-bars** icon which is the navigation button - Navigation menu opens.
+* Clicked on the **fas fa-times** icon which replaces the **fas fa-bars** icon - Navigation menu closes.
+* Clicked on the **fas fa-bars** then selected the **About** link which took me to the **About Us Page** and closed the navigation menu for me. - Credit to Jon from CI slack community for peer code review where he pointed out i had forgotten to re-add the auto close when links clicked.
+* Repeated the above process for all links - All worked successfully.
+
+#### Pages
+
+* Clicked and also manually scrolled to all pages one by one refreshing the website each time - No issues found.
+
+#### Animation
+
+* Scrolled through the website on mobile and desktop view - All animations caused page overflow initially which was solved by adding *overflow-x:hidden* to **Body & HTML tags**.
+
+#### Map
+
+* Clicked Map was able to move view around, zoom in and out & also able to view larger map on google and get directions.
+
+#### Shopping Cart / Menu
+
+* Clicked **Add to Basket** buttons for all items on the menu page - all buttons changed to **Item Added** & disabled for 5 seconds correctly.
+* Clicked **Add to Basket** buttons for all items on menu page - all items loaded into shopping cart correctly in name, price, quantity & total cost.
+* Clicked on **View Basket** button on the menu page - Shopping basket opened correctly.
+* Clicked on the **fas fa-shopping-cart** icon - Shopping basket opened correctly.
+* Clicked the **fas fa-plus** icon to increase the quantity - Correctly increased the quantity for the items selected while also increasing the total cost by the correct amount.
+* Clicked the **fas fa-minus** icon to decrease the quantity - Correctly drecreased the quantity for the items selectioned while also decreasing the total cost. (cant decrease lower than one)
+* Clicked the **far fa-times-circle** icon to remove items from basket - Worked correctly & correctly adjusted total cost.
+* I re-added all items to the basket and increased the quantity of some of the items then refreshed the page to check if local storage restored the data correctly - this was successful.
+* I re-added all items to the basket and increased the quantity of some of the items then closed the browser and reopened to check if local storage restored the data correctly - this was successful.
+* This is as far as the shopping cart goes, i'm unable yet to create a database for storing data correctly and also setting up a functioning payment system but plan to implement this when i am capable.
+
+#### Dark Mode
+
+* I clicked on **fas fa-adjust** icon which successfully loaded the dark mode options and replaced the correct images also.
+* I refreshed my page to check if local storage kept the dark mode settings - this was successful.
+* I closed my browser and reopened to check if local storage kept the dark mode settings - this was successful.
+* I clicked on **fas fa-adjust** icon again which then successfully transitioned back to light mode.
+
+#### EmailJS Forms
+
+##### Booking Form
+
+* Filled out **Booking Form** information then clicked submit - emails were sent correctly to customer & owner [Customer Email](../images/testing-images/booking-customer.png) [Owner Email](../images/testing-images/booking-owner.png)
+* Also when the emails we're sent the button text changes to **Submitted** & disabled till page refreshed to prevent spam.
+* Clicked Date & Time - Was unable to select booking times and dates outside of opening hours and days accomplished by using & [TempusDominus Time & Date Plugin](https://tempusdominus.github.io/bootstrap-4/)
+
+##### Contact Form
+
+* Filled **Contact Form** information then clicked submit - email was sent correctly to  owner [Contact Form Email](../images/testing-images/contact-email.png).
+* Also when the emails we're sent the button text changes to **Submitted** & disabled till page refreshed to prevent spam.
+
