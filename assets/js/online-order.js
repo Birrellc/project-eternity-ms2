@@ -62,17 +62,18 @@ for (let i = 0; i < addToBasket.length; i++) {
 let storedBasketItems = JSON.parse(localStorage.getItem("foodInBasket")) || {};
 
 for (const key in storedBasketItems) {
-    // get corresponding food index
-    food.forEach(function (food, i) {
-        if (food.name === storedBasketItems[key].name) foodIndex = i;
-    });
-
+    if (storedBasketItems.hasOwnProperty(key)) {
+        // get corresponding food index
+        food.forEach(function (food, i) {
+            if (food.name === storedBasketItems[key].name) foodIndex = i;
+        });
+    
     if (!basketItem.includes(foodIndex)) {
         basketItem.push(foodIndex);
         food[foodIndex].inBasket = storedBasketItems[key].inBasket;
         updateModal(foodIndex);
     }
-}
+}}
 
 // This adds item to basket
 function addItemToBasket(food, itemIndex) {
