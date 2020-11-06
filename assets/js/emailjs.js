@@ -9,7 +9,6 @@ formContact.addEventListener("submit", function (e) {
         })
         .then(
             function () {
-                alert("success");
                 let submitButtonContact = document.getElementById("submitBtnContact");
                 submitButtonContact.innerHTML = "Submitted!";
                 document.getElementById("submitBtnContact").disabled = true;
@@ -33,7 +32,6 @@ formBooking.addEventListener("submit", function (e) {
         })
         .then(
             function () {
-                alert("success");
                 let submitButtonContact = document.getElementById("submitBtnBooking");
                 submitButtonContact.innerHTML = "Submitted!";
                 document.getElementById("submitBtnBooking").disabled = true;
