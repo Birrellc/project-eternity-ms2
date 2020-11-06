@@ -48,9 +48,8 @@ let food = [{
 
 for (let i = 0; i < addToBasket.length; i++) {
     addToBasket[i].addEventListener("click", e => {                            //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
-        foodindex = i;
-        if (!basketItem.includes(foodindex)) {
-            basketItem.push(foodindex);
+        if (!basketItem.includes(i)) {
+            basketItem.push(i);
             addItemToBasket(food[i], i);
         } else {
             return;
