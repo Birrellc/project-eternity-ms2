@@ -16,7 +16,7 @@ The completed wireframes for this project can be accesed by clicking [Wireframes
 
 ### Landing Page
 
-The landing page design i have chosen follows a minimalist approach which will follow throughout the website due to current trends i find minimalism conveys luxuary very well. This will consist of a simple image background with a linear gradient over to top of it to not be so overpowering for the user for both light and dark modes which there will be a button in place to toggle between both modes to provide comfort to the viewers/users preference. A title displayed vertically to capture interest with a horizontal sub heading to draw contrast from the heading with a call to action button to book a table below. There will be 3 bar navigation button (hamburger menu) to allow users to open a navigation menu to explore the website or they could scroll down with smooth scrolling and also this allows 
+The landing page design i have chosen follows a minimalist approach which will follow throughout the website due to current trends i find minimalism conveys luxuary very well. This will consist of a simple image background with a linear gradient over to top of it to not be so overpowering for the user for both light and dark modes which there will be a button in place to toggle between both modes to provide comfort to the viewers/users preference. A title displayed vertically to capture interest with a horizontal sub heading to draw contrast from the heading with a call to action button to book a table below. There will be 3 bar navigation button (hamburger menu) to allow users to open a navigation menu to explore the website or they could scroll down with smooth scrolling and also this allows
 users to best experience the website and it's animation effects.
 
 ### About Us
@@ -35,7 +35,7 @@ The Reservations page is kept very minimalistic but informative of all the infor
 
 This page is a simple form with an image behind it with another linear gradient over to top of it to not be so overpowering for the user, the form on this page will allow the user to contact the restaurant with any complaints, suggestions or questions they may have for the restaurant.
 
-### Dividers 
+### Dividers
 
 The divider pages are used to show more imagery of the restaurant while also breaking up the website to help keep the flow clean and not clutter the experience of the user while also listing words that describe the principles of the restaurant.
 
@@ -58,7 +58,7 @@ Owner:
 * As the owner, i would like there to be a booking form which emails ourselves and the user with details of their reservation as well as a contact number option for booking so customers can book in whichever way is more convenient for them but also to stop clogging up the phones during busy hours.
 * As the owner, i would like there to be an option for delivery to help boost sales with customers who are currently prefering to isolate at home rather than eat out in public due to coronavirus 2020.
 * As the owner, i would like a section showing our history and who we are as a business to help build a connection with our potential customers.
-* As the owner, i would like the website to convey the essence of the business which is luxury & elegent fine dining. 
+* As the owner, i would like the website to convey the essence of the business which is luxury & elegent fine dining.
 
 ### Strategy Plane
 
@@ -86,7 +86,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ### Structure
 
-* The website is designed to allow viewers/users to quickly understand and view the information displayed without causing distraction which may lead to failure to draw action from the user. 
+* The website is designed to allow viewers/users to quickly understand and view the information displayed without causing distraction which may lead to failure to draw action from the user.
 * The information throughout the website will be short and concise to allow the user to quickly navigate the the area they wish to view without distraction while still providing the information they want.
 * Areas of user interaction will be clearly displayed to allow higher interation and potentially increased sales.
 
@@ -120,7 +120,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ## Features
 
-#### Features
+### Features
 
 * Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact)
 * 2 User Interactive Forms With HTML Validation - Booking form\(modal\) & Contact form.
@@ -130,7 +130,7 @@ The purpose of the website created is to entice more customers to the restaurant
 * Social Media - Social media icons will be present on all pages.
 * Light / Dark mode - Dark mode option is available due to growing trend of preference.
 
-#### Features to be Implemented in Future
+### Features to be Implemented in Future
 
 * Fully functioning booking form database system to replace the form in place at the moment
 * Fully functioning checkout system to add to the shopping cart for successful online orders
@@ -142,21 +142,34 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ## Technologies
 
-The technologies i have used for this project are:
+### Languages
 
-* HTML5
-* CSS3
-* Bootstrap 4
-* Javascript
-* jQuery
-* EmailJS
-* MomentJs Plugin
-* TempusDominus Time & Date Plugin
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
-## External Resources
+### Libraries, Frameworks & Plugins
 
-* [W3C HTML Validator](https://validator.w3.org/) - Used to test HTML code on the website.
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code on the website.
+* [Bootstrap 4](https://getbootstrap.com/)
+* [jQuery](https://michalsnik.github.io/aos/)
+* [EmailJS](https://www.emailjs.com/)
+* [MomentJs](https://momentjs.com/)
+* [TempusDominus Time & Date Plugin](https://tempusdominus.github.io/bootstrap-4/)
+* [Animate On Scroll](https://michalsnik.github.io/aos/)
+
+### Workspace
+
+* [VSCode](https://code.visualstudio.com/)
+* [Gitpod](https://www.gitpod.io/)
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com/)
+
+### External Resources
+
+* [Google Fonts](https://fonts.google.com/) - Used to import fonts for the website.
+* [JSHint](https://jshint.com/) - Used to test/validate JavaScript Code.
+* [W3C HTML Validator](https://validator.w3.org/) - Used to test/validate HTML code on the website.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to test/validate the CSS code on the website.
 * [Pexels](https://https://www.pexels.com/) - Stock image resource.
 * [Tinypng](http://https://tinypng.com/) - Website used to compress my images to allow for faster loading times.
 * [Font Awesome](https://fontawesome.com/) - Used to provide small icons for the website. eg. Testimonial quotes section.
@@ -169,3 +182,31 @@ The technologies i have used for this project are:
 ## Testing
 
 Testing is done in its own section [Here](assets/testing/testing.md)
+
+## Version Control
+
+* Git was used for version control.
+* Branches were only merged once when using IDE on two different devices.
+
+## Deployment
+
+*note* Github has changed master branch names to main - Currently at time of this project the branch name is still refered to as master
+
+This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/)
+
+* Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based IDE was used briefly when i encountered an issue with my VSCode client.
+
+* First select the repository on GitHub for this project where all the code is stored.
+* Then click settings link at the top with the cogwheel icon next to it.
+* Scroll down till reaching the GitHub Pages Heading.
+* Locate the source section and click on branch master then select the master branch
+* This will then publish the project to GitHub Pages and display the URL of the live website. (may have to refresh and scroll back to this section to see the URL)
+* The deployed website version will be tracked to your last commit so if you have made changes without commiting and pushing them to github those changes will not be live.
+
+* The code itself can be cloned or downloaded to your local pc for editing also.
+* To do this navigate back to the [Repository page](https://github.com/Birrellc/Eternity-MS2)
+* Select the clone option at the top right of the Respository.
+* From here you will be able to download the download the code and open it locally on your PC with your own IDE
+* You can also clone the code by copying the link provided when the clone drop down menu is opened
+* The method i used was cloning by the link provided - I first downloaded [Git](https://git-scm.com/), after that i opened VSCode and selected the **git clone** option after pressing F1 and pasted the url into the box.
+* You can also open your terminal in your local IDE, Change the current working directory to where you want the clone to be made then type **git clone** in the terminal and paste the link after for e.g "git clone https://github.com/Birrellc/Eternity-MS2"
