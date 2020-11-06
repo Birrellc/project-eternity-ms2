@@ -73,8 +73,16 @@ This project has been tested throughout with use of preview, devtools, manual te
 * All my JavaScript code was tested via manual testing which was also then used to solve error's i had missed [Example here](../images/testing-images/manual-testing-example.png).
 * When running devtools to inspect the website for errors i found verbose warnings for **Violation Added for non-passive event listener to scroll blocking** - planning to discuss with mentor in final session.
 * Ran code through [JSHINT](https://jshint.com/) - Warnings recieved for using ES6 & higher which are fine to ignore as the code works in all browsers apart from Internet Explorer.
-I also recieved the warning *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (foodindex, i, basketItem, addItemToBasket, food)* & *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (storedBasketItems, foodIndex)* after research of [Stack Overflow](https://stackoverflow.com/) i found that these warnings are false positives so i then created my own post to confirm that this was correct [Here](https://stackoverflow.com/a/64688795/14580125) this is also linked to in my code.
-I also recieved the warning *The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype.* which i also resorted to use of [Stack Overflow](https://stackoverflow.com/) to fix which lead to me correcting my code [Here](https://stackoverflow.com/a/64688795/14580125) credit has been given on that line of code.
+I also recieved the warning 
+
+*Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (foodindex, i, basketItem, addItemToBasket, food)* & *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (storedBasketItems, foodIndex)*
+
+after research of [Stack Overflow](https://stackoverflow.com/) i found that these warnings are false positives so i then created my own post to confirm that this was correct [Here](https://stackoverflow.com/a/64688795/14580125) this is also linked to in my code.
+I also recieved the warning 
+
+*The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype.* 
+
+which i also resorted to use of [Stack Overflow](https://stackoverflow.com/) to fix which lead to me correcting my code [Here](https://stackoverflow.com/a/64688795/14580125) credit has been given on that line of code.
 [JSHINT WARNING IMAGE](../images/testing-images/jshint.png)
 
 #### NAVIGATION
