@@ -48,6 +48,8 @@ AOS.init({
     duration: 1500,
 });
 
+//jQuery - closes nav when link is clicked
+
 $(function () {
     $('.nav-link').on('click', function () {
         $('.toggle').toggleClass('open');
