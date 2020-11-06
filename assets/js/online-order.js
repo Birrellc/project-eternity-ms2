@@ -47,7 +47,7 @@ let food = [{
 // This adds onClick events to each food item in the list
 
 for (let i = 0; i < addToBasket.length; i++) {
-    addToBasket[i].addEventListener("click", e => {
+    addToBasket[i].addEventListener("click", e => {                            //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
         foodindex = i;
         if (!basketItem.includes(foodindex)) {
             basketItem.push(foodindex);
@@ -62,9 +62,9 @@ for (let i = 0; i < addToBasket.length; i++) {
 let storedBasketItems = JSON.parse(localStorage.getItem("foodInBasket")) || {};
 
 for (const key in storedBasketItems) {
-    if (storedBasketItems.hasOwnProperty(key)) {
+    if (storedBasketItems.hasOwnProperty(key)) {                               //credit for this line of code - https://stackoverflow.com/a/64688795/14580125
         // get corresponding food index
-        food.forEach(function (food, i) {
+        food.forEach(function (food, i) {                                      //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
             if (food.name === storedBasketItems[key].name) foodIndex = i;
         });
     
