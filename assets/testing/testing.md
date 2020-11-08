@@ -12,6 +12,8 @@ This project has been tested throughout with use of preview, devtools, manual te
 
 - Overflow - Page overflow was found to be an issue once i added animations which i fixed by adding _overflow-x: hidden to the HTML - identified by adding a border to all my elements to detect the leak.
 
+___
+
 ## MID STAGE TESTING REVIEW
 
 ### HTML
@@ -21,10 +23,14 @@ This project has been tested throughout with use of preview, devtools, manual te
 - 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-fixed.png/)
 - Using the preview feature of my IDE i have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
 
+___
+
 ### CSS
 
 - I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - No Errors received [No Error Found Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/css-validator-1.png/)
+
+___
 
 ### JAVASCRIPT
 
@@ -32,10 +38,14 @@ This project has been tested throughout with use of preview, devtools, manual te
 - All function's were then further tested collectivley by pushing live to my deployed page to see if any issues appeared on the live version or if any of the functions caused issues with each other.
 - By combining these processes of i have been able to track issues created via my code through the commit log of my repository allowing the ability to navigate back through code to identify any errors and if necessary rolling back the code which i did on at least 1 occasion.
 
+___
+
 ### SPEED TEST
 
 - I ran a speed test on the live github page of my website via [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - The results received we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before project is fully live [Speed test results](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/initial-speed-test.png)
+
+___
 
 ### RESPONSIVE TEST
 
@@ -82,6 +92,8 @@ This project has been tested throughout with use of preview, devtools, manual te
 | Shopping Cart Modal | Click \- or \+ beside product in quantity | Increase or decrease quantity of product depending which is clicked | PASS   |
 | Shopping Cart Modal | Refresh page with products in basket      | Products remain in basket                                           | PASS   |
 
+___
+
 ### HTML
 
 - I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
@@ -93,11 +105,15 @@ This project has been tested throughout with use of preview, devtools, manual te
 - Map - Clicked Map was able to move view around, zoom in and out & also able to view larger map on Google and get directions.
 - Social Media Links - I clicked each link individually which opened a new browser tab to the correct targeted addresses for each link.
 
+___
+
 ### CSS
 
 - I ran my code through [Auto Prefixer CSS](https://autoprefixer.github.io) to make sure my CSS has all the correct vendor prefixes.
 - I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and received no errors.
 - I applied a red border to all my elements to check for any overflow issues & there are none.
+
+___
 
 ### JAVASCRIPT
 
@@ -166,6 +182,8 @@ which i also resorted to use of [Stack Overflow](https://stackoverflow.com/) to 
 - Filled **Contact Form** information then clicked submit - email was sent correctly to owner [Contact Form Email](../images/testing-images/contact-email.png).
 - Also when the emails we're sent the button text changes to **Submitted** & disabled till page refreshed to prevent spam.
 
+___
+
 ### BROWSER TESTING
 
 #### Supported Browsers
@@ -182,6 +200,8 @@ All browsers were tested by:
 - All EmailJS forms were tested by filling out and submitting.
 - Internet explorer was the only browser that failed - shopping basket didn't work, issues with text, modal containers etc. - **This Browser is not supported**
 
+___
+
 ### SPEED TESTING
 
 Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
@@ -191,6 +211,8 @@ Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [G
 - I re-scaled my images using [Photoshop](https://www.photoshop.com/en) to 294 x 440 pixels and ran the speed test again improving my results to a "B" as you can see [Here](../images/testing-images/speedtest-after.png)
 - To improve my page scale to an A i would have to use a server to cache my images and also using less plugins for example [Tempus Dominus](https://tempusdominus.github.io/bootstrap-4/) to save on page loading times.
 - After i ran a desktop speed test on [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) just to double check and received a score of "95" [Here](../images/testing-images/google-speedtest.png)
+
+___
 
 ### USER STORY TESTING
 
@@ -205,6 +227,9 @@ In order for the user to browse the food that is available at the restaurant the
 3. Scroll to browse the food on mobile & other smaller screen devices / On desktop the Menu is visable on one screen as two rows of 4 images.
 
 Alternatively the user could scroll down to the menu section.
+
+___
+
 
 - As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone in case my issue is urgent or not so urgent.
 
@@ -231,6 +256,8 @@ Alternatively the user could scroll down to each section.
 The user will be able to the the restaurant environment through images that are spread throughout the website for example divider \#1 shows the inside of the restaurant where as
 divider \#2 shows the outside, About us has two images showing a brief of food being prepared and also an image showing how food is served.
 
+___
+
 
 * As a user, i would like the option to book a table online and by telephone so i can make a reservation in whichever manner is convenient to me.
 
@@ -244,6 +271,8 @@ the user will ble able to book a table online by filling out a booking form or a
 4. Click the **Book Now** button and fill out the form when it pops up
 
 Alternatively the user could scroll down to this section or if you wish to use the booking form click the **Book Now** button located on the home page.
+
+___
 
 
 * As a user, i would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out. (coronavirus 2020)
@@ -260,6 +289,8 @@ The user will be able to order food online by selecting items from the menu and 
 6. Fill out the form with your details and then click Checkout.
 
 ***NOTE - The ability to add items to the basket is functional same with removing or increasing / decreasing the quanitity but due to not having the capable skills yet the form does not direct to a paywall or store the data provided in the form, All that happens is the moment is the form data is posted to the code institute form dump which checks that the data is submitted - The database and paywall feature will be added as my skills develop later in the course***
+
+___
 
 
 * As a user, i would like to have information about the history of the restaurant available on the website.
