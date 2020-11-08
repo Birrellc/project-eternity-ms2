@@ -578,9 +578,6 @@ hr.line-light-address {
     font-family: "Raleway", sans-serif;
     font-size: 0.6rem !important;
     letter-spacing: 0px;
-}
-
-.basket-modal {
     background-color: #0a0908;
     color: #a9927d;
 }
@@ -593,7 +590,16 @@ hr.line-light-address {
     text-align: left;
 }
 
+.item-quantity{
+    padding-left:5px;
+    padding-right: 5px;
+}
+
 .basket-modal h5 {
+    font-size: 0.8rem;
+}
+
+.basket-form {
     font-size: 0.8rem;
 }
 
@@ -638,6 +644,14 @@ hr.line-light-address {
     .basket-modal {
         font-size: 0.8rem !important;
     }
+
+    .basket-modal h5 {
+        font-size: 1rem;
+    }
+
+    .basket-form {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -658,7 +672,7 @@ hr.line-light-address {
     }
 
     .basket-modal {
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
     }
 
     .contact-section-light {
@@ -667,6 +681,10 @@ hr.line-light-address {
 
     .contact-section-dark {
         height: 100vh;
+    }
+
+    .delete-btn {
+        padding-right: 5px;
     }
 }
 

@@ -147,21 +147,21 @@ function updateModal(itemIndex) {
             `<div class="productName" data-food="${foodItem.name}">
                 <i class="far fa-times-circle delete-btn"></i>
                 <span>${foodItem.name}</span>
-            </div>`
+            </div><br>`
         );
         basket.price.insertAdjacentHTML("beforeend",
             `<div class="productPrice" data-food="${foodItem.name}">
-                ${foodItem.price}
-            </div>`
+                £ ${foodItem.price}
+            </div><br>`
         );
         basket.quantity.insertAdjacentHTML("beforeend",
             `<div class="productQuantity"data-itemIndex=${itemIndex} data-food="${foodItem.name}">
                 <i class="fas fa-minus"></i>
                 <span class="item-quantity">${foodItem.inBasket}</span>
                 <i class="fas fa-plus"></i>
-            </div>`
+            </div><br>`
         );
-        basket.totalPrice.innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
+        basket.totalPrice.innerHTML = `<div class="totalPrice">£ ${totalPrice}</div>`;
     }
 }
 // allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
