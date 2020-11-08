@@ -150,7 +150,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 45px;
+    top: 60px;
     right: 8px;
     cursor: pointer;
     z-index: 100;
@@ -163,7 +163,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 70px;
+    top: 100px;
     right: 8px;
     cursor: pointer;
     z-index: 100;
@@ -186,7 +186,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 130px;
+    top: 250px;
     right: 7px;
     color: #5e503f;
     z-index: 100;
@@ -197,7 +197,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 155px;
+    top: 285px;
     right: 7px;
     color: #5e503f;
     z-index: 100;
@@ -208,7 +208,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 180px;
+    top: 320px;
     right: 7px;
     color: #5e503f;
     z-index: 100;
@@ -219,7 +219,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 205px;
+    top: 355px;
     right: 7px;
     color: #5e503f;
     z-index: 100;
