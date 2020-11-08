@@ -134,3 +134,20 @@ which i also resorted to use of [Stack Overflow](https://stackoverflow.com/) to 
 * Also when the emails we're sent the button text changes to **Submitted** & disabled till page refreshed to prevent spam.
 
 ### BROWSER TESTING
+
+#### Supported Browsers
+
+| Opera | Chrome | Firefox | Edge | Internet Explorer |
+|-------|--------|---------|------|-------------------|
+| Y     | Y      | Y       | Y    | N                 |
+
+All browsers were tested by:
+
+* Clicking all buttons and waiting for desired effects.
+* Testing local storage by adding items to basket and then closing / reopening browser.
+* Shopping cart was fully tested for adding items, removing, increasing, decreasing.
+* All EmailJS forms were tested by filling out and submitting.
+* Internet explorer was the only browser that failed - shopping basket didn't work, issues with text, modal containers etc. - **This Browser is not supported**
+
+### SPEED TESTING
+
