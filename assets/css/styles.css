@@ -8,12 +8,17 @@
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
 body.modal-open {
     overflow: auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 li {
@@ -30,7 +35,7 @@ hr {
 }
 
 a:hover {
-    color:#49111c !important;
+    color: #49111c !important;
 }
 
 h1,
@@ -59,7 +64,7 @@ h1 {
 
 .btn:hover {
     color: #a9927d;
-  }
+}
 
 /* LIGHT MODE */
 
@@ -402,7 +407,7 @@ h1 {
     font-size: 0.8rem;
 }
 
-hr.line-light-menu{
+hr.line-light-menu {
     border-top: 2px solid #5e503f;
     width: 20%;
 }
@@ -484,12 +489,13 @@ hr.line-light-address {
 
 /*CONTACT PAGE*/
 
-.home-arrow{
-    margin-bottom: 40px;;
+.home-arrow {
+    margin-bottom: 40px;
+    ;
 }
 
-.home-arrow a{
-    color:#5e503f;
+.home-arrow a {
+    color: #5e503f;
     font-size: 1.8rem;
 }
 
@@ -583,15 +589,15 @@ hr.line-light-address {
     color: #a9927d;
 }
 
-.basket-data{
+.basket-data {
     color: #f2f4f3;
 }
 
-.product{
+.product {
     text-align: left;
 }
 
-.basket-modal h5{
+.basket-modal h5 {
     font-size: 0.8rem;
 }
 
