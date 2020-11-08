@@ -29,6 +29,10 @@ hr {
     width: 50%;
 }
 
+a:hover {
+    color:#49111c !important;
+}
+
 h1,
 h2,
 h3,
@@ -479,6 +483,15 @@ hr.line-light-address {
 }
 
 /*CONTACT PAGE*/
+
+.home-arrow{
+    margin-bottom: 40px;;
+}
+
+.home-arrow a{
+    color:#5e503f;
+    font-size: 1.8rem;
+}
 
 .contact-section-light {
     background: -o-linear-gradient(top, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
