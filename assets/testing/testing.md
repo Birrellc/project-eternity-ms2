@@ -304,3 +304,28 @@ The user will be able to find out information about the restaurant on the **Abou
 3. Information needed is displayed on this page.
 
 Alternatively the user could scroll down to this section.
+
+
+---
+
+### RESPONSIVE TESTING
+
+- For the Responsive test i used an app called [Responsivley App](https://responsively.app/) to view my website with multiple device sizes \(iPhone 5/5se 320px, iPhone X 375px, Ipad 768px, and a generic laptop size of 1280px\)
+
+![picture](../images/testing-images/responsive-final.gif)
+
+- I have also tested the website on desktop view of 1920x1080 pixels which worked fine.
+
+Full list of tested resolutions with & without [Responsivley App](https://responsively.app/):
+
+1. iPhone 5/5se 320px
+2. iPhone X 375px
+3. Pixel 2 411px
+4. iPhone 6/7/8 Plus 414px
+5. Ipad 768px
+6. Nexus 10 800px
+7. Generic Laptop 1280px
+8. MacBook Air 1440px
+9. Desktop 1920px
+
+---
