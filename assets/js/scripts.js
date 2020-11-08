@@ -45,7 +45,7 @@ $('#datetimepicker1').datetimepicker({
 
 AOS.init({
     easing:'ease',
-    duration: 1500,
+    duration: 2000,
 });
 
 //jQuery - closes nav when link is clicked
