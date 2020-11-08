@@ -209,7 +209,7 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
 
     document.querySelector(
         ".total-price"
-    ).innerHTML = `<div class="totalPrice">${totalPrice}</div>`;
+    ).innerHTML = `<div class="totalPrice">£ ${totalPrice}</div>`;
 });
 // Function for deleting items in basket through use of a Font awesome icon
 function deleteButtons() {
