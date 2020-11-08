@@ -231,7 +231,6 @@ h1 {
     z-index: 100;
 }
 
-
 /* HOME SECTION */
 
 .home-light {
@@ -286,7 +285,6 @@ h1 {
     font-size: 1rem;
     letter-spacing: 15px;
 }
-
 
 /*ABOUT US*/
 
@@ -538,11 +536,6 @@ hr.line-light-address {
 .contact-btn {
     margin-top: 15px;
 }
-
-
-.modal-open {
-    overflow: auto;
-   }
 
 /* BOTH MODALS*/
 .modal-dialog {
