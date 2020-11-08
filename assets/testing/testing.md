@@ -198,9 +198,78 @@ Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [G
 
 ![picture](../images/testing-images/user-story-one.gif)
 
-- In order for the user to browse the food that is available at the restaurant they should:
+In order for the user to browse the food that is available at the restaurant they should:
 
-1. Click the Navigation button at the top
+1. Click the Navigation Icon at the top right of the screen
 2. Select Menu
 3. Scroll to browse the food on mobile & other smaller screen devices / On desktop the Menu is visable on one screen as two rows of 4 images.
-4. Alternatively the user could scroll down to the menu section.
+
+Alternatively the user could scroll down to the menu section.
+
+- As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone incase my issue is urgent or not so urgent.
+
+![picture](../images/testing-images/user-story-two-part1.gif) ![picture](../images/testing-images/user-story-two-part2.gif)
+
+The user will be able to contact the restaurant by use of a Contact form located in the **Contact** section of the website, also alternatively there is an **Email** and **Telephone number** located on the **Reservations** page to do either of these:
+
+1. Click the **Navigation** Icon at the top
+2. Select **Contact**
+3. Fill out the form
+
+or
+
+1. Click the **Navigation Icon** at the top right of the screen
+2. Select **Reservations**
+3. Click on either the Email Address or Telephone number Depending which you prefer.
+
+Alternatively the user could scroll down to each section.
+
+- As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area incase i choose to eat here in the summer.
+
+![picture](../images/testing-images/user-story-three.gif)
+
+The user will be able to the the restaurant environment through images that are spread throughout the website for example divider \#1 shows the inside of the restaurant where as
+divider \#2 shows the outside, About us has two images showing a brief of food being prepared and also an image showing how food is served.
+
+
+* As a user, i would like the option to book a table online and by telephone so i can make a reservation in whichever manner is convenient to me.
+
+![picture](../images/testing-images/user-story-four.gif)
+
+the user will ble able to book a table online by filling out a booking form or also by emailing the restaurant. The customer also has the option to telephone the restaurant with the contact number provided on the **Reservations** page by doing the following steps below:
+
+1. Click the **Navigation Icon** at the top right of the screen
+2. Select **Reservations**
+3. Click on either the Email Address or Telephone number Depending which you prefer
+4. Click the **Book Now** button and fill out the form when it pops up
+
+Alternatively the user could scroll down to this section or if you wish to use the booking form click the **Book Now** button located on the home page.
+
+
+* As a user, i would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out. (coronavirus 2020)
+
+![picture](../images/testing-images/user-story-five.gif)
+
+The user will be able to order food online by selecting items from the menu and then clicking the shopping cart:
+
+1. Click the **Navigation Icon** at the top right of the screen
+2. Select **Menu**
+3. Click the **Add To Basket** buttons under the food images to add them to your shopping cart
+4. Click either the **View Basket** at the bottom of the **Menu** page or click the shopping cart icon in the top right area
+5. Increase or decrease the quanity of each item you like and if you want to remove something click the "X" to the left of the product name
+6. Fill out the form with your details and then click Checkout.
+
+***NOTE - The ability to add items to the basket is functional same with removing or increasing / decreasing the quanitity but due to not having the capable skills yet the form does not direct to a paywall or store the data provided in the form, ALl that happens is the moment is the form data is posted to the code institute form dump which checks that the data is submitted - The database and paywall feature will be added as my skills develop later in the course***
+
+
+* As a user, i would like to have information about the history of the restaurant available on the website.
+
+![picture](../images/testing-images/user-story-six.gif)
+
+The user will be able to find out information about the restaurant on the **About** page:
+
+1. Click the **Navigation Icon** at the top right of the screen
+2. Select **About**
+3. Information needed is displayed on this page.
+
+Alternatively the user could scroll down to this section.
