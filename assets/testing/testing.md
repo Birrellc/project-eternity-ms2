@@ -49,6 +49,43 @@ This project has been tested throughout with use of preview, devtools, manual te
 
 ## FULL FINAL TESTING
 
+### FEATURE TESTING - TABLE VIEW
+
+| PAGE                | ACTION                                    | EXPECTED                                                            | RESULT |
+|---------------------|-------------------------------------------|---------------------------------------------------------------------|--------|
+| Home                | Clicked Navigation icon                   | Open Navigation Menu                                                | PASS   |
+| Home                | Clicked Light/Dark mode switch            | To switch between Light/Dark moode                                  | PASS   |
+| Home                | Clicked Shopping Cart icon                | To open Shopping Cart modal                                         | PASS   |
+| Home                | Clicked each Social Media icon            | To open correct social media website in a new browser tab           | PASS   |
+| Home                | Clicked Book Now Button                   | Open the Booking Form modal                                         | PASS   |
+| Home                | Refreshed page with dark mode on          | Dark mode to remain active                                          | PASS   |
+| About Us            | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
+| Divider \#1         | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
+| The Menu            | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
+| Menu                | Click Add to basket buttons               | Add the selected item to shopping cart                              | PASS   |
+| Menu                | Click Add to basket buttons               | Text to change to item added & disabled for 5 seconds               | PASS   |
+| Menu                | Click View basket button                  | Open Shopping Basket                                                | PASS   |
+| Divider \#2         | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
+| Reservations        | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
+| Reservations        | Clicking Email                            | Opens customers email tool \(outlook\)                              | PASS   |
+| Reservations        | Click Tel Number                          | Opens the option to call that number on customers                   | PASS   |
+| Reservations        | Click Book Now Button                     | Opens the Booking Form Modal                                        | PASS   |
+| Reservations        | Click zoom in/zoom out on map             | Zooms map in and out                                                | PASS   |
+| Reservations        | Click directions/view larger maps         | Opens map in google in a new browser tab                            | PASS   |
+| Contact             | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
+| Contact Form        | Submit form with incorrect data           | Validation to not allow form to send                                | PASS   |
+| Contact Form        | Submit form with correct data             | Button text to change to submitted\! and disable to prevent spam    | PASS   |
+| Contact Form        | Submit form with correct data             | Data to be sent to company email                                    | PASS   |
+| Booking Form        | Submit form with incorrect data           | Validation to not allow form to be sent                             | PASS   |
+| Booking Form        | Submit form with correct data             | Button text to change to submitted\! and disable to prevent spam    | PASS   |
+| Booking Form        | Submit form with correct data             | Emails to be sent to owner & user with the correct data             | PASS   |
+| Shopping Cart Modal | Incorrectly Fill in Form                  | Validation prevents submission                                      | PASS   |
+| Shopping Cart Modal | Fill in form correctly                    | Shopping cart form submits                                          | PASS   |
+| Shopping Cart Modal | Click X icon beside product name          | Delete item from basket                                             | PASS   |
+| Shopping Cart Modal | Click \- or \+ beside product in quantity | Increase or decrease quantity of product depending which is clicked | PASS   |
+| Shopping Cart Modal | Refresh page with products in basket      | Products remain in basket                                           | PASS   |
+
+
 ### HTML
 
 * I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
@@ -158,4 +195,6 @@ Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [G
 * I rescaled my images using [Photoshop](https://www.photoshop.com/en) to 294 x 440 pixels and ran the speed test again improving my results to a "B" as you can see [Here](../images/testing-images/speedtest-after.png)
 * To improve my page scale to an A i would have to use a server to cache my images and also using less plugins for example [Tempus Dominus](https://tempusdominus.github.io/bootstrap-4/) to save on page loading times.
 * After i ran a desktop speed test on [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) just to double check and recieved a score of "95" [Here](../images/testing-images/google-speedtest.png)
+
+### USER STORY TESTING
 
