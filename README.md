@@ -2,34 +2,34 @@
 
 ## Description
 
-_this is a ficticious business created for my milestone project 2 with the code institute_
+_this is a fictitious business created for my milestone project 2 with the code institute_
 
-A luxuary minimalistic restaurant website designed to convey upper market fine dining experience with high quality food and service. The user of this website will have a taste for high quality foods delivered in a sophisticated environment while eating out but also have the option to eat from home with an online delivery service which i decided to use as thats how many restaurants are managing to survive due to the current pandemic.
+A luxury minimalist restaurant website designed to convey upper market fine dining experience with high quality food and service. The user of this website will have a taste for high quality foods delivered in a sophisticated environment while eating out but also have the option to eat from home with an online delivery service which i decided to use as thats how many restaurants are managing to survive due to the current pandemic.
 
 _Frontend only - backend databases for reservation and paygate for the online orders to be added as i progress during the course_
 
 ## Wireframe
 
-The completed wireframes for this project can be accesed by clicking [Wireframes](https://github.com/Birrellc/ms2-ci/tree/master/assets/wireframes)
+The completed wireframes for this project can be accessed by clicking [Wireframes](https://github.com/Birrellc/ms2-ci/tree/master/assets/wireframes)
 
 ## UX
 
 ### Landing Page
 
-The landing page design i have chosen follows a minimalist approach which will follow throughout the website due to current trends i find minimalism conveys luxuary very well. This will consist of a simple image background with a linear gradient over to top of it to not be so overpowering for the user for both light and dark modes which there will be a button in place to toggle between both modes to provide comfort to the viewers/users preference. A title displayed vertically to capture interest with a horizontal sub heading to draw contrast from the heading with a call to action button to book a table below. There will be 3 bar navigation button (hamburger menu) to allow users to open a navigation menu to explore the website or they could scroll down with smooth scrolling and also this allows
+The landing page design i have chosen follows a minimalist approach which will follow throughout the website due to current trends i find minimalism conveys luxury very well. This will consist of a simple image background with a linear gradient over to top of it to not be so overpowering for the user for both light and dark modes which there will be a button in place to toggle between both modes to provide comfort to the viewers/users preference. A title displayed vertically to capture interest with a horizontal sub heading to draw contrast from the heading with a call to action button to book a table below. There will be 3 bar navigation button (hamburger menu) to allow users to open a navigation menu to explore the website or they could scroll down with smooth scrolling and also this allows
 users to best experience the website and it's animation effects.
 
 ### About Us
 
-The About Us page design is simple but informative - 2 images are placed on the right with a summary of the history of the rest restaurant on the left in order to give the user a view of the experience they will recieve in the restaurant and also to provide the user with a view of how the restaurant looks. To the left of these images will be a brief snippet of text explaining how the restaurant started to build an emotional connection with the user.
+The About Us page design is simple but informative - 2 images are placed on the right with a summary of the history of the rest restaurant on the left in order to give the user a view of the experience they will receive in the restaurant and also to provide the user with a view of how the restaurant looks. To the left of these images will be a brief snippet of text explaining how the restaurant started to build an emotional connection with the user.
 
 ### Menu
 
-The Menu page is nice and simple, the menu options are displayed by images of what the finished dish looks like to provide the user a viewing of the quality food they can expect to recieve at the restaurant. Also as the restaurant offers online delivery service an add to basket button is displayed with each menu item for the user to then add to their online order and purchase for delivery if they do so require.
+The Menu page is nice and simple, the menu options are displayed by images of what the finished dish looks like to provide the user a viewing of the quality food they can expect to receive at the restaurant. Also as the restaurant offers online delivery service an add to basket button is displayed with each menu item for the user to then add to their online order and purchase for delivery if they do so require.
 
 ### Reservations
 
-The Reservations page is kept very minimalistic but informative of all the information the customer requires to book a table at the restaurant while also providing a map of the restaurant location, contact details, address and last but not least a call to action button to allow the customer to book a table at the restaurant.
+The Reservations page is kept very minimalist but informative of all the information the customer requires to book a table at the restaurant while also providing a map of the restaurant location, contact details, address and last but not least a call to action button to allow the customer to book a table at the restaurant.
 
 ### Contact Us
 
@@ -44,8 +44,8 @@ The divider pages are used to show more imagery of the restaurant while also bre
 #### User:
 
 - As a user of this website i would like to be able to browse what food is available before going to the premises so that i would not be wasting my time if there was no options i wanted.
-- As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone incase my issue is urgent or not so urgent.
-- As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area incase i choose to eat here in the summer.
+- As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone in case my issue is urgent or not so urgent.
+- As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area in case i choose to eat here in the summer.
 - As a user, i would like the option to book a table online and by telephone so i can make a reservation in whichever manner is convenient to me.
 - As a user, i would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out. (coronavirus 2020)
 - As a user, i would like to have information about the history of the restaurant available on the website.
@@ -56,29 +56,29 @@ The divider pages are used to show more imagery of the restaurant while also bre
 - As the owner, i would like there to be an option for customers to reach us by email to provide us with any feedback and also have a contact telephone number available for those who prefer.
 - As the owner, i would like images to be displayed throughout the site displaying our restaurant environment and also the outdoor area so that customers know they can enjoy an outdoor meal depending on the weather.
 - As the owner, i would like there to be a booking form which emails ourselves and the user with details of their reservation as well as a contact number option for booking so customers can book in whichever way is more convenient for them but also to stop clogging up the phones during busy hours.
-- As the owner, i would like there to be an option for delivery to help boost sales with customers who are currently prefering to isolate at home rather than eat out in public due to coronavirus 2020.
+- As the owner, i would like there to be an option for delivery to help boost sales with customers who are currently  preferring to isolate at home rather than eat out in public due to coronavirus 2020.
 - As the owner, i would like a section showing our history and who we are as a business to help build a connection with our potential customers.
-- As the owner, i would like the website to convey the essence of the business which is luxury & elegent fine dining.
+- As the owner, i would like the website to convey the essence of the business which is luxury & elegant fine dining.
 
 ### Strategy Plane
 
-The purpose of the website created is to entice more customers to the restaurant while displaying the restaurant's core concepts of sophisticated, luxury and elegence to current and new users.
+The purpose of the website created is to entice more customers to the restaurant while displaying the restaurant's core concepts of sophisticated, luxury and elegance to current and new users.
 
-- Showcase the restaurant and its 3 key principles of sophistication, luxury and elegence.
+- Showcase the restaurant and its 3 key principles of sophistication, luxury and elegance.
 - Showcase the high quality food available at the restaurant - I spoke to a friend whos worked as a Chef in many restaurants throughout the UK/Europe and one of the key comments he made for attracting fine dining customers is quality of food and presentation that stands out from chain restaurants.
 - Offer an easy to use online booking form to allow users to reserve a table quickly and efficiently to increase sales & provide phone booking for people who prefer.
 - Display social media for proofing and trust from potential customers.
 - Obtain user email information via newletter subscription to increase user database and potentially earn more repeat customers through offers and events.
 - Design an easy to use website with a minimalism approach to help entice customers through less distractions [Source](https://pos.toasttab.com/blog/on-the-line/restaurant-design-minimalist-design)
 - Design mobile responsive website - 81% of customers have searched for a restaurant on a mobile device [Source](https://blogs.constantcontact.com/restaurants-most-searched-industry-by-consumers-on-mobile-devices-and-other-hot-topics/)
-- Incorperate an online menu to increase business sales - (51% of customers use a restaurant's website to order food [Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/readme-images/online-orders-stats.png) [Source](https://pos.toasttab.com/resources/restaurant-success-industry-report))
+- Incorporate an online menu to increase business sales - (51% of customers use a restaurant's website to order food [Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/readme-images/online-orders-stats.png) [Source](https://pos.toasttab.com/resources/restaurant-success-industry-report))
 - Provide an area for feedback, suggestions & questions through a contact form.
 - Display the restaurant environment through images displayed throughout the website.
 - Display key information for increasing customer interest with location map, address, and opening hours.
 
 ### Scope
 
-- The website will provide a clean UX / UI for users to use effectivley.
+- The website will provide a clean UX / UI for users to use effectively.
 - The website will be minimalist, professional and luxury themed to present the business correctly to build trust with current and new clients while creating a solid web foundation for the business to further increase reputation.
 - All booking and forms regarding user data must be validated for efficiency and professionalism.
 - Project will contain imagery throughout the website to advertise the business throughout.
@@ -87,15 +87,15 @@ The purpose of the website created is to entice more customers to the restaurant
 
 - The website is designed to allow viewers/users to quickly understand and view the information displayed without causing distraction which may lead to failure to draw action from the user.
 - The information throughout the website will be short and concise to allow the user to quickly navigate the the area they wish to view without distraction while still providing the information they want.
-- Areas of user interaction will be clearly displayed to allow higher interation and potentially increased sales.
+- Areas of user interaction will be clearly displayed to potentially increased sales.
 
 ### Skeleton
 
-- Minimal Theme Navigation - Navigation will be done throuh scrolling the pages or by use of a small navigation button (hamburger button)
-- Design - Each section will have a slight contrast from the previous in order to provide clear seperation.
+- Minimal Theme Navigation - Navigation will be done through scrolling the pages or by use of a small navigation button (hamburger button)
+- Design - Each section will have a slight contrast from the previous in order to provide clear separation.
 - Dividers - Dividers are used to help split information so as to not over clutter the UX.
 - Pages - There will be a Homepage, About page, Menu page, Reservation page & a contact section in that order
-- Iframe - A google map will be loaded to the page through an iframe, previously this was done with google maps API but due to only one marker being used i deemed relying on the API unnecessary
+- Iframe - A Google map will be loaded to the page through an iframe, previously this was done with Google maps API but due to only one marker being used i deemed relying on the API unnecessary
 
 ### Surface
 
@@ -107,7 +107,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ![picture](assets/images/readme-images/color-scheme.png)
 
-- I picked this color scheme as it supported the website theme of the restaurant which is minimalist & luxury, also with a contrast of light and dark colours allows me to use just one pallete for both my light and dark themes on the website.
+- I picked this color scheme as it supported the website theme of the restaurant which is minimalist & luxury, also with a contrast of light and dark colours allows me to use just one palette for both my light and dark themes on the website.
 
 #### Site Images
 
@@ -123,7 +123,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 - Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact)
 - 2 User Interactive Forms With HTML Validation - Booking form\(modal\) & Contact form.
-- Interactive Map - Map taken from google maps iframe showing restaurant location to help makes the business more accessible to customers.
+- Interactive Map - Map taken from Google maps iframe showing restaurant location to help makes the business more accessible to customers.
 - Online Menu - An online menu has been setup with a JavaScript shopping cart \(items can be added to cart from menu page via buttons then quantity can be adjusted in the shopping cart modal with total price being calculated but due to my lack of skillset the there is no paywall / checkout feature functioning yet but will be added as my skills improve\)
 - Animations - Throughout the website their will be animations as the pages switch.
 - Social Media - Social media icons will be present on all pages.
@@ -187,7 +187,7 @@ Testing is done in its own section [Here](assets/testing/testing.md)
 
 ## Deployment
 
-_note_ Github has changed master branch names to main - Currently at time of this project the branch name is still refered to as master
+_note_ Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master.
 
 This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/)
 
@@ -198,12 +198,12 @@ This project has been deployed on GitHub Pages [Here](https://birrellc.github.io
 - Scroll down till reaching the GitHub Pages Heading.
 - Locate the source section and click on branch master then select the master branch
 - This will then publish the project to GitHub Pages and display the URL of the live website. (may have to refresh and scroll back to this section to see the URL)
-- The deployed website version will be tracked to your last commit so if you have made changes without commiting and pushing them to github those changes will not be live.
+- The deployed website version will be tracked to your last commit so if you have made changes without committing and pushing them to github those changes will not be live.
 
 - The code itself can be cloned or downloaded to your local pc for editing also.
 - To do this navigate back to the [Repository page](https://github.com/Birrellc/Eternity-MS2)
 - Select the clone option at the top right of the Respository.
 - From here you will be able to download the download the code and open it locally on your PC with your own IDE
 - You can also clone the code by copying the link provided when the clone drop down menu is opened
-- The method i used was cloning by the link provided - I first downloaded [Git](https://git-scm.com/), after that i opened VSCode and selected the **git clone** option after pressing F1 and pasted the url into the box.
+- The method i used was cloning by the link provided - I first downloaded [Git](https://git-scm.com/), after that i opened VSCode and selected the **git clone** option after pressing F1 and pasted the URL into the box.
 - You can also open your terminal in your local IDE, Change the current working directory to where you want the clone to be made then type **git clone** in the terminal and paste the link after for e.g "git clone https://github.com/Birrellc/Eternity-MS2"

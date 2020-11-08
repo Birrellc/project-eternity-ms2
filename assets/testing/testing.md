@@ -10,32 +10,32 @@ This project has been tested throughout with use of preview, devtools, manual te
 
 - Google Map API not displaying correct information - To fix this problem after trying various ways to fix i eventually took the example code from the documentation and just switched the coordinates to suit my needs. **No longer using Google Maps API switched to Iframe**
 
-- Overflow - Page overflow was found to be an issue once i added animations which i fixed by adding _overflow-x: hidden to the html_ - identified by adding a border to all my elements to detect the leak.
+- Overflow - Page overflow was found to be an issue once i added animations which i fixed by adding _overflow-x: hidden to the HTML - identified by adding a border to all my elements to detect the leak.
 
 ## MID STAGE TESTING REVIEW
 
 ### HTML
 
 - I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
-- And recieved 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-errors.png/)
+- And received 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-errors.png/)
 - 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-fixed.png/)
 - Using the preview feature of my IDE i have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
 
 ### CSS
 
 - I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- No Errors recieved [No Error Found Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/css-validator-1.png/)
+- No Errors received [No Error Found Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/css-validator-1.png/)
 
 ### JAVASCRIPT
 
 - All function's were tested for individual purpose manually via console.log & dev tools through my IDE's Live Preview.
 - All function's were then further tested collectivley by pushing live to my deployed page to see if any issues appeared on the live version or if any of the functions caused issues with each other.
-- By combining these processes of i have been able to track issues created via my code through the commit log of my repository allowing the ability to navigate back through code to identify any errors and if necessary rolling back the code which i did on atleast 1 occasion.
+- By combining these processes of i have been able to track issues created via my code through the commit log of my repository allowing the ability to navigate back through code to identify any errors and if necessary rolling back the code which i did on at least 1 occasion.
 
 ### SPEED TEST
 
 - I ran a speed test on the live github page of my website via [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-- The results recieved we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before project is fully live [Speed test results](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/initial-speed-test.png)
+- The results received we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before project is fully live [Speed test results](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/initial-speed-test.png)
 
 ### RESPONSIVE TEST
 
@@ -51,7 +51,7 @@ This project has been tested throughout with use of preview, devtools, manual te
 | PAGE                | ACTION                                    | EXPECTED                                                            | RESULT |
 | ------------------- | ----------------------------------------- | ------------------------------------------------------------------- | ------ |
 | Home                | Clicked Navigation icon                   | Open Navigation Menu                                                | PASS   |
-| Home                | Clicked Light/Dark mode switch            | To switch between Light/Dark moode                                  | PASS   |
+| Home                | Clicked Light/Dark mode switch            | To switch between Light/Dark mode                                   | PASS   |
 | Home                | Clicked Shopping Cart icon                | To open Shopping Cart modal                                         | PASS   |
 | Home                | Clicked each Social Media icon            | To open correct social media website in a new browser tab           | PASS   |
 | Home                | Clicked Book Now Button                   | Open the Booking Form modal                                         | PASS   |
@@ -68,7 +68,7 @@ This project has been tested throughout with use of preview, devtools, manual te
 | Reservations        | Click Tel Number                          | Opens the option to call that number on customers                   | PASS   |
 | Reservations        | Click Book Now Button                     | Opens the Booking Form Modal                                        | PASS   |
 | Reservations        | Click zoom in/zoom out on map             | Zooms map in and out                                                | PASS   |
-| Reservations        | Click directions/view larger maps         | Opens map in google in a new browser tab                            | PASS   |
+| Reservations        | Click directions/view larger maps         | Opens map in Google in a new browser tab                            | PASS   |
 | Contact             | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
 | Contact Form        | Submit form with incorrect data           | Validation to not allow form to send                                | PASS   |
 | Contact Form        | Submit form with correct data             | Button text to change to submitted\! and disable to prevent spam    | PASS   |
@@ -85,18 +85,18 @@ This project has been tested throughout with use of preview, devtools, manual te
 ### HTML
 
 - I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
-- And recieved 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-before.png/)
+- And received 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-before.png/)
 - 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-after.png/)
 - Using the preview feature of my IDE i have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
 - Forms - All have are validated with the _required_ feature to stop submission without key information e.g - Email Address or Name / Which has been tested.
 - Buttons - All work correctly - Tested by clicking each button on the website.
-- Map - Clicked Map was able to move view around, zoom in and out & also able to view larger map on google and get directions.
+- Map - Clicked Map was able to move view around, zoom in and out & also able to view larger map on Google and get directions.
 - Social Media Links - I clicked each link individually which opened a new browser tab to the correct targeted addresses for each link.
 
 ### CSS
 
 - I ran my code through [Auto Prefixer CSS](https://autoprefixer.github.io) to make sure my CSS has all the correct vendor prefixes.
-- I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and recieved no errors.
+- I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and received no errors.
 - I applied a red border to all my elements to check for any overflow issues & there are none.
 
 ### JAVASCRIPT
@@ -105,13 +105,13 @@ This project has been tested throughout with use of preview, devtools, manual te
 
 - All my JavaScript code was tested via manual testing which was also then used to solve error's i had missed [Example here](../images/testing-images/manual-testing-example.png).
 - When running devtools to inspect the website for errors i found verbose warnings for **Violation Added for non-passive event listener to scroll blocking** - planning to discuss with mentor in final session.
-- Ran code through [JSHINT](https://jshint.com/) - Warnings recieved for using ES6 & higher which are fine to ignore as the code works in all browsers apart from Internet Explorer.
-  I also recieved the warning
+- Ran code through [JSHINT](https://jshint.com/) - Warnings received for using ES6 & higher which are fine to ignore as the code works in all browsers apart from Internet Explorer.
+  I also received the warning
 
 _Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (foodindex, i, basketItem, addItemToBasket, food)_ & _Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (storedBasketItems, foodIndex)_
 
 after research of [Stack Overflow](https://stackoverflow.com/) i found that these warnings are false positives so i then created my own post to confirm that this was correct [Here](https://stackoverflow.com/a/64688795/14580125) this is also linked to in my code.
-I also recieved the warning
+I also received the warning
 
 _The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype._
 
@@ -140,11 +140,11 @@ which i also resorted to use of [Stack Overflow](https://stackoverflow.com/) to 
 - Clicked on **View Basket** button on the menu page - Shopping basket opened correctly.
 - Clicked on the **fas fa-shopping-cart** icon - Shopping basket opened correctly.
 - Clicked the **fas fa-plus** icon to increase the quantity - Correctly increased the quantity for the items selected while also increasing the total cost by the correct amount.
-- Clicked the **fas fa-minus** icon to decrease the quantity - Correctly drecreased the quantity for the items selectioned while also decreasing the total cost. (cant decrease lower than one)
+- Clicked the **fas fa-minus** icon to decrease the quantity - Correctly decreased the quantity for the items selected while also decreasing the total cost. (cant decrease lower than one)
 - Clicked the **far fa-times-circle** icon to remove items from basket - Worked correctly & correctly adjusted total cost.
 - I re-added all items to the basket and increased the quantity of some of the items then refreshed the page to check if local storage restored the data correctly - this was successful.
 - I re-added all items to the basket and increased the quantity of some of the items then closed the browser and reopened to check if local storage restored the data correctly - this was successful.
-- This is as far as the shopping cart goes, i'm unable yet to create a database for storing data correctly and also setting up a functioning payment system but plan to implement this when i am capable.
+- This is as far as the shopping cart goes, I'm unable yet to create a database for storing data correctly and also setting up a functioning payment system but plan to implement this when i am capable.
 
 #### DARK MODE
 
@@ -187,10 +187,10 @@ All browsers were tested by:
 Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 - Initially i tested with [GT Metrix](https://gtmetrix.com/) and found there to be a huge issue with my page speed, It rated my page speed as "E" which is a 50% rating.
-- In order to improve my speed it suggested i rescale my images so that my website doesnt have to do it itself resulting in faster speeds as you can see [Here](../images/testing-images/speedtest-before.png)
-- I rescaled my images using [Photoshop](https://www.photoshop.com/en) to 294 x 440 pixels and ran the speed test again improving my results to a "B" as you can see [Here](../images/testing-images/speedtest-after.png)
+- In order to improve my speed it suggested i re-scale my images so that my website doesn't have to do it itself resulting in faster speeds as you can see [Here](../images/testing-images/speedtest-before.png)
+- I re-scaled my images using [Photoshop](https://www.photoshop.com/en) to 294 x 440 pixels and ran the speed test again improving my results to a "B" as you can see [Here](../images/testing-images/speedtest-after.png)
 - To improve my page scale to an A i would have to use a server to cache my images and also using less plugins for example [Tempus Dominus](https://tempusdominus.github.io/bootstrap-4/) to save on page loading times.
-- After i ran a desktop speed test on [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) just to double check and recieved a score of "95" [Here](../images/testing-images/google-speedtest.png)
+- After i ran a desktop speed test on [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) just to double check and received a score of "95" [Here](../images/testing-images/google-speedtest.png)
 
 ### USER STORY TESTING
 
@@ -206,7 +206,7 @@ In order for the user to browse the food that is available at the restaurant the
 
 Alternatively the user could scroll down to the menu section.
 
-- As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone incase my issue is urgent or not so urgent.
+- As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone in case my issue is urgent or not so urgent.
 
 ![picture](../images/testing-images/user-story-two-part1.gif) ![picture](../images/testing-images/user-story-two-part2.gif)
 
@@ -224,7 +224,7 @@ or
 
 Alternatively the user could scroll down to each section.
 
-- As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area incase i choose to eat here in the summer.
+- As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area in case i choose to eat here in the summer.
 
 ![picture](../images/testing-images/user-story-three.gif)
 
@@ -256,10 +256,10 @@ The user will be able to order food online by selecting items from the menu and 
 2. Select **Menu**
 3. Click the **Add To Basket** buttons under the food images to add them to your shopping cart
 4. Click either the **View Basket** at the bottom of the **Menu** page or click the shopping cart icon in the top right area
-5. Increase or decrease the quanity of each item you like and if you want to remove something click the "X" to the left of the product name
+5. Increase or decrease the quantity of each item you like and if you want to remove something click the "X" to the left of the product name
 6. Fill out the form with your details and then click Checkout.
 
-***NOTE - The ability to add items to the basket is functional same with removing or increasing / decreasing the quanitity but due to not having the capable skills yet the form does not direct to a paywall or store the data provided in the form, ALl that happens is the moment is the form data is posted to the code institute form dump which checks that the data is submitted - The database and paywall feature will be added as my skills develop later in the course***
+***NOTE - The ability to add items to the basket is functional same with removing or increasing / decreasing the quanitity but due to not having the capable skills yet the form does not direct to a paywall or store the data provided in the form, All that happens is the moment is the form data is posted to the code institute form dump which checks that the data is submitted - The database and paywall feature will be added as my skills develop later in the course***
 
 
 * As a user, i would like to have information about the history of the restaurant available on the website.
