@@ -151,3 +151,11 @@ All browsers were tested by:
 
 ### SPEED TESTING
 
+Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+
+* Initially i tested with [GT Metrix](https://gtmetrix.com/) and found there to be a huge issue with my page speed, It rated my page speed as "E" which is a 50% rating.
+* In order to improve my speed it suggested i rescale my images so that my website doesnt have to do it itself resulting in faster speeds as you can see [Here](../images/testing-images/speedtest-before.png)
+* I rescaled my images using [Photoshop](https://www.photoshop.com/en) to 294 x 440 pixels and ran the speed test again improving my results to a "B" as you can see [Here](../images/testing-images/speedtest-after.png)
+* To improve my page scale to an A i would have to use a server to cache my images and also using less plugins for example [Tempus Dominus](https://tempusdominus.github.io/bootstrap-4/) to save on page loading times.
+* After i ran a desktop speed test on [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) just to double check and recieved a score of "95" [Here](../images/testing-images/google-speedtest.png)
+
