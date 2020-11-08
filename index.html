@@ -451,82 +451,84 @@
                     <br>
                     <hr class="basket-hr">
                     <br>
-                    <div class="row">
-                        <div class="col-md-6 mb-2">
-                            <label for="fullNameBasket">Full Name:</label>
-                            <input type="text" class="form-control" id="fullNameBasket" name="fullNameBasket"
-                                placeholder="eg: John" required />
+                    <form class="needs-validation" method="POST" action="https://formdump.codeinstitute.net/">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="fullNameBasket">Full Name:</label>
+                                <input type="text" class="form-control" id="fullNameBasket" name="fullNameBasket"
+                                    placeholder="eg: John" required />
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="emailAddressBasket">Email</label>
+                                <input type="email" class="form-control" id="emailAddressBasket"
+                                    name="EmailAddressBasket" placeholder="you@example.com" required />
+                            </div>
                         </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="emailAddressBasket">Email</label>
-                            <input type="email" class="form-control" id="emailAddressBasket" name="EmailAddressBasket"
-                                placeholder="you@example.com" required />
+                        <div class="mb-2">
+                            <label for="addressBasket">Address</label>
+                            <input type="text" class="form-control" id="addressBasket" name="Address"
+                                placeholder="1234 Main St" required />
                         </div>
-                    </div>
-                    <div class="mb-2">
-                        <label for="addressBasket">Address</label>
-                        <input type="text" class="form-control" id="addressBasket" name="Address"
-                            placeholder="1234 Main St" required />
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-2">
-                            <label for="postcode">Postcode </label>
-                            <input type="text" class="form-control" id="postcode" name="Postcode" placeholder="NE1 62F"
-                                required />
-                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="postcode">Postcode </label>
+                                <input type="text" class="form-control" id="postcode" name="Postcode"
+                                    placeholder="NE1 62F" required />
+                            </div>
 
-                        <div class="col-md-6 mb-2">
-                            <label for="country">Country </label>
-                            <input type="text" class="form-control" id="country" name="Country"
-                                placeholder="United Kingdom" required />
+                            <div class="col-md-6 mb-2">
+                                <label for="country">Country </label>
+                                <input type="text" class="form-control" id="country" name="Country"
+                                    placeholder="United Kingdom" required />
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <h5 class="mb-3">Payment</h5>
-                    <div class="d-flex">
-                        <div class="col-4 custom-control custom-radio">
-                            <input id="credit" name="paymentMethod" type="radio" value="Credit Card"
-                                class="custom-control-input" checked required />
-                            <label class="custom-control-label" for="credit">Credit card</label>
+                        <br>
+                        <h5 class="mb-3">Payment</h5>
+                        <div class="d-flex">
+                            <div class="col-4 custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" value="Credit Card"
+                                    class="custom-control-input" checked required />
+                                <label class="custom-control-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="col-4 custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" value="Debit Card"
+                                    class="custom-control-input" required />
+                                <label class="custom-control-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="col-4 custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" value="Paypal"
+                                    class="custom-control-input" required />
+                                <label class="custom-control-label" for="paypal">PayPal</label>
+                            </div>
                         </div>
-                        <div class="col-4 custom-control custom-radio">
-                            <input id="debit" name="paymentMethod" type="radio" value="Debit Card"
-                                class="custom-control-input" required />
-                            <label class="custom-control-label" for="debit">Debit card</label>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="cc-name">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required />
+                                <small class="text-muted">Full name as displayed on card</small>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="cc-number">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required />
+                            </div>
                         </div>
-                        <div class="col-4 custom-control custom-radio">
-                            <input id="paypal" name="paymentMethod" type="radio" value="Paypal"
-                                class="custom-control-input" required />
-                            <label class="custom-control-label" for="paypal">PayPal</label>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="cc-expiration">Expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required />
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required />
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6 mb-2">
-                            <label for="cc-name">Name on card</label>
-                            <input type="text" class="form-control" id="cc-name" placeholder="" required />
-                            <small class="text-muted">Full name as displayed on card</small>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="cc-number">Credit card number</label>
-                            <input type="text" class="form-control" id="cc-number" placeholder="" required />
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6 mb-2">
-                            <label for="cc-expiration">Expiration</label>
-                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required />
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <label for="cc-cvv">CVV</label>
-                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required />
-                        </div>
-                    </div>
                 </div>
                 <div class="modal-footer col-12 border-top-0 justify-content-between">
-                    <button type="button" class="btn">Checkout</button>
+                    <button type="submit" class="btn">Checkout</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
