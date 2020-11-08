@@ -86,19 +86,19 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     top: 15px;
-    right: 8px;
+    right: 7px;
     cursor: pointer;
     z-index: 1000;
 }
 
 .hamburger-toggle i {
     font-size: 25px;
-    color: #5e503f
+    color: #5e503f;
 }
 
 .fa-times {
-    right: 7px;
-    font-size: 25px;
+    right: 10px;
+    font-size: 30px;
 }
 
 .fa-times {
