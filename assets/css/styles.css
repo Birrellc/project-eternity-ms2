@@ -301,7 +301,7 @@ h1 {
 .about-us-text {
     font-family: "Raleway", sans-serif;
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 1.2px;
     line-height: 40px;
     width: 250px;
@@ -395,7 +395,7 @@ h1 {
 .menu-delivery-text {
     font-family: "Raleway", sans-serif;
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 hr.line-light-menu{
@@ -467,7 +467,7 @@ hr.line-light-menu{
     font-style: italic;
     letter-spacing: 1.2px;
     line-height: 40px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     width: 280px;
     max-width: 100%;
     margin: auto;
