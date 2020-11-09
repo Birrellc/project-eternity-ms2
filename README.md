@@ -273,6 +273,17 @@ The purpose of the website created is to entice more customers to the restaurant
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - Used to test the loading speed of the website.
 - [Responsivley App](https://responsively.app/) - Used to test responsive web apps.
 - [Real Favicon Generator](https://realfavicongenerator.net/) - Used to create my favicon image and also test to see if it was working.
+- [Spell Checker for Chrome](https://chrome.google.com/webstore/detail/spell-checker-for-chrome/jfpdnkkdgghlpdgldicfgnnnkhdfhocg?hl=en) - Used to spell check my **README.md** & **testing.md**.
+- [W3 Schools](https://www.w3schools.com/) - Used as a general resource to help with coding.
+- [Am I Responsive](http://ami.responsivedesign.is/) - Used to create mockup of responsive website for **README.md**.
+- [Photoshop](https://www.w3schools.com/) - Used to re-scale images.
+- [Youtube](https://www.w3schools.com/) - Used as a general resource for help with code.
+- [Balsamiq](https://balsamiq.com/wireframes/) - Used to create wireframes.
+- [Abhijit Rawool](https://abhijitrawool.com/restaurant-website-color-palettes/) - Used this website to find my color scheme.
+- [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) - Used to create my **README.md** & **Testing.md** files.
+- [Code Institute](https://codeinstitute.net/) - Main source of coding knowledge.
+- Code institute Slack Community - Used for inspiration for my website.
+
 
 ---
 
@@ -299,7 +310,7 @@ _note_ Github has changed master branch names to main - Currently at time of thi
 
 This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/).
 
-- Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based IDE was used briefly when i encountered an issue with my VSCode client.
+Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based IDE was used briefly when i encountered an issue with my VSCode client.
 
 - First select the repository on GitHub for this project where all the code is stored.
 - Then click settings link at the top with the cogwheel icon next to it.
