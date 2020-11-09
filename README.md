@@ -46,7 +46,11 @@ _Frontend only - backend databases for reservation and paygate for the online or
 - [Testing](#testing)
 - [Version Control](#version-control)
 - [Deployment](#deployment)
+  - [Deploy](#deploy)
+  - [Clone](#clone)
 - [Credits](#credits)
+  - [Media](#media)
+  - [Credited Code](#credited-code)
 
 ---
 
@@ -283,6 +287,8 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 ## Deployment
 
+### Deploy
+
 _note_ Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master.
 
 This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/).
@@ -295,6 +301,10 @@ This project has been deployed on GitHub Pages [Here](https://birrellc.github.io
 - Locate the source section and click on branch master then select the master branch.
 - This will then publish the project to GitHub Pages and display the URL of the live website. (may have to refresh and scroll back to this section to see the URL)
 - The deployed website version will be tracked to your last commit so if you have made changes without committing and pushing them to github those changes will not be live.
+
+---
+
+### Clone
 
 - The code itself can be cloned or downloaded to your local pc for editing also.
 - To do this navigate back to the [Repository page](https://github.com/Birrellc/Eternity-MS2).
@@ -313,9 +323,13 @@ This project has been deployed on GitHub Pages [Here](https://birrellc.github.io
 - Code Institute slack community members for help, ideas & feedback from code reviews.
 - Michael Prothero for taking the time to let me bounce ideas and offer general support with my project. \*[Udemy](https://www.freecodecamp.org/) & [FreeCodeCamp](https://www.freecodecamp.org/) courses also helped provide understanding of ES6.
 
+---
+
 ### Media
 
 - All Images on this project were taken from [Pexels](https://https://www.pexels.com/)
+
+---
 
 ### Credited Code
 
