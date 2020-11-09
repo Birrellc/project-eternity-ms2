@@ -1,6 +1,8 @@
 let formContact = document.getElementById("contactForm");
 formContact.addEventListener("submit", function (e) {
     e.preventDefault();
+    let submitButtonContact = document.getElementById("submitBtnContact");
+    submitButtonContact.innerHTML = "Submitting!";
     emailjs.send("gmail", "eternity-contact", {
             "from_name": contactForm.fullNameContact.value,
             "from_email": contactForm.emailContact.value,
@@ -24,6 +26,8 @@ formContact.addEventListener("submit", function (e) {
 let formBooking = document.getElementById("bookingForm");
 formBooking.addEventListener("submit", function (e) {
     e.preventDefault();
+    let submitButtonContact = document.getElementById("submitBtnBooking");
+                submitButtonContact.innerHTML = "Submitting!";
     emailjs.send("gmail", "eternity", {
             "from_name": bookingForm.fullNameBooking.value,
             "from_email": bookingForm.emailBooking.value,
