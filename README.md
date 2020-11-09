@@ -6,46 +6,47 @@
 
 ## Description
 
-_this is a fictitious business created for my milestone project 2 with the code institute_
+_this is a fictitious business created for my milestone project 2 with the code institute_.
 
 A luxury minimalist restaurant website designed to convey upper market fine dining experience with high quality food and service. The user of this website will have a taste for high quality foods delivered in a sophisticated environment while eating out but also have the option to eat from home with an online delivery service which i decided to use as thats how many restaurants are managing to survive due to the current pandemic.
 
-_Frontend only - backend databases for reservation and paygate for the online orders to be added as i progress during the course_
+_Frontend only - backend databases for reservation and paygate for the online orders to be added as i progress during the course_.
 
 ---
 
 ## Table of content
 
 - [UX](#ux)
-    - [Wireframes](#wireframes)
-    - [User Stories](#user-stories)
-        - [User](#user)
-        - [Owner](#owner)
-    - [Landing Page](#landing-page)
-    - [About](#about)
-    - [Menu](#menu)
-    - [Reservations](#reservations)
-    - [Contact](#contact)
-    - [Dividers](#dividers)
-    - [Strategy Plane](#strategy-plane)
-    - [Scope](#scope)
-    - [Structure](#structure)
-    - [Skeleton](#skeleton)
-    - [Surface](#surface)
-        - [Color Scheme](#color-scheme)
-        - [Site Images](#site-images)
-        - [Fonts](#fonts)
+  - [Wireframes](#wireframes)
+  - [User Stories](#user-stories)
+    - [User](#user)
+    - [Owner](#owner)
+  - [Landing Page](#landing-page)
+  - [About](#about)
+  - [Menu](#menu)
+  - [Reservations](#reservations)
+  - [Contact](#contact)
+  - [Dividers](#dividers)
+  - [Strategy Plane](#strategy-plane)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Skeleton](#skeleton)
+  - [Surface](#surface)
+    - [Color Scheme](#color-scheme)
+    - [Site Images](#site-images)
+    - [Fonts](#fonts)
 - [Features](#features)
-    - [Website Features](#website-features)
-    - [Features to be Implemented in the Future](#features-to-be-implemented-in-the-future)
+  - [Website Features](#website-features)
+  - [Features to be Implemented in the Future](#features-to-be-implemented-in-the-future)
 - [Technologies](#technologies)
-    - [Languages](#languages)
-    - [Libraries, Frameworks & Plugins](libraries,-frameworks-&-plguins)
-    - [Workspace](#workspace)
-    - [External Resources](#external-resources)
+  - [Languages](#languages)
+  - [Libraries, Frameworks & Plugins](libraries,-frameworks-&-plguins)
+  - [Workspace](#workspace)
+  - [External Resources](#external-resources)
 - [Testing](#testing)
 - [Version Control](#version-control)
 - [Deployment](#deployment)
+- [Credits](#credits)
 
 ---
 
@@ -55,7 +56,7 @@ _Frontend only - backend databases for reservation and paygate for the online or
 
 ### Wireframes
 
-The completed wireframes for this project can be accessed by clicking [Wireframes](https://github.com/Birrellc/ms2-ci/tree/master/assets/wireframes)
+The completed wireframes for this project can be accessed by clicking [Wireframes](https://github.com/Birrellc/ms2-ci/tree/master/assets/wireframes).
 
 ---
 
@@ -80,7 +81,7 @@ The completed wireframes for this project can be accessed by clicking [Wireframe
 - As the owner, i would like there to be an option for customers to reach us by email to provide us with any feedback and also have a contact telephone number available for those who prefer.
 - As the owner, i would like images to be displayed throughout the site displaying our restaurant environment and also the outdoor area so that customers know they can enjoy an outdoor meal depending on the weather.
 - As the owner, i would like there to be a booking form which emails ourselves and the user with details of their reservation as well as a contact number option for booking so customers can book in whichever way is more convenient for them but also to stop clogging up the phones during busy hours.
-- As the owner, i would like there to be an option for delivery to help boost sales with customers who are currently  preferring to isolate at home rather than eat out in public due to coronavirus 2020.
+- As the owner, i would like there to be an option for delivery to help boost sales with customers who are currently preferring to isolate at home rather than eat out in public due to coronavirus 2020.
 - As the owner, i would like a section showing our history and who we are as a business to help build a connection with our potential customers.
 - As the owner, i would like the website to convey the essence of the business which is luxury & elegant fine dining.
 
@@ -160,11 +161,11 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ### Skeleton
 
-- Minimal Theme Navigation - Navigation will be done through scrolling the pages or by use of a small navigation button (hamburger button)
+- Minimal Theme Navigation - Navigation will be done through scrolling the pages or by use of a small navigation button \(hamburger button\).
 - Design - Each section will have a slight contrast from the previous in order to provide clear separation.
 - Dividers - Dividers are used to help split information so as to not over clutter the UX.
-- Pages - There will be a Homepage, About page, Menu page, Reservation page & a contact section in that order
-- Iframe - A Google map will be loaded to the page through an iframe, previously this was done with Google maps API but due to only one marker being used i deemed relying on the API unnecessary
+- Pages - There will be a Homepage, About page, Menu page, Reservation page & a contact section in that order.
+- Iframe - A Google map will be loaded to the page through an iframe, previously this was done with Google maps API but due to only one marker being used i deemed relying on the API unnecessary.
 
 ---
 
@@ -200,10 +201,10 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ### Website Features
 
-- Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact)
+- Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact\)
 - 2 User Interactive Forms With HTML Validation - Booking form\(modal\) & Contact form.
 - Interactive Map - Map taken from Google maps iframe showing restaurant location to help makes the business more accessible to customers.
-- Online Menu - An online menu has been setup with a JavaScript shopping cart \(items can be added to cart from menu page via buttons then quantity can be adjusted in the shopping cart modal with total price being calculated but due to my lack of skillset the there is no paywall / checkout feature functioning yet but will be added as my skills improve\)
+- Online Menu - An online menu has been setup with a JavaScript shopping cart \(items can be added to cart from menu page via buttons then quantity can be adjusted in the shopping cart modal with total price being calculated but due to my lack of skillset the there is no paywall / checkout feature functioning yet but will be added as my skills improve\).
 - Animations - Throughout the website their will be animations as the pages switch.
 - Social Media - Social media icons will be present on all pages.
 - Light / Dark mode - Dark mode option is available due to growing trend of preference.
@@ -212,12 +213,12 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ### Features to be Implemented in the Future
 
-- Fully functioning booking form database system to replace the form in place at the moment
-- Fully functioning checkout system to add to the shopping cart for successful online orders
-- The ability to update and alternate menu's with ease
-- Newsletter system with automated response & database to store subscriber email addresses
+- Fully functioning booking form database system to replace the form in place at the moment.
+- Fully functioning checkout system to add to the shopping cart for successful online orders.
+- The ability to update and alternate menu's with ease.
+- Newsletter system with automated response & database to store subscriber email addresses.
 - Alternative system to emailJS for sending emails.
-- Improve on the features already in place to be more optimal e.g the time and date part of the booking form could self made instead of relying on a plugin
+- Improve on the features already in place to be more optimal e.g the time and date part of the booking form could self made instead of relying on a plugin.
 
 ---
 
@@ -269,7 +270,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ## Testing
 
-Testing is done in its own section [Here](assets/testing/testing.md)
+Testing is done in its own section [Here](assets/testing/testing.md).
 
 ---
 
@@ -284,23 +285,43 @@ Testing is done in its own section [Here](assets/testing/testing.md)
 
 _note_ Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master.
 
-This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/)
+This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/).
 
 - Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based IDE was used briefly when i encountered an issue with my VSCode client.
 
 - First select the repository on GitHub for this project where all the code is stored.
 - Then click settings link at the top with the cogwheel icon next to it.
 - Scroll down till reaching the GitHub Pages Heading.
-- Locate the source section and click on branch master then select the master branch
+- Locate the source section and click on branch master then select the master branch.
 - This will then publish the project to GitHub Pages and display the URL of the live website. (may have to refresh and scroll back to this section to see the URL)
 - The deployed website version will be tracked to your last commit so if you have made changes without committing and pushing them to github those changes will not be live.
 
 - The code itself can be cloned or downloaded to your local pc for editing also.
-- To do this navigate back to the [Repository page](https://github.com/Birrellc/Eternity-MS2)
+- To do this navigate back to the [Repository page](https://github.com/Birrellc/Eternity-MS2).
 - Select the clone option at the top right of the Respository.
-- From here you will be able to download the download the code and open it locally on your PC with your own IDE
-- You can also clone the code by copying the link provided when the clone drop down menu is opened
+- From here you will be able to download the download the code and open it locally on your PC with your own IDE.
+- You can also clone the code by copying the link provided when the clone drop down menu is opened.
 - The method i used was cloning by the link provided - I first downloaded [Git](https://git-scm.com/), after that i opened VSCode and selected the **git clone** option after pressing F1 and pasted the URL into the box.
-- You can also open your terminal in your local IDE, Change the current working directory to where you want the clone to be made then type **git clone** in the terminal and paste the link after for e.g "git clone https://github.com/Birrellc/Eternity-MS2"
+- You can also open your terminal in your local IDE, Change the current working directory to where you want the clone to be made then type **git clone** in the terminal and paste the link after for e.g "git clone https://github.com/Birrellc/Eternity-MS2".
 
 ---
+
+## Credits
+
+- First Credits go to my mentor Felipe Alarcon for guidance and advice on how to get this project submission ready.
+- Code institute for providing the content and support to help learn and develop my skills.
+- Code Institute slack community members for help, ideas & feedback from code reviews.
+- Michael Prothero for taking the time to let me bounce ideas and offer general support with my project. \*[Udemy](https://www.freecodecamp.org/) & [FreeCodeCamp](https://www.freecodecamp.org/) courses also helped provide understanding of ES6.
+
+### Media
+
+- All Images on this project were taken from [Pexels](https://https://www.pexels.com/)
+
+### Credited Code
+
+- [Bootstrap - examples](https://getbootstrap.com/docs/4.0/examples/checkout/) - This is the code used for my modal checkout form.
+- [Stack Overflow - Forum](https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript) - I was looking for the best way to refactor a function that worked but had bad readability. - credited in code
+- [Stack Overflow - Forum](https://stackoverflow.com/a/64688795/14580125) - I had a JavaScript error when running my code through jsHint which after researching i found that it was a false positive so i made a post on stack overflow in order to get somebody to confirm that my code was fine and that it was indeed a false positive. Also in this post i was having an issue with getting an "in" statement to work and the stack overflow community helped me by explaning how to fix it here. - Credited in code.
+- [Shopping Cart Tutorial](https://www.youtube.com/watch?v=IY5UN82FZ2Q) - This is the tutorial i used to get a starting point on my shopping cart - The code has been modified & some features completely done my own way without using the tutorial code - credited at the top of online-order.js.
+- [Tempus Dominus Documentation](https://tempusdominus.github.io/bootstrap-4/) - Without the documentation resource i wouldnt have been able to set up the time and date plugin correctly for the operational hours of the business.
+- [Code Institute](https://codeinstitute.net/) - For teaching me the code required to complete this project. e.g. The emailJS code stems from the emailJS section of the Code Institute course. - Mentioned in emailJS.js code
