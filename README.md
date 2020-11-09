@@ -14,7 +14,7 @@ _Frontend only - backend databases for reservation and paygate for the online or
 
 ---
 
-## Table of content
+## Table of Contents
 
 - [UX](#ux)
   - [Wireframes](#wireframes)
@@ -322,7 +322,7 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 ### Deploy
 
-**_note Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master._**
+**_Note: Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master._**
 
 This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/).
 
