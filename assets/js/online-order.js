@@ -44,8 +44,8 @@ let food = [{
         inBasket: 0
     }
 ];
-// This adds onClick events to each food item in the list
 
+// This adds onClick events to each food item in the list
 for (let i = 0; i < addToBasket.length; i++) {
     addToBasket[i].addEventListener("click", e => {                            //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
         if (!basketItem.includes(i)) {
@@ -66,7 +66,7 @@ for (const key in storedBasketItems) {
         food.forEach(function (food, i) {                                      //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
             if (food.name === storedBasketItems[key].name) foodIndex = i;
         });
-    
+
     if (!basketItem.includes(foodIndex)) {
         basketItem.push(foodIndex);
         food[foodIndex].inBasket = storedBasketItems[key].inBasket;
@@ -122,6 +122,7 @@ function totalCost(food) {
         localStorage.setItem("totalPrice", food.price);
     }
 }
+
 // recieve object from DOM and assign variables to div classes - Template
 function getBasketData() {
     return {
@@ -134,6 +135,7 @@ function getBasketData() {
         totalPrice: document.querySelector(".total-price")
     };
 }
+
 // push objects from localstorage array into dynamic div's on the DOM
 function updateModal(itemIndex) {
     let basket = getBasketData();
@@ -164,6 +166,7 @@ function updateModal(itemIndex) {
         basket.totalPrice.innerHTML = `<div class="totalPrice">£ ${totalPrice}</div>`;
     }
 }
+
 // allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
 Element.prototype.parents = function () {
     let parents = [];
@@ -211,6 +214,7 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
         ".total-price"
     ).innerHTML = `<div class="totalPrice">£ ${totalPrice}</div>`;
 });
+
 // Function for deleting items in basket through use of a Font awesome icon
 function deleteButtons() {
     addEventListenerByClass("click", "delete-btn", function (e) {
