@@ -2,6 +2,8 @@
 
 This project has been tested throughout with use of preview, devtools, manual testing and also the website was deployed on github pages very early in development to allow live testing after each commit was made.
 
+---
+
 ## BUGS
 
 - Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
