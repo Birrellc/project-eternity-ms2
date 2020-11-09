@@ -51,6 +51,8 @@ _Frontend only - backend databases for reservation and paygate for the online or
 
 ## UX
 
+---
+
 ### Wireframes
 
 The completed wireframes for this project can be accessed by clicking [Wireframes](https://github.com/Birrellc/ms2-ci/tree/master/assets/wireframes)
@@ -59,14 +61,18 @@ The completed wireframes for this project can be accessed by clicking [Wireframe
 
 ### User Stories
 
+---
+
 #### User:
 
-    - As a user of this website i would like to be able to browse what food is available before going to the premises so that i would not be wasting my time if there was no options i wanted.
-    - As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone in case my issue is urgent or not so urgent.
-    - As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area in case i choose to eat here in the summer.
-    - As a user, i would like the option to book a table online and by telephone so i can make a reservation in whichever manner is convenient to me.
-    - As a user, i would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out. (coronavirus 2020)
-    - As a user, i would like to have information about the history of the restaurant available on the website.
+- As a user of this website i would like to be able to browse what food is available before going to the premises so that i would not be wasting my time if there was no options i wanted.
+- As a user, i want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone in case my issue is urgent or not so urgent.
+- As a user, i want to be able to see what kind of environment the restaurant has through images to see if its the kind of place i would feel comfortable or to see if there is an outdoor area in case i choose to eat here in the summer.
+- As a user, i would like the option to book a table online and by telephone so i can make a reservation in whichever manner is convenient to me.
+- As a user, i would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out. (coronavirus 2020)
+- As a user, i would like to have information about the history of the restaurant available on the website.
+
+---
 
 #### Owner:
 
