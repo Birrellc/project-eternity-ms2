@@ -362,7 +362,8 @@ h1 {
     -ms-writing-mode: tb-rl;
     -webkit-text-orientation: upright;
     -webkit-writing-mode: vertical-rl;
-    float: left font-family: "Cairo", sans-serif;
+    float: left;
+    font-family: "Cairo", sans-serif;
     letter-spacing: 0px;
     text-orientation: upright;
     writing-mode: vertical-rl;
@@ -372,7 +373,8 @@ h1 {
     -ms-writing-mode: tb-rl;
     -webkit-text-orientation: upright;
     -webkit-writing-mode: vertical-rl;
-    float: right font-family: "cairo", sans-serif;
+    float: right;
+    font-family: "cairo", sans-serif;
     letter-spacing: 0px;
     text-orientation: upright;
     writing-mode: vertical-rl;
