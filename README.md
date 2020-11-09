@@ -284,12 +284,25 @@ The purpose of the website created is to entice more customers to the restaurant
 - [Code Institute](https://codeinstitute.net/) - Main source of coding knowledge.
 - Code institute Slack Community - Used for inspiration for my website.
 
-
 ---
 
 ## Testing
 
 Testing is done in its own section [Here](assets/testing/testing.md).
+
+---
+
+## Project Barriers / Bugs
+
+- Slow Loading Speed - I found that when running speed tests my website scored poorly on speed and in order to fix this i compressed my images and also re-scaled the menu images so that the website itself wasn't wasting resources re-scalling each image itself. I also found that if i cache images i could improve my website speed more but due to hosting on github i cannot use server image caching to improve more.
+
+- Animation Page overflow - After adding my animations to my website i found there to be huge overflow issues created. I identified the issue by applying a "1px red border" to all my elements in attempt to find the leak. I managed to overcome this issue by adding "overflow-x:hidden" to my HTML & Body elements with the use of CSS.
+
+- Google Map API not displaying correct information - To fix this problem after trying various ways to fix i eventually took the example code from the documentation and just switched the coordinates to suit my needs. **No longer using Google Maps API switched to Iframe**
+
+- Issues with TotalCost function calculation - I fixed the problem where the total cost was being calculated incorrectly with an if, else statement that would save the current cart price in order for my total cost to be added. Identifying the issue was managed by using console.log to see when the variable was being called & also using breakpoints with dev tools to find out what information was stored in the variable at certain points in the code.
+
+- Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
 
 ---
 
@@ -306,7 +319,7 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 ### Deploy
 
-_note_ Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master.
+**_note Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master._**
 
 This project has been deployed on GitHub Pages [Here](https://birrellc.github.io/Eternity-MS2/).
 

@@ -4,18 +4,6 @@ This project has been tested throughout with use of preview, devtools, manual te
 
 ---
 
-## BUGS
-
-- Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
-
-- Issues with Total Cost calculation - I fixed the problem where the total cost was being calculated incorrectly with an if, else statement that would save the current cart price in order for my total cost to be added.
-
-- Google Map API not displaying correct information - To fix this problem after trying various ways to fix i eventually took the example code from the documentation and just switched the coordinates to suit my needs. **No longer using Google Maps API switched to Iframe**
-
-- Overflow - Page overflow was found to be an issue once i added animations which i fixed by adding \_overflow-x: hidden to the HTML - identified by adding a border to all my elements to detect the leak.
-
----
-
 ## MID STAGE TESTING REVIEW
 
 ### HTML
@@ -306,7 +294,6 @@ The user will be able to find out information about the restaurant on the **Abou
 3. Information needed is displayed on this page.
 
 Alternatively the user could scroll down to this section.
-
 
 ---
 
