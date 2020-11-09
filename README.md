@@ -44,6 +44,7 @@ _Frontend only - backend databases for reservation and paygate for the online or
   - [Workspace](#workspace)
   - [External Resources](#external-resources)
 - [Testing](#testing)
+- [Project Barriers / Bugs](#project-barriers-/-bugs)
 - [Version Control](#version-control)
 - [Deployment](#deployment)
   - [Deploy](#deploy)
@@ -303,6 +304,8 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 - Issues with TotalCost function calculation - I fixed the problem where the total cost was being calculated incorrectly with an if, else statement that would save the current cart price in order for my total cost to be added. Identifying the issue was managed by using console.log to see when the variable was being called & also using breakpoints with dev tools to find out what information was stored in the variable at certain points in the code.
 
 - Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
+
+- Shopping Cart Checkout / login - What i want to be able to do is create a login system so that when users make an order the details are saved to their account and also implement a payment system so that when the checkout form button is submitted the order for the customer will be placed and the shopping cart data will be saved to the customers account. **FEATURE NOT YET IMPLEMENTED DUE TO BEING BEYOND CURRENT SKILL LEVEL**
 
 ---
 
