@@ -203,6 +203,8 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ## Features
 
+---
+
 ### Website Features
 
 - Scrolling website - 5 Pages \(Home, About, Menu, Reservations & Contact\)
@@ -227,6 +229,8 @@ The purpose of the website created is to entice more customers to the restaurant
 ---
 
 ## Technologies
+
+---
 
 ### Languages
 
@@ -287,6 +291,8 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 ## Deployment
 
+---
+
 ### Deploy
 
 _note_ Github has changed master branch names to main - Currently at time of this project the branch name is still referred to as master.
@@ -317,6 +323,8 @@ This project has been deployed on GitHub Pages [Here](https://birrellc.github.io
 ---
 
 ## Credits
+
+---
 
 - First Credits go to my mentor Felipe Alarcon for guidance and advice on how to get this project submission ready.
 - Code institute for providing the content and support to help learn and develop my skills.
