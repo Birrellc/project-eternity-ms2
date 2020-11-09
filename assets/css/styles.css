@@ -238,10 +238,10 @@ h1 {
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-size: cover;
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
     background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/background-light-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
+    background-size: cover;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -254,10 +254,10 @@ h1 {
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-size: cover;
     background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
+    background-size: cover;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
