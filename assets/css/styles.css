@@ -16,7 +16,7 @@ li {
 }
 
 * {
-    padding: 0;
+    padding: 0px;
 }
 
 hr {
@@ -49,14 +49,14 @@ h1 {
 }
 
 .btn {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: auto;
-    font-size: 1.1rem;
+    -o-transition: background-color .5s;
+    -webkit-transition: background-color .5s;
     background-color: #49111c;
     color: #f2f4f3;
-    -webkit-transition: background-color .5s;
-    -o-transition: background-color .5s;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin: auto;
+    text-transform: uppercase;
     transition: background-color .5s;
 }
 
@@ -81,24 +81,24 @@ h1 {
 /* NAV SECTION */
 
 .hamburger-toggle {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 15px;
-    right: 7px;
     cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    right: 7px;
+    top: 15px;
     z-index: 1000;
 }
 
 .hamburger-toggle i {
-    font-size: 25px;
     color: #5e503f;
+    font-size: 25px;
 }
 
 .fa-times {
-    right: 10px;
     font-size: 30px;
+    right: 10px;
 }
 
 .fa-times {
@@ -115,30 +115,30 @@ h1 {
 }
 
 .nav-list {
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
     background-color: rgba(0, 0, 2, 1);
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    list-style: none;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100vh;
-    list-style: none;
     z-index: 1;
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .nav-list a {
     color: #a9927d;
     font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 200;
     font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .nav-list a:hover {
@@ -147,41 +147,41 @@ h1 {
 }
 
 .nav-list.open {
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
 }
 
 .dark-mode-switch {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 60px;
-    right: 8px;
-    cursor: pointer;
-    z-index: 100;
-    font-size: 1.2rem;
     color: #5e503f;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-size: 1.2rem;
+    position: fixed;
+    right: 8px;
+    top: 60px;
+    z-index: 100;
 }
 
 .basket {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 100px;
-    right: 8px;
-    cursor: pointer;
-    z-index: 100;
-    font-size: 1.2rem;
     color: #5e503f;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-size: 1.2rem;
+    position: fixed;
+    right: 8px;
+    top: 100px;
+    z-index: 100;
 }
 
 .social-media {
+    color: #5e503f;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #5e503f;
 }
 
 .social-media a:hover {
@@ -189,92 +189,92 @@ h1 {
 }
 
 .instagram {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 250px;
-    right: 7px;
     color: #5e503f;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    right: 7px;
+    top: 250px;
     z-index: 100;
 }
 
 .twitter {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 285px;
-    right: 7px;
     color: #5e503f;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    right: 7px;
+    top: 285px;
     z-index: 100;
 }
 
 .facebook {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 320px;
-    right: 7px;
     color: #5e503f;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    right: 7px;
+    top: 320px;
     z-index: 100;
 }
 
 .linkedin {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 355px;
-    right: 7px;
     color: #5e503f;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    right: 7px;
+    top: 355px;
     z-index: 100;
 }
 
 /* HOME SECTION */
 
 .home-light {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-size: cover;
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
     background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/background-light-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/background-light-home.jpg") center no-repeat;
-    background-size: cover;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    width: 100%;
     height: 100vh;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 .home-dark {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-size: cover;
     background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
-    background-size: cover;
-    display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    width: 100%;
     height: 100vh;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 .heading h1 {
-    -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
     -webkit-text-orientation: upright;
-    text-orientation: upright;
+    -webkit-writing-mode: vertical-rl;
     float: right;
-    font-weight: 600;
     font-size: 2.2rem;
+    font-weight: 600;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
 }
 
 .sub-heading {
@@ -290,8 +290,8 @@ h1 {
 /*ABOUT US*/
 
 .about {
-    padding-top: 50px;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .about-us-images {
@@ -305,79 +305,77 @@ h1 {
 
 .about-us-text {
     font-family: "Raleway", sans-serif;
-    font-style: italic;
     font-size: 0.8rem;
+    font-style: italic;
     letter-spacing: 1.2px;
     line-height: 40px;
-    width: 250px;
     margin: auto;
     text-align: center;
+    width: 250px;
 }
 
 /*DIVIDER*/
 
 .divider-bg-1-light {
+    background-size: cover;
     background: -o-linear-gradient(left, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background: -webkit-gradient(linear, left top, right top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
-    background-size: cover;
     margin-right: 30px
 }
 
 .divider-bg-1-dark {
+    background-size: cover;
     background: -o-linear-gradient(left, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     background: -webkit-gradient(linear, left top, right top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-1.jpg") center no-repeat;
     background: linear-gradient(to right, rgba(10, 9, 8, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
-    background-size: cover;
     margin-right: 30px
 }
 
 .divider-bg-2-light {
+    background-size: cover;
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background: -webkit-gradient(linear, right top, left top, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
-    background-size: cover;
     margin-right: 30px
 }
 
 .divider-bg-2-dark {
+    background-size: cover;
     background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/divider-2.jpg") center no-repeat;
     background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
-    background-size: cover;
     margin-right: 30px
 }
 
 .divider-section {
-    min-height: 65vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    min-height: 65vh;
 }
 
 .heading-div-1 {
-    -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
     -webkit-text-orientation: upright;
-    text-orientation: upright;
+    -webkit-writing-mode: vertical-rl;
+    float: left font-family: "Cairo", sans-serif;
     letter-spacing: 0px;
-    font-family: "Cairo", sans-serif;
-    float: left
+    text-orientation: upright;
+    writing-mode: vertical-rl;
 }
 
 .heading-div-2 {
-    -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
     -webkit-text-orientation: upright;
-    text-orientation: upright;
+    -webkit-writing-mode: vertical-rl;
+    float: right font-family: "cairo", sans-serif;
     letter-spacing: 0px;
-    font-family: "cairo", sans-serif;
-    float: right
+    text-orientation: upright;
+    writing-mode: vertical-rl;
 }
 
 /*MENU*/
@@ -387,8 +385,8 @@ h1 {
 }
 
 .menu-images {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .menu-heading {
@@ -399,8 +397,8 @@ h1 {
 
 .menu-delivery-text {
     font-family: "Raleway", sans-serif;
-    font-style: italic;
     font-size: 0.8rem;
+    font-style: italic;
 }
 
 hr.line-light-menu {
@@ -409,8 +407,8 @@ hr.line-light-menu {
 }
 
 .card {
-    margin: auto;
     border: none;
+    margin: auto;
 }
 
 .card-light {
@@ -423,8 +421,8 @@ hr.line-light-menu {
 
 .card-body p {
     font-family: "Raleway", sans-serif;
-    font-weight: 500;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .view-basket-btn {
@@ -434,19 +432,19 @@ hr.line-light-menu {
 /*Reservations*/
 
 .reservations {
-    padding-top: 50px;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .map {
-    height: 350px;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    padding-right: 15px;
-    padding-left: 15px;
     border: 0;
+    height: 350px;
+    margin-top: 50px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 100%;
 }
 
 .address-details {
@@ -458,8 +456,8 @@ hr.line-light-menu {
 }
 
 .address-contact a {
-    text-decoration: underline;
     color: #a9927d;
+    text-decoration: underline;
 }
 
 .reservations-heading {
@@ -469,13 +467,13 @@ hr.line-light-menu {
 
 .reservations-text {
     font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
     font-style: italic;
     letter-spacing: 1.2px;
     line-height: 40px;
-    font-size: 0.8rem;
-    width: 280px;
-    max-width: 100%;
     margin: auto;
+    max-width: 100%;
+    width: 280px;
 }
 
 hr.line-light-address {
@@ -487,7 +485,6 @@ hr.line-light-address {
 
 .home-arrow {
     margin-bottom: 40px;
-    ;
 }
 
 .home-arrow a {
@@ -496,42 +493,42 @@ hr.line-light-address {
 }
 
 .contact-section-light {
+    background-size: cover;
     background: -o-linear-gradient(top, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/contactbg.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
-    background-size: cover;
-    width: 100%;
     height: 120vh;
-    padding-top: 20px;
     overflow-y: auto;
+    padding-top: 20px;
+    width: 100%;
 }
 
 .contact-section-dark {
+    background-size: cover;
     background: -o-linear-gradient(top, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/contact-us-dark.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
-    background-size: cover;
-    width: 100%;
     height: 120vh;
-    padding-top: 20px;
     overflow-y: auto;
+    padding-top: 20px;
+    width: 100%;
 }
 
 .contact-form {
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f2f4f3;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
     flex-direction: column;
+    margin-top: 25px;
+    margin: auto;
+    padding: 10px;
     text-align: center;
     width: 100%;
-    padding: 10px;
-    margin-top: 25px;
-    color: #f2f4f3;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .contact-btn {
@@ -540,8 +537,8 @@ hr.line-light-address {
 
 /* BOTH MODALS*/
 .modal-dialog {
-    padding: 0px;
     color: #0a0908;
+    padding: 0px;
     text-align: center;
 }
 
@@ -575,11 +572,11 @@ hr.line-light-address {
 /* BASKET MODAL*/
 
 .basket-modal {
+    background-color: #0a0908;
+    color: #a9927d;
     font-family: "Raleway", sans-serif;
     font-size: 0.6rem !important;
     letter-spacing: 0px;
-    background-color: #0a0908;
-    color: #a9927d;
 }
 
 .basket-data {
@@ -590,8 +587,8 @@ hr.line-light-address {
     text-align: left;
 }
 
-.item-quantity{
-    padding-left:5px;
+.item-quantity {
+    padding-left: 5px;
     padding-right: 5px;
 }
 
@@ -607,9 +604,9 @@ hr.line-light-address {
 
 @media screen and (min-width: 320px) {
     .heading h1 {
-        padding-top: 50px;
-        font-weight: 300;
         font-size: 1.7rem;
+        font-weight: 300;
+        padding-top: 50px;
     }
 
     .sub-heading h5 {
@@ -620,8 +617,8 @@ hr.line-light-address {
 
 @media screen and (min-width: 375px) {
     .heading h1 {
-        font-weight: 400;
         font-size: 2.1rem;
+        font-weight: 400;
     }
 
     .sub-heading h5 {
@@ -656,8 +653,8 @@ hr.line-light-address {
 
 @media screen and (min-width: 768px) {
     .heading h1 {
-        font-weight: 600;
         font-size: 2.4rem;
+        font-weight: 600;
     }
 
     .sub-heading h5 {
@@ -667,8 +664,8 @@ hr.line-light-address {
 
     .contact-form {
         margin-top: 100px;
-        width: 100%;
         padding: 50px;
+        width: 100%;
     }
 
     .basket-modal {
