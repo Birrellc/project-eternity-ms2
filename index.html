@@ -272,9 +272,9 @@
                 <div class="col-12 col-md-4" data-aos="fade-left">
                     <h5 class="address-heading">OPENING HOURS:</h5>
                     <hr class="line-light-address">
-                        <p>DAYS: WED-SUN</p>
-                        <br>
-                        <p>TIMES: 16:00-01:00</p>
+                    <p>DAYS: WED-SUN</p>
+                    <br>
+                    <p>TIMES: 16:00-01:00</p>
                     <br>
                 </div>
             </div>
@@ -341,13 +341,24 @@
         </div>
     </section>
 
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container-fluid footer-container">
+            <div class="social-footer text-center text-uppercase d-flex justify-content-center">
+                <a href="https://github.com/Birrellc"><i class="fab fa-github"></i></a>
+                <a href="#"><span>Chris Birrell</span></a>              <!--Link to portfolio will be added here when completed-->
+                <a href="https://www.linkedin.com/in/chrisbirrell17/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <!--BOOKING MODAL-->
 
     <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content booking-modal">
                 <div class="modal-header text-uppercase booking-modal-head">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Make A Reservation:</h5>
+                    <h5 class="modal-title" id="bookingModalTitle">Make A Reservation:</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -502,23 +513,27 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <label for="cc-name">Name on card</label>
-                                <input type="text" name="PaymentDetailsName" class="form-control" id="cc-name" placeholder="John Smith" required />
+                                <input type="text" name="PaymentDetailsName" class="form-control" id="cc-name"
+                                    placeholder="John Smith" required />
                                 <small class="text-muted">Full name as displayed on card</small>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <label for="cc-number">Credit card number</label>
-                                <input type="text" name="PaymentDetailsCardNumber" class="form-control" id="cc-number" placeholder="e.g. 1234567891234567" required />
+                                <input type="text" name="PaymentDetailsCardNumber" class="form-control" id="cc-number"
+                                    placeholder="e.g. 1234567891234567" required />
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <label for="cc-expiration">Expiration</label>
-                                <input type="text" name="PaymentDetailsExpData" class="form-control" id="cc-expiration" placeholder="05/2020" required />
+                                <input type="text" name="PaymentDetailsExpData" class="form-control" id="cc-expiration"
+                                    placeholder="05/2020" required />
                             </div>
                             <div class="col-md-6 mb-2">
                                 <label for="cc-cvv">CVV</label>
-                                <input type="text" name="PaymentDetailsCVV" class="form-control" id="cc-cvv" placeholder="***" required />
+                                <input type="text" name="PaymentDetailsCVV" class="form-control" id="cc-cvv"
+                                    placeholder="***" required />
                             </div>
                         </div>
                 </div>
