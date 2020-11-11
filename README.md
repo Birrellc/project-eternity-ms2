@@ -45,6 +45,8 @@ _Frontend only - backend databases for reservation and paygate for the online or
   - [External Resources](#external-resources)
 - [Testing](#testing)
 - [Project Barriers / Bugs](#project-barriers-/-bugs)
+  - [Solved](#solved)
+  - [Unsolved](#unsolved)
 - [Version Control](#version-control)
 - [Deployment](#deployment)
   - [Deploy](#deploy)
@@ -289,11 +291,18 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ## Testing
 
+---
+
 Testing is done in its own section [Here](assets/testing/testing.md).
 
 ---
 
 ## Project Barriers / Bugs
+
+---
+
+### Solved
+
 
 - Slow Loading Speed - I found that when running speed tests my website scored poorly on speed and in order to fix this i compressed my images and also re-scaled the menu images so that the website itself wasn't wasting resources re-scalling each image itself. I also found that if i cache images i could improve my website speed more but due to hosting on github i cannot use server image caching to improve more.
 
@@ -305,11 +314,19 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 - Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
 
+---
+
+### Unsolved
+
+- Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left in place where items were before and i am currently still trying to figure the best way to remove them while retaining the delete button functionality.
+
 - Shopping Cart Checkout / login - What i want to be able to do is create a login system so that when users make an order the details are saved to their account and also implement a payment system so that when the checkout form button is submitted the order for the customer will be placed and the shopping cart data will be saved to the customers account. **FEATURE NOT YET IMPLEMENTED DUE TO BEING BEYOND CURRENT SKILL LEVEL**
 
 ---
 
 ## Version Control
+
+---
 
 - Git was used for version control.
 - Branches were only merged once when using IDE on two different devices.
@@ -339,6 +356,7 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based
 
 ### Clone
 
+
 - The code itself can be cloned or downloaded to your local pc for editing also.
 - To do this navigate back to the [Repository page](https://github.com/Birrellc/Eternity-MS2).
 - Select the clone option at the top right of the Respository.
@@ -356,7 +374,8 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based
 - First Credits go to my mentor Felipe Alarcon for guidance and advice on how to get this project submission ready.
 - Code institute for providing the content and support to help learn and develop my skills.
 - Code Institute slack community members for help, ideas & feedback from code reviews.
-- Michael Prothero for taking the time to let me bounce ideas and offer general support with my project. \*[Udemy](https://www.freecodecamp.org/) & [FreeCodeCamp](https://www.freecodecamp.org/) courses also helped provide understanding of ES6.
+- Michael Prothero for taking the time to let me bounce ideas and offer general support with my project. 
+- [Udemy](https://www.freecodecamp.org/) & [FreeCodeCamp](https://www.freecodecamp.org/) courses also helped provide understanding of ES6.
 
 ---
 
