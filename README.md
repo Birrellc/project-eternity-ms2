@@ -303,7 +303,6 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 ### Solved
 
-
 - Slow Loading Speed - I found that when running speed tests my website scored poorly on speed and in order to fix this i compressed my images and also re-scaled the menu images so that the website itself wasn't wasting resources re-scalling each image itself. I also found that if i cache images i could improve my website speed more but due to hosting on github i cannot use server image caching to improve more.
 
 - Animation Page overflow - After adding my animations to my website i found there to be huge overflow issues created. I identified the issue by applying a "1px red border" to all my elements in attempt to find the leak. I managed to overcome this issue by adding "overflow-x:hidden" to my HTML & Body elements with the use of CSS.
@@ -319,6 +318,14 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 ### Unsolved
 
 - Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left in place where items were before and i am currently still trying to figure the best way to remove them while retaining the delete button functionality.
+
+- Shopping Cart error - _Uncaught TypeError: Cannot read property 'name' of undefined
+  at HTMLDivElement._ ```   
+        cartItems = {
+        ...cartItems,
+        [item.name]: item
+    }; ```
+This error only displays occasionally and the shopping cart retains its functionality even when this error appears in console. Unsure of cause of this issue so far.
 
 - Shopping Cart Checkout / login - What i want to be able to do is create a login system so that when users make an order the details are saved to their account and also implement a payment system so that when the checkout form button is submitted the order for the customer will be placed and the shopping cart data will be saved to the customers account. **FEATURE NOT YET IMPLEMENTED DUE TO BEING BEYOND CURRENT SKILL LEVEL**
 
@@ -356,7 +363,6 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based
 
 ### Clone
 
-
 - The code itself can be cloned or downloaded to your local pc for editing also.
 - To do this navigate back to the [Repository page](https://github.com/Birrellc/Eternity-MS2).
 - Select the clone option at the top right of the Respository.
@@ -374,7 +380,7 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based
 - First Credits go to my mentor Felipe Alarcon for guidance and advice on how to get this project submission ready.
 - Code institute for providing the content and support to help learn and develop my skills.
 - Code Institute slack community members for help, ideas & feedback from code reviews.
-- Michael Prothero for taking the time to let me bounce ideas and offer general support with my project. 
+- Michael Prothero for taking the time to let me bounce ideas and offer general support with my project.
 - [Udemy](https://www.freecodecamp.org/) & [FreeCodeCamp](https://www.freecodecamp.org/) courses also helped provide understanding of ES6.
 
 ---
