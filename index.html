@@ -34,16 +34,20 @@
                 <i class="fas fa-adjust"></i>
             </div>
             <div class="social-media">
-                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" class="instagram" id="social-instagram">
+                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" class="instagram"
+                    id="social-instagram">
                     <i class="fab fa-instagram-square"></i>
                 </a>
-                <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" class="twitter" id="social-twitter">
+                <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" class="twitter"
+                    id="social-twitter">
                     <i class="fab fa-twitter-square"></i>
                 </a>
-                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" class="facebook" id="social-facebook">
+                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" class="facebook"
+                    id="social-facebook">
                     <i class="fab fa-facebook-square"></i>
                 </a>
-                <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="linkedin" id="social-linkedin">
+                <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="linkedin"
+                    id="social-linkedin">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
@@ -322,19 +326,19 @@
                     </div>
                     <div class="form-group">
                         <label for="emailContact">Email Address:</label>
-                        <input type="email" class="form-control" id="emailContact" placeholder="eg. johnsmith@email.com"
-                            name="emailContact" required />
+                        <input type="email" class="form-control" id="emailContact" name="emailContact"
+                            placeholder="eg. johnsmith@email.com" required />
                     </div>
                     <div class="form-group">
                         <label for="subjectContact">Subject:</label>
-                        <input type="text" class="form-control" id="subjectContact" placeholder="RE:Feedback"
-                            name="subjectContact" required />
+                        <input type="text" class="form-control" id="subjectContact" name="subjectContact"
+                            placeholder="RE:Feedback" required />
                     </div>
                     <div class="form-group">
                         <label for="messageContact">Message:</label>
                         <textarea class="form-control" id="messageContact" rows="3" name="messageContact"
-                            required></textarea>
-                        <button type="submit" id="submitBtnContact" class="btn contact-btn px-5 btn-red">Submit</button>
+                            placeholder="Your message here:" required></textarea>
+                        <button type="submit" class="btn contact-btn px-5 btn-red" id="submitBtnContact">Submit</button>
                     </div>
                 </form>
             </div>
@@ -345,9 +349,12 @@
     <footer class="footer">
         <div class="container-fluid footer-container">
             <div class="social-footer text-center text-uppercase d-flex justify-content-center">
-                <a href="https://github.com/Birrellc" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><span>Chris Birrell</span></a>              <!--Link to portfolio will be added here when completed-->
-                <a href="https://www.linkedin.com/in/chrisbirrell17/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Birrellc" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><span>Chris Birrell</span></a>
+                <!--Link to portfolio will be added here when completed-->
+                <a href="https://www.linkedin.com/in/chrisbirrell17/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -369,20 +376,20 @@
                             <div class="form-group">
                                 <label for="fullNameBooking" class="control-label">Full Name:</label>
                                 <div>
-                                    <input type="text" class="form-control input-lg" name="fullNameBooking"
-                                        id="fullNameBooking" placeholder="John Smith" required>
+                                    <input type="text" class="form-control input-lg" id="fullNameBooking"
+                                        name="fullNameBooking" placeholder="John Smith" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="emailBooking" class="control-label">E-Mail Address:</label>
                                 <div>
-                                    <input type="email" class="form-control input-lg" name="emailBooking"
-                                        id="emailBooking" value="" placeholder="johnsmith@email.com" required>
+                                    <input type="email" class="form-control input-lg" id="emailBooking"
+                                        name="emailBooking" value="" placeholder="johnsmith@email.com" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="tableSizeSelectBooking" class="control-label">Table Size:</label>
-                                <select class="form-control" name="tableSizeSelectBooking" id="tableSizeSelectBooking">
+                                <select class="form-control" id="tableSizeSelectBooking" name="tableSizeSelectBooking">
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
@@ -396,7 +403,7 @@
                                 <label class="control-label">Date & Time:</label>
                                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                                     <input type="text" class="form-control datetimepicker-input"
-                                        data-target="#datetimepicker1" name="date_time" id="date_time">
+                                        data-target="#datetimepicker1" id="date_time" name="date_time">
                                     <div class="input-group-append" data-target="#datetimepicker1"
                                         data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
@@ -494,18 +501,18 @@
                         <h5 class="mb-3">Payment</h5>
                         <div class="d-flex">
                             <div class="col-4 custom-control custom-radio">
-                                <input id="credit" name="paymentMethod" type="radio" value="Credit Card"
-                                    class="custom-control-input" checked required />
+                                <input class="custom-control-input" id="credit" name="paymentMethod" type="radio"
+                                    value="Credit Card" checked required />
                                 <label class="custom-control-label" for="credit">Credit card</label>
                             </div>
                             <div class="col-4 custom-control custom-radio">
-                                <input id="debit" name="paymentMethod" type="radio" value="Debit Card"
-                                    class="custom-control-input" required />
+                                <input type="radio" class="custom-control-input" id="debit" name="paymentMethod"
+                                    value="Debit Card" required />
                                 <label class="custom-control-label" for="debit">Debit card</label>
                             </div>
                             <div class="col-4 custom-control custom-radio">
-                                <input id="paypal" name="paymentMethod" type="radio" value="Paypal"
-                                    class="custom-control-input" required />
+                                <input type="radio" class="custom-control-input" id="paypal" name="paymentMethod"
+                                    value="Paypal" required />
                                 <label class="custom-control-label" for="paypal">PayPal</label>
                             </div>
                         </div>
@@ -513,13 +520,13 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <label for="cc-name">Name on card</label>
-                                <input type="text" name="PaymentDetailsName" class="form-control" id="cc-name"
+                                <input type="text" class="form-control" id="cc-name" name="PaymentDetailsName"
                                     placeholder="John Smith" required />
                                 <small class="text-muted">Full name as displayed on card</small>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <label for="cc-number">Credit card number</label>
-                                <input type="text" name="PaymentDetailsCardNumber" class="form-control" id="cc-number"
+                                <input type="text" class="form-control" id="cc-number" name="PaymentDetailsCardNumber"
                                     placeholder="e.g. 1234567891234567" required />
                             </div>
                         </div>
@@ -527,12 +534,12 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <label for="cc-expiration">Expiration</label>
-                                <input type="text" name="PaymentDetailsExpData" class="form-control" id="cc-expiration"
+                                <input type="text" class="form-control" id="cc-expiration" name="PaymentDetailsExpData"
                                     placeholder="05/2020" required />
                             </div>
                             <div class="col-md-6 mb-2">
                                 <label for="cc-cvv">CVV</label>
-                                <input type="text" name="PaymentDetailsCVV" class="form-control" id="cc-cvv"
+                                <input type="text" class="form-control" id="cc-cvv" name="PaymentDetailsCVV"
                                     placeholder="***" required />
                             </div>
                         </div>
