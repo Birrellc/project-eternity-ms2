@@ -16,7 +16,7 @@ formContact.addEventListener("submit", function (e) {
                 document.getElementById("submitBtnContact").disabled = true;
             },
             function (error) {
-                alert("Error Please Try Again!")
+                alert("Error Please Try Again!");
                 console.log("FAILED", error);
             });
     document.getElementById('contactForm').reset();
@@ -41,7 +41,7 @@ formBooking.addEventListener("submit", function (e) {
                 document.getElementById("submitBtnBooking").disabled = true;
             },
             function (error) {
-                alert("Error Please Try Again!")
+                alert("Error Please Try Again!");
                 console.log("FAILED", error);
             });
     document.getElementById('bookingForm').reset();

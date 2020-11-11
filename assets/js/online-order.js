@@ -2,6 +2,7 @@ let addToBasket = document.querySelectorAll(".menu-btn");
 let foodIndex = 0;
 let totalPrice = 0;
 let basketItem = [];
+let storedBasketItems = JSON.parse(localStorage.getItem("foodInBasket")) || {};
 
 let food = [{
         name: "Rack of Lamb",
@@ -46,8 +47,9 @@ let food = [{
 ];
 
 // This adds onClick events to each food item in the list
+
 for (let i = 0; i < addToBasket.length; i++) {
-    addToBasket[i].addEventListener("click", e => {                            //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
+    addToBasket[i].addEventListener("click", e => { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
         if (!basketItem.includes(i)) {
             basketItem.push(i);
             addItemToBasket(food[i], i);
@@ -58,21 +60,22 @@ for (let i = 0; i < addToBasket.length; i++) {
 }
 
 // show previously stored basket data
-let storedBasketItems = JSON.parse(localStorage.getItem("foodInBasket")) || {};
 
 for (const key in storedBasketItems) {
-    if (storedBasketItems.hasOwnProperty(key)) {                               //credit for this line of code - https://stackoverflow.com/a/64688795/14580125
+    if (storedBasketItems.hasOwnProperty(key)) { //credit for this line of code - https://stackoverflow.com/a/64688795/14580125
         // get corresponding food index
-        food.forEach(function (food, i) {                                      //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
+        food.forEach(function (food, i) { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
             if (food.name === storedBasketItems[key].name) foodIndex = i;
         });
 
-    if (!basketItem.includes(foodIndex)) {
-        basketItem.push(foodIndex);
-        food[foodIndex].inBasket = storedBasketItems[key].inBasket;
-        updateModal(foodIndex);
+        if (!basketItem.includes(foodIndex)) {
+            basketItem.push(foodIndex);
+            food[foodIndex].inBasket = storedBasketItems[key].inBasket;
+            updateModal(foodIndex);
+        }
     }
-}}
+}
+
 
 // This adds item to basket
 function addItemToBasket(food, itemIndex) {

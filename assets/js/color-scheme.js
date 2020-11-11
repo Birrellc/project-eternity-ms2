@@ -5,15 +5,15 @@ $(".dark-mode-switch").on('click', function () {
         $("#divider-1").removeClass("divider-bg-1-dark");
         $("#divider-2").removeClass("divider-bg-2-dark");
         $(".card").removeClass("card-dark");
-        $("#contact").removeClass("contact-section-dark")
-        localStorage.removeItem("darkMode")
+        $("#contact").removeClass("contact-section-dark");
+        localStorage.removeItem("darkMode");
     } else {
         $("body").addClass("dark-mode");
         $("#home").addClass("home-dark");
         $("#divider-1").addClass("divider-bg-1-dark");
         $("#divider-2").addClass("divider-bg-2-dark");
         $(".card").addClass("card-dark");
-        $("#contact").addClass("contact-section-dark")
+        $("#contact").addClass("contact-section-dark");
         localStorage.setItem("darkMode", true);
     }
 });
@@ -26,7 +26,7 @@ onload = function () {
         $("#divider-1").addClass("divider-bg-1-dark");
         $("#divider-2").addClass("divider-bg-2-dark");
         $(".card").addClass("card-dark");
-        $("#contact").addClass("contact-section-dark")
+        $("#contact").addClass("contact-section-dark");
         localStorage.setItem("darkMode", true);
     }
-}
+};
