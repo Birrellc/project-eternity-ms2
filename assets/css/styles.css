@@ -655,25 +655,25 @@ hr.line-light-address {
 /* MEDIA QUERIES*/
 
 @media screen and (min-width: 320px) {
-    .heading h1 {
+    .home-heading h1 {
         font-size: 1.7rem;
         font-weight: 300;
         padding-top: 50px;
     }
 
-    .sub-heading h5 {
+    .home-sub-heading h5 {
         font-size: 1rem;
         letter-spacing: 12px;
     }
 }
 
 @media screen and (min-width: 375px) {
-    .heading h1 {
+    .home-heading h1 {
         font-size: 2.1rem;
         font-weight: 400;
     }
 
-    .sub-heading h5 {
+    .home-sub-heading h5 {
         font-size: 1.2rem;
         letter-spacing: 15px;
     }
@@ -706,12 +706,12 @@ hr.line-light-address {
 }
 
 @media screen and (min-width: 768px) {
-    .heading h1 {
+    .home-heading h1 {
         font-size: 2.4rem;
         font-weight: 600;
     }
 
-    .sub-heading h5 {
+    .home-sub-heading h5 {
         font-size: 1.8rem;
         letter-spacing: 14px;
     }
@@ -740,7 +740,7 @@ hr.line-light-address {
 }
 
 @media screen and (min-width: 1024px) {
-    .sub-heading h5 {
+    .home-sub-heading h5 {
         letter-spacing: 14px;
     }
 
@@ -750,24 +750,24 @@ hr.line-light-address {
 }
 
 @media screen and (min-width: 1280px) {
-    .heading h1 {
+    .home-heading h1 {
         font-size: 2.2rem;
         letter-spacing: 15px;
     }
 
-    .sub-heading h5 {
+    .home-sub-heading h5 {
         font-size: 1.8rem;
         letter-spacing: 12px;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .heading h1 {
+    .home-heading h1 {
         font-size: 2rem;
         letter-spacing: 15px;
     }
 
-    .sub-heading h5 {
+    .home-sub-heading h5 {
         font-size: 1.6rem;
         letter-spacing: 11px;
     }
