@@ -10,7 +10,7 @@
 ![picture](assets/images/readme-images/light-mode-readme.png)
 
 ### Dark Mode
-![picture](assets/images/readme-images/dark-mode-readme.png))
+![picture](assets/images/readme-images/dark-mode-readme.png)
 
 [LIVE DEPLOYMENT OF WEBSITE](https://birrellc.github.io/Eternity-MS2/)
 
