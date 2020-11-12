@@ -66,12 +66,16 @@ h1 {
 
 /* LIGHT MODE */
 
+/* applies light mode background and text to the body*/
+
 .light-mode {
     background-color: #f2f4f3;
     color: #0a0908;
 }
 
 /* DARK MODE */
+
+/* applies dark mode background and text to the body*/
 
 .dark-mode {
     background-color: #0a0908;
@@ -95,6 +99,8 @@ h1 {
     color: #5e503f;
     font-size: 25px;
 }
+
+/* fa-times & fa-bars are the icons used for the navigation menu / hamburger toggler */
 
 .fa-times {
     font-size: 30px;
@@ -152,6 +158,8 @@ h1 {
     display: flex;
 }
 
+/* The switch for toggling dark modle */
+
 .dark-mode-switch {
     color: #5e503f;
     cursor: pointer;
@@ -165,7 +173,9 @@ h1 {
     z-index: 100;
 }
 
-.basket {
+/* icon below navigation used to open shopping basket */
+
+.shopping-basket-icon {
     color: #5e503f;
     cursor: pointer;
     display: -ms-flexbox;
@@ -234,6 +244,8 @@ h1 {
 
 /* HOME SECTION */
 
+/* Light mode class for homepage (replaces background image with light version)*/
+
 .home-light {
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -249,6 +261,8 @@ h1 {
     text-align: center;
     width: 100%;
 }
+
+/* Dark mode class for homepage (replaces background image with dark alternative)*/
 
 .home-dark {
     -ms-flex-align: center;
@@ -316,6 +330,8 @@ h1 {
 
 /*DIVIDER*/
 
+/* Applies light mode gradient color to first page divider image*/
+
 .divider-bg-1-light {
     background-size: cover;
     background: -o-linear-gradient(left, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
@@ -323,6 +339,8 @@ h1 {
     background: linear-gradient(to right, rgba(242, 244, 243, 1), transparent), url("../images/divider-1.jpg") center no-repeat;
     margin-right: 30px
 }
+
+/* Applies dark mode gradient color to first page divider image*/
 
 .divider-bg-1-dark {
     background-size: cover;
@@ -332,6 +350,8 @@ h1 {
     margin-right: 30px
 }
 
+/* Applies light mode gradient color to second page divider image*/
+
 .divider-bg-2-light {
     background-size: cover;
     background: -o-linear-gradient(right, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
@@ -339,6 +359,8 @@ h1 {
     background: linear-gradient(to left, rgba(242, 244, 243, 1), transparent), url("../images/divider-2.jpg") center no-repeat;
     margin-right: 30px
 }
+
+/* Applies dark mode gradient color to second page divider image*/
 
 .divider-bg-2-dark {
     background-size: cover;
@@ -485,6 +507,8 @@ hr.line-light-address {
 
 /*CONTACT PAGE*/
 
+/* home-arrow is the arrow icon on the contact page that you click to bring back to home page*/
+
 .home-arrow {
     margin-bottom: 40px;
 }
@@ -561,7 +585,6 @@ hr.line-light-address {
     padding-right: 15px;
     font-family: "Cairo", sans-serif;
 }
-
 
 /* BOTH MODALS*/
 
