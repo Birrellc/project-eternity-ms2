@@ -323,6 +323,21 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 - Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
 
+- Shopping Cart error - _Uncaught TypeError: Cannot read property 'name' of undefined
+  at HTMLDivElement._ ```   
+        cartItems = {
+        ...cartItems,
+        [item.name]: item
+    }; ```
+This error only displays occasionally and the shopping cart retains its functionality even when this error appears in console. Unsure of cause of this issue so far.
+
+This bug has now been solved by implementing: ```
+    if (!item) {
+        return;
+    }
+```
+to the beginning of the on click event listener function for adjusting quantity.
+
 ---
 
 ### Unsolved
