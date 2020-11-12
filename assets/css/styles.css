@@ -280,7 +280,7 @@ h1 {
     width: 100%;
 }
 
-.heading h1 {
+.home-heading h1 {
     -ms-writing-mode: tb-rl;
     -webkit-text-orientation: upright;
     -webkit-writing-mode: vertical-rl;
@@ -291,11 +291,11 @@ h1 {
     writing-mode: vertical-rl;
 }
 
-.sub-heading {
+.home-sub-heading {
     float: right;
 }
 
-.sub-heading-text {
+.home-sub-heading-text {
     font-family: "Cairo", sans-serif;
     font-size: 1rem;
     letter-spacing: 15px;
@@ -303,7 +303,7 @@ h1 {
 
 /*ABOUT US*/
 
-.about {
+.about-section {
     padding-bottom: 50px;
     padding-top: 50px;
 }
@@ -380,7 +380,7 @@ h1 {
     min-height: 65vh;
 }
 
-.heading-div-1 {
+.heading-divider-1 {
     -ms-writing-mode: tb-rl;
     -webkit-text-orientation: upright;
     -webkit-writing-mode: vertical-rl;
@@ -391,7 +391,7 @@ h1 {
     writing-mode: vertical-rl;
 }
 
-.heading-div-2 {
+.heading-divider-2 {
     -ms-writing-mode: tb-rl;
     -webkit-text-orientation: upright;
     -webkit-writing-mode: vertical-rl;
@@ -404,7 +404,7 @@ h1 {
 
 /*MENU*/
 
-.menu {
+.menu-section {
     padding-bottom: 50px;
 }
 
@@ -471,12 +471,12 @@ hr.line-light-menu {
     width: 100%;
 }
 
-.address-details {
-    font-family: "Cairo", sans-serif;
+.reservations-sub-headings h5 {
+    text-decoration: underline;
 }
 
-.address-heading h5 {
-    text-decoration: underline;
+.address-details {
+    font-family: "Cairo", sans-serif;
 }
 
 .address-contact a {
@@ -507,13 +507,13 @@ hr.line-light-address {
 
 /*CONTACT PAGE*/
 
-/* home-arrow is the arrow icon on the contact page that you click to bring back to home page*/
+/* home-arrow-link is the arrow icon on the contact page that you click to bring back to home page*/
 
-.home-arrow {
+.home-arrow-link {
     margin-bottom: 40px;
 }
 
-.home-arrow a {
+.home-arrow-link a {
     color: #5e503f;
     font-size: 1.8rem;
 }
