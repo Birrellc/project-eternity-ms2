@@ -73,9 +73,11 @@ This project has been tested throughout with use of preview, devtools, manual te
 | Reservations        | Click directions/view larger maps         | Opens map in Google in a new browser tab                            | PASS   |
 | Contact             | Scroll                                    | Animation effects when scroll to this page                          | PASS   |
 | Contact Form        | Submit form with incorrect data           | Validation to not allow form to send                                | PASS   |
+| Contact Form        | Submit form with correct data             | Button text to change to submitting\! while waiting for submit      | PASS   |
 | Contact Form        | Submit form with correct data             | Button text to change to submitted\! and disable to prevent spam    | PASS   |
 | Contact Form        | Submit form with correct data             | Data to be sent to company email                                    | PASS   |
 | Booking Form        | Submit form with incorrect data           | Validation to not allow form to be sent                             | PASS   |
+| Booking Form        | Submit form with correct data             | Button text to change to submitting\! while waiting for submit      | PASS   |
 | Booking Form        | Submit form with correct data             | Button text to change to submitted\! and disable to prevent spam    | PASS   |
 | Booking Form        | Submit form with correct data             | Emails to be sent to owner & user with the correct data             | PASS   |
 | Shopping Cart Modal | Incorrectly Fill in Form                  | Validation prevents submission                                      | PASS   |
