@@ -44,7 +44,7 @@ _Frontend only - backend databases for reservation and paygate for the online or
   - [Workspace](#workspace)
   - [External Resources](#external-resources)
 - [Testing](#testing)
-- [Project Barriers / Bugs](#project-barriers-/-bugs)
+- [Project Barriers & Bugs](#project-barriers-&-bugs)
   - [Solved](#solved)
   - [Unsolved](#unsolved)
 - [Version Control](#version-control)
@@ -297,7 +297,7 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 ---
 
-## Project Barriers / Bugs
+## Project Barriers & Bugs
 
 ---
 
