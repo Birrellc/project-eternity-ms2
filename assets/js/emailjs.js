@@ -14,6 +14,10 @@ formContact.addEventListener("submit", function (e) {
                 let submitButtonContact = document.getElementById("submitBtnContact");
                 submitButtonContact.innerHTML = "Submitted!";
                 document.getElementById("submitBtnContact").disabled = true;
+                setTimeout(function () {
+                    document.getElementById("submitBtnContact").disabled = false;
+                    document.getElementById("submitBtnContact").innerHTML = "Submit";
+                }, 2500);
             },
             function (error) {
                 alert("Error Please Try Again!");
@@ -39,6 +43,10 @@ formBooking.addEventListener("submit", function (e) {
                 let submitButtonContact = document.getElementById("submitBtnBooking");
                 submitButtonContact.innerHTML = "Submitted!";
                 document.getElementById("submitBtnBooking").disabled = true;
+                setTimeout(function () {
+                    document.getElementById("submitBtnBooking").disabled = false;
+                    document.getElementById("submitBtnBooking").innerHTML = "Submit";
+                },2500);
             },
             function (error) {
                 alert("Error Please Try Again!");
