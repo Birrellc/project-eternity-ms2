@@ -187,6 +187,12 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
         .parents(".productQuantity")[0]
         .getAttribute("data-itemIndex");
     const item = food[itemIndex];
+
+    // If there is no item, then don't do anything - fixes item.name undefinted html bug on shopping cart
+    if (!item) {
+        return;
+    }
+
     // when clicked on plus icon
     if (e.target.classList.contains("fa-plus")) {
         // increasing the quantity by 1 in item object and in DOM
