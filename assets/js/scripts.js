@@ -10,7 +10,7 @@ $(function () {
 // jQuery - toggle shopping cart modal when clicking cart icon
 
 $(function () {
-    $(".basket").on("click", function () {
+    $(".shopping-basket-icon").on("click", function () {
         $("#basketModal").modal("show");
     });
 });
