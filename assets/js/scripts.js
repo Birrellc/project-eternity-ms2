@@ -26,6 +26,15 @@ $('#datetimepicker1').datetimepicker({
     enabledHours: [16, 17, 18, 19, 20, 21, 22, 23]
 });
 
+// jQuery - Allows user to select expiration date for card in payment for but blacks previous dates
+
+$(function () {
+    $('#datetimepicker6').datetimepicker({
+        format: 'MM-YY',
+        minDate: new Date()
+    });
+});
+
 //JQuery - Changes text on menu buttons when clicked for 5 seconds & greys out button
 
 (function () {
