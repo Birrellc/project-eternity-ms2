@@ -40,7 +40,7 @@ _Frontend only - backend databases for reservation and paygate for the online or
   - [Features to be Implemented in the Future](#features-to-be-implemented-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
-  - [Libraries, Frameworks & Plugins](libraries-frameworks-&-plguins)
+  - [Libraries, Frameworks & Plugins](libraries-frameworks-&-plugins)
   - [Workspace](#workspace)
   - [External Resources](#external-resources)
 - [Testing](#testing)
