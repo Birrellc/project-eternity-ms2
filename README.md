@@ -40,11 +40,11 @@ _Frontend only - backend databases for reservation and paygate for the online or
   - [Features to be Implemented in the Future](#features-to-be-implemented-in-the-future)
 - [Technologies](#technologies)
   - [Languages](#languages)
-  - [Libraries, Frameworks & Plugins](libraries,-frameworks-&-plguins)
+  - [Libraries, Frameworks & Plugins](libraries-frameworks-&-plguins)
   - [Workspace](#workspace)
   - [External Resources](#external-resources)
 - [Testing](#testing)
-- [Project Barriers & Bugs](#project-barriers-&-bugs)
+- [Project Barriers & Bugs](#project-barriers)
   - [Solved](#solved)
   - [Unsolved](#unsolved)
 - [Version Control](#version-control)
@@ -243,7 +243,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ---
 
-### Libraries, Frameworks & Plugins
+### Libraries Frameworks & Plugins
 
 - [Bootstrap 4](https://getbootstrap.com/)
 - [jQuery](https://michalsnik.github.io/aos/)
@@ -297,7 +297,7 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 
 ---
 
-## Project Barriers & Bugs
+## Project Barriers
 
 ---
 
