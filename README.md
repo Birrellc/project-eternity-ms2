@@ -4,6 +4,16 @@
 
 ![picture](assets/images/readme-images/eternity-logo.png)
 
+---
+
+### Light Mode
+![picture](assets/images/readme-images/light-mode-readme.png)
+
+### Dark Mode
+![picture](assets/images/readme-images/dark-mode-readme.png))
+
+[LIVE DEPLOYMENT OF WEBSITE](https://birrellc.github.io/Eternity-MS2/)
+
 ## Description
 
 _this is a fictitious business created for my milestone project 2 with the code institute_.
