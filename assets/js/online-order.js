@@ -53,7 +53,7 @@ let food = [{
 
 // This adds onClick events to each food item in the list
 
-for (let i = 0; i < addToBasket.length; i++) { //
+for (let i = 0; i < addToBasket.length; i++) {
     addToBasket[i].addEventListener("click", e => { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
         if (!basketItem.includes(i)) {
             basketItem.push(i);
@@ -64,7 +64,7 @@ for (let i = 0; i < addToBasket.length; i++) { //
     });
 }
 
-// show previously stored basket data
+// Iterates object to be pushed into updateModal Function allowing items to be added
 
 for (const key in storedBasketItems) {
     if (storedBasketItems.hasOwnProperty(key)) { //credit for this line of code - https://stackoverflow.com/a/64688795/14580125
@@ -149,7 +149,7 @@ function getBasketData() {
 
 // push objects from localstorage array into dynamic div's on the DOM
 
-// Partial Credit (i modified it again) for this function - https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript
+// Partial Credit (modified it again) for this function - https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript
 
 function updateModal(itemIndex) {
     let basket = getBasketData();
@@ -171,7 +171,7 @@ function updateModal(itemIndex) {
             </div>`
         );
         basket.quantity.insertAdjacentHTML("beforeend",
-            `<div class="product-quantity"data-itemIndex=${itemIndex} data-food="${foodItem.name}">
+            `<div class="product-quantity" data-itemIndex=${itemIndex} data-food="${foodItem.name}">
                 <i class="fas fa-minus"></i>
                 <span class="item-quantity">${foodItem.inBasket}</span>
                 <i class="fas fa-plus"></i>
