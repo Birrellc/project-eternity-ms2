@@ -2,6 +2,10 @@
 
 ---
 
+[LIVE DEPLOYMENT OF WEBSITE](https://birrellc.github.io/Eternity-MS2/)
+
+---
+
 ![picture](assets/images/readme-images/eternity-logo.png)
 
 ---
@@ -14,7 +18,7 @@
 
 ![picture](assets/images/readme-images/dark-mode-readme.png)
 
-[LIVE DEPLOYMENT OF WEBSITE](https://birrellc.github.io/Eternity-MS2/)
+---
 
 ## Description
 
@@ -296,6 +300,8 @@ The purpose of the website created is to entice more customers to the restaurant
 - [Abhijit Rawool](https://abhijitrawool.com/restaurant-website-color-palettes/) - Used this website to find my color scheme.
 - [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) - Used to create my **README.md** & **Testing.md** files.
 - [Udemy Javascript Course](https://www.udemy.com/course/the-complete-javascript-course) - Used to develop further understanding of JavaScript.
+- [Grammarly(unofficial)](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) - A plugin for VSCode which I used to check the grammar and spelling for my README.md & testing.md docs.
+- [BrowserStack](https://www.browserstack.com) - Used to test my website with the Safari browser.
 - [Code Institute](https://codeinstitute.net/) - Main source of coding knowledge.
 - Code institute Slack Community - Used for inspiration for my website.
 
@@ -425,7 +431,3 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud-based
 - [Shopping Cart Tutorial](https://www.youtube.com/watch?v=B20Getj_Zk4) - This is the tutorial I used to get a starting point on my shopping cart - The code has been modified & some features completely done without using the tutorial code - credited at the top of online-order.js.
 - [Tempus Dominus Documentation](https://tempusdominus.github.io/bootstrap-4/) - Without the documentation resource I wouldn't have been able to set up the time and date plugin correctly for the operational hours of the business.
 - [Code Institute](https://codeinstitute.net/) - For teaching me the code required to complete this project. e.g. The emailJS code stems from the emailJS section of the Code Institute course. - Mentioned in emailJS.js code
-
-```
-
-```
