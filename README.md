@@ -7,9 +7,11 @@
 ---
 
 ### Light Mode
+
 ![picture](assets/images/readme-images/light-mode-readme.png)
 
 ### Dark Mode
+
 ![picture](assets/images/readme-images/dark-mode-readme.png)
 
 [LIVE DEPLOYMENT OF WEBSITE](https://birrellc.github.io/Eternity-MS2/)
@@ -324,33 +326,40 @@ Testing is done in its own section [Here](assets/testing/testing.md).
 - Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
 
 - Shopping Cart error - _Uncaught TypeError: Cannot read property 'name' of undefined
-  at HTMLDivElement._ ```   
-        cartItems = {
-        ...cartItems,
-        [item.name]: item
-    }; ```
-This error only displays occasionally and the shopping cart retains its functionality even when this error appears in console. Unsure of cause of this issue so far.
+  at HTMLDivElement._ ` cartItems = { ...cartItems, [item.name]: item };`
+  This error only displays occasionally and the shopping cart retains its functionality even when this error appears in console. Unsure of cause of this issue so far.
 
 This bug has now been solved by implementing: ```
-    if (!item) {
-        return;
-    }
-```
+if (!item) {
+return;
+}
+
+````
 to the beginning of the on click event listener function for adjusting quantity.
+
+- Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left in place where items were before and i am currently still trying to figure the best way to remove them while retaining the delete button functionality.
+
+This bug has now been solved by removing the ```<br>``` tags from being dynamically injected when products are added to basket and instead added 
+``` 
+.product-name, .product-price, .product-quantity {
+    padding-bottom: 15px;
+} ```
+
+to my CSS file which has provided the spacing between the items required instead.
 
 ---
 
 ### Unsolved
 
-- Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left in place where items were before and i am currently still trying to figure the best way to remove them while retaining the delete button functionality.
+- **SOLVED** ~~Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left in place where items were before and i am currently still trying to figure the best way to remove them while retaining the delete button functionality.~~
 
-- Shopping Cart error - _Uncaught TypeError: Cannot read property 'name' of undefined
-  at HTMLDivElement._ ```   
+- **SOLVED** ~~Shopping Cart error - _Uncaught TypeError: Cannot read property 'name' of undefined
+  at HTMLDivElement._ ```
         cartItems = {
         ...cartItems,
         [item.name]: item
     }; ```
-This error only displays occasionally and the shopping cart retains its functionality even when this error appears in console. Unsure of cause of this issue so far.
+This error only displays occasionally and the shopping cart retains its functionality even when this error appears in console. Unsure of cause of this issue so far.~~
 
 - Shopping Cart Checkout / login - What i want to be able to do is create a login system so that when users make an order the details are saved to their account and also implement a payment system so that when the checkout form button is submitted the order for the customer will be placed and the shopping cart data will be saved to the customers account. **FEATURE NOT YET IMPLEMENTED DUE TO BEING BEYOND CURRENT SKILL LEVEL**
 
@@ -424,3 +433,4 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud based
 - [Shopping Cart Tutorial](https://www.youtube.com/watch?v=IY5UN82FZ2Q) - This is the tutorial i used to get a starting point on my shopping cart - The code has been modified & some features completely done my own way without using the tutorial code - credited at the top of online-order.js.
 - [Tempus Dominus Documentation](https://tempusdominus.github.io/bootstrap-4/) - Without the documentation resource i wouldnt have been able to set up the time and date plugin correctly for the operational hours of the business.
 - [Code Institute](https://codeinstitute.net/) - For teaching me the code required to complete this project. e.g. The emailJS code stems from the emailJS section of the Code Institute course. - Mentioned in emailJS.js code
+````
