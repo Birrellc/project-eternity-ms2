@@ -288,6 +288,7 @@ h1 {
     font-size: 2.2rem;
     font-weight: 600;
     text-orientation: upright;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
 }
 
@@ -388,6 +389,7 @@ h1 {
     font-family: "Cairo", sans-serif;
     letter-spacing: 0px;
     text-orientation: upright;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
 }
 
@@ -399,6 +401,7 @@ h1 {
     font-family: "cairo", sans-serif;
     letter-spacing: 0px;
     text-orientation: upright;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
 }
 
@@ -646,11 +649,14 @@ hr.line-light-address {
     color: #f2f4f3;
 }
 
-.product-name, .product-price, .product-quantity {
+.product-name,
+.product-price,
+.product-quantity {
     padding-bottom: 15px;
 }
 
-.basket-subheading-left, .product {
+.basket-subheading-left,
+.product {
     text-align: left;
 }
 
@@ -677,7 +683,7 @@ hr.line-light-address {
     width: 100%;
 }
 
-.error-text{
+.error-text {
     color: #a9927d;
     text-align: center;
     margin: auto;
@@ -688,8 +694,8 @@ hr.line-light-address {
     font-size: 5rem;
 }
 
-.error-page-subtext{
-    color:#a9927d;
+.error-page-subtext {
+    color: #a9927d;
 }
 
 /* MEDIA QUERIES*/
