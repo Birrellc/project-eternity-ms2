@@ -387,7 +387,6 @@ h1 {
     -webkit-writing-mode: vertical-rl;
     float: left;
     font-family: "Cairo", sans-serif;
-    letter-spacing: 0px;
     text-orientation: upright;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -399,7 +398,6 @@ h1 {
     -webkit-writing-mode: vertical-rl;
     float: right;
     font-family: "cairo", sans-serif;
-    letter-spacing: 0px;
     text-orientation: upright;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
