@@ -149,24 +149,24 @@ function updateModal(itemIndex) {
     if (foodItem !== undefined) {
         totalPrice += foodItem.price * foodItem.inBasket;
         basket.product.insertAdjacentHTML("beforeend",
-            `<div class="productName" data-food="${foodItem.name}">
+            `<div class="product-name" data-food="${foodItem.name}">
                 <i class="far fa-times-circle delete-btn"></i>
                 <span>${foodItem.name}</span>
-            </div><br>`
+            </div>`
         );
         basket.price.insertAdjacentHTML("beforeend",
-            `<div class="productPrice" data-food="${foodItem.name}">
+            `<div class="product-price" data-food="${foodItem.name}">
                 £ ${foodItem.price}
-            </div><br>`
+            </div>`
         );
         basket.quantity.insertAdjacentHTML("beforeend",
-            `<div class="productQuantity"data-itemIndex=${itemIndex} data-food="${foodItem.name}">
+            `<div class="product-quantity"data-itemIndex=${itemIndex} data-food="${foodItem.name}">
                 <i class="fas fa-minus"></i>
                 <span class="item-quantity">${foodItem.inBasket}</span>
                 <i class="fas fa-plus"></i>
-            </div><br>`
+            </div>`
         );
-        basket.totalPrice.innerHTML = `<div class="totalPrice">£ ${totalPrice}</div>`;
+        basket.totalPrice.innerHTML = `<div class="total-price">£ ${totalPrice}</div>`;
     }
 }
 
@@ -184,7 +184,7 @@ Element.prototype.parents = function () {
 document.querySelector(".quantity").addEventListener("click", function (e) {
     // Get index of the item of which the quantity icons were clicked
     const itemIndex = e.target
-        .parents(".productQuantity")[0]
+        .parents(".product-quantity")[0]
         .getAttribute("data-itemIndex");
     const item = food[itemIndex];
 
@@ -221,7 +221,7 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
 
     document.querySelector(
         ".total-price"
-    ).innerHTML = `<div class="totalPrice">£ ${totalPrice}</div>`;
+    ).innerHTML = `<div class="total-Price">£ ${totalPrice}</div>`;
 });
 
 // Function for deleting items in basket through use of a Font awesome icon

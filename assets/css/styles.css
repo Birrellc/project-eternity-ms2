@@ -638,8 +638,16 @@ hr.line-light-address {
     padding: 0;
 }
 
+.basket-modal h5 {
+    font-size: 0.8rem;
+}
+
 .basket-data {
     color: #f2f4f3;
+}
+
+.product-name, .product-price, .product-quantity {
+    padding-bottom: 15px;
 }
 
 .basket-subheading-left, .product {
@@ -651,17 +659,9 @@ hr.line-light-address {
     padding-right: 5px;
 }
 
-.basket-modal h5 {
-    font-size: 0.8rem;
-}
-
 .basket-form {
     font-size: 0.8rem;
     padding: 20px;
-}
-
-.shopping-basket-body {
-    padding: 0;
 }
 
 /* MEDIA QUERIES*/
