@@ -75,16 +75,19 @@ This project has been tested throughout with the use of preview, DevTools, manua
 | Contact Form        | Submit form with incorrect data           | Validation to not allow the form to send                                | PASS   |
 | Contact Form        | Submit form with correct data             | Button text to "change to submitting\!" while waiting for submit        | PASS   |
 | Contact Form        | Submit form with correct data             | Button text to "change to submitted\!" and disable to prevent spam      | PASS   |
+| Contact Form        | Submit form with correct data             | Button text to "change back to submit\!" 2.5 seconds after "submitted"  | PASS   |
 | Contact Form        | Submit form with correct data             | Data to be sent to company email                                        | PASS   |
 | Booking Form        | Submit form with incorrect data           | Validation to not allow the form to be sent                             | PASS   |
 | Booking Form        | Submit form with correct data             | Button text to" change to submitting\!" while waiting for submit        | PASS   |
 | Booking Form        | Submit form with correct data             | Button text to "change to submitted\!" and disable to prevent spam      | PASS   |
+| Booking Form        | Submit form with correct data             | Button text to "change back to submit\!" 2.5 seconds after "submitted"  | PASS   |
 | Booking Form        | Submit form with correct data             | Emails to be sent to owner & user with the correct data                 | PASS   |
 | Shopping Cart Modal | Incorrectly Fill in Form                  | Validation prevents submission                                          | PASS   |
 | Shopping Cart Modal | Fill in form correctly                    | Shopping cart form submits                                              | PASS   |
 | Shopping Cart Modal | Click X icon beside product name          | Delete item from basket                                                 | PASS   |
 | Shopping Cart Modal | Click \- or \+ beside product in quantity | Increase or decrease the quantity of product depending which is clicked | PASS   |
 | Shopping Cart Modal | Refresh page with products in basket      | Products remain in basket                                               | PASS   |
+| 404 Page            | Click home button on 404 error page       | Takes user back to the home page of the website                         | PASS   |
 
 ---
 
@@ -93,7 +96,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
 - And received 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-before.png/)
 - 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-after.png/)
-- Using the preview feature of my IDE i have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
+- Using the preview feature of my IDE I have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
 - Forms - All have are validated with the _required_ feature to stop submission without key information e.g - Email Address or Name / Which has been tested.
 - Buttons - All work correctly - Tested by clicking each button on the website.
 - Map - Clicked Map was able to move the view around, zoom in and out & also able to view a larger map on Google and get directions.
@@ -114,7 +117,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 #### OVERVIEW
 
 - All my JavaScript code was tested via manual testing which was also then used to solve the errors I had missed [Example here](../images/testing-images/manual-testing-example.png).
-- When running the DevTools to inspect the website for errors I found verbose warnings for **Violation Added for non-passive event listener to scroll blocking** - planning to discuss with ,mu mentor in the final session. - **Google map issue - can ignore** 
+- When running the DevTools to inspect the website for errors I found verbose warnings for **Violation Added for non-passive event listener to scroll blocking** - planning to discuss with ,mu mentor in the final session. - **Google map issue - can ignore**
 - Ran code through [JSHINT](https://jshint.com/) - Warnings received for using ES6 & higher which are fine to ignore as the code works in all browsers apart from Internet Explorer.
   I also received the warning
 
@@ -168,13 +171,15 @@ which I also resorted to the use of [Stack Overflow](https://stackoverflow.com/)
 ##### BOOKING FORM
 
 - Filled out **Booking Form** information then clicked submit - emails were sent correctly to customer & owner [Customer Email](../images/testing-images/booking-customer.png) [Owner Email](../images/testing-images/booking-owner.png)
-- Also when the emails we're sent the button text changes to **Submitted** & disabled till the page refreshed to prevent spam.
+- When the button to submit the the form is pressed the text changes to **submitting!** until the form completes its submit.
+- When the emails we're sent the button text changes to **Submitted** & disabled for 2.5 seconds then changed back to **Submit** to prevent spam.
 - Clicked Date & Time - Was unable to select booking times and dates outside of opening hours and days accomplished by using & [TempusDominus Time & Date Plugin](https://tempusdominus.github.io/bootstrap-4/)
 
 ##### CONTACT FORM
 
 - Filled **Contact Form** information then clicked submit - email was sent correctly to the owner [Contact Form Email](../images/testing-images/contact-email.png).
-- Also when the emails we're sent the button text changes to **Submitted** & disabled till the page refreshed to prevent spam.
+- When the button to submit the the form is pressed the text changes to **submitting!** until the form completes its submit.
+- When the emails we're sent the button text changes to **Submitted** & disabled for 2.5 seconds then changed back to **Submit** to prevent spam.
 
 ---
 
@@ -182,14 +187,16 @@ which I also resorted to the use of [Stack Overflow](https://stackoverflow.com/)
 
 #### Supported Browsers
 
-| Opera | Chrome | Firefox | Edge | Internet Explorer |
-| ----- | ------ | ------- | ---- | ----------------- |
-| Y     | Y      | Y       | Y    | N                 |
+| Opera | Chrome | Firefox | Edge | Internet Explorer | Safari |
+| ----- | ------ | ------- | ---- | ----------------- | ------ |
+| Y     | Y      | Y       | Y    | N                 | Y      |
+
+** NOTE: Safari Browser was tested using an iPhone emulator on the free version of [BrowserStack](https://www.browserstack.com/) so may not be 100% reliable.**
 
 All browsers were tested by:
 
 - Clicking all buttons and waiting for desired effects.
-- Testing local storage by adding items to basket and then closing / reopening the browser.
+- Testing local storage by adding items to the basket and then closing / reopening the browser.
 - Shopping cart was fully tested for adding items, removing, increasing, decreasing.
 - All EmailJS forms were tested by filling out and submitting.
 - Internet Explorer was the only browser that failed - shopping basket didn't work, issues with the text, modal containers etc. - **This Browser is not supported**
