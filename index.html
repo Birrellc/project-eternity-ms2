@@ -339,7 +339,7 @@
                     <div class="form-group">
                         <label for="messageContact">Message:</label>
                         <textarea class="form-control" id="messageContact" rows="3" name="messageContact"
-                            placeholder="Your message here:" required></textarea>
+                            placeholder="Your message here: (min-characters: 15)" minlength="15" required></textarea>
                         <button type="submit" class="btn contact-btn px-5 btn-red" id="submitBtnContact">Submit</button>
                     </div>
                 </form>
@@ -406,7 +406,7 @@
                                 <label class="control-label">Date & Time:(Year/Month/Day)</label>
                                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                                     <input type="text" class="form-control datetimepicker-input"
-                                        data-target="#datetimepicker1" id="date_time" name="date_time">
+                                        data-target="#datetimepicker1" id="date_time" name="date_time" required>
                                     <div class="input-group-append" data-target="#datetimepicker1"
                                         data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
@@ -529,8 +529,8 @@
                             </div>
                             <div class="col-md-6 mb-2">
                                 <label for="cc-number">Credit card number</label>
-                                <input type="text" class="form-control" id="cc-number" name="PaymentDetailsCardNumber"
-                                    placeholder="e.g. 1234567891234567" required />
+                                <input type="number" class="form-control" id="cc-number" name="PaymentDetailsCardNumber"
+                                    placeholder="e.g. 1234567891234567" required min="16" max="16" />
                             </div>
                         </div>
                         <br>
@@ -539,7 +539,7 @@
                                 <label for="cc-expiration">Expiration</label>
                                 <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
                                     <input type="text" class="form-control datetimepicker-input"
-                                        id="cc-expiration required" name="PaymentDetailsExpData"
+                                        id="cc-expiration" name="PaymentDetailsExpData"
                                         data-target="#datetimepicker6" required />
                                     <div class="input-group-append" data-target="#datetimepicker6"
                                         data-toggle="datetimepicker">
@@ -549,8 +549,8 @@
                             </div>
                             <div class="col-md-6 mb-2">
                                 <label for="cc-cvv">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" name="PaymentDetailsCVV"
-                                    placeholder="***" required />
+                                <input type="number" class="form-control" id="cc-cvv" name="PaymentDetailsCVV"
+                                    placeholder="***" required min="3" max="3" />
                             </div>
                         </div>
                         <div class="modal-footer col-12 border-top-0 justify-content-between">
