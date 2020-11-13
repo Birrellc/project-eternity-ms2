@@ -1,3 +1,5 @@
+// Credit - Part of this code is from the code institute course which i have expanded on for my needs.
+
 let formContact = document.getElementById("contactForm");
 formContact.addEventListener("submit", function (e) {
     e.preventDefault();

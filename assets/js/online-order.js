@@ -1,3 +1,8 @@
+/* This code was created with the help of a tutorial which has been used as a reference guide throughout,
+that being said the code has been modified from the original
+And no function remains the same as in the original code */
+// Tutorial link = https://www.youtube.com/watch?v=B20Getj_Zk4
+
 let addToBasket = document.querySelectorAll(".menu-btn");
 let foodIndex = 0;
 let totalPrice = 0;
@@ -48,7 +53,7 @@ let food = [{
 
 // This adds onClick events to each food item in the list
 
-for (let i = 0; i < addToBasket.length; i++) {
+for (let i = 0; i < addToBasket.length; i++) { //
     addToBasket[i].addEventListener("click", e => { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
         if (!basketItem.includes(i)) {
             basketItem.push(i);
@@ -76,8 +81,8 @@ for (const key in storedBasketItems) {
     }
 }
 
-
 // This adds item to basket
+
 function addItemToBasket(food, itemIndex) {
     let menuNumbers = localStorage.getItem("addItemToBasket");
     menuNumbers = parseInt(menuNumbers);
@@ -126,7 +131,10 @@ function totalCost(food) {
     }
 }
 
-// recieve object from DOM and assign variables to div classes - Template
+// Recieve object from Storage and assign variables to div classes - Template
+
+// Credit for this function - https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript
+
 function getBasketData() {
     return {
         delete: document.querySelectorAll(".product far fa-times-circle"),
@@ -140,6 +148,9 @@ function getBasketData() {
 }
 
 // push objects from localstorage array into dynamic div's on the DOM
+
+// Partial Credit (i modified it again) for this function - https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript
+
 function updateModal(itemIndex) {
     let basket = getBasketData();
     if (basket.products === null) {
@@ -170,7 +181,8 @@ function updateModal(itemIndex) {
     }
 }
 
-// allows access of the individual parentNodes of dynamic divs for increments and decrements in following function
+// Allows access of the individual parentNodes by pushing into an array
+
 Element.prototype.parents = function () {
     let parents = [];
     let currentParent = this.parentNode;
@@ -225,6 +237,7 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
 });
 
 // Function for deleting items in basket through use of a Font awesome icon
+
 function deleteButtons() {
     addEventListenerByClass("click", "delete-btn", function (e) {
         let cartItems = localStorage.getItem("foodInBasket");
@@ -233,9 +246,11 @@ function deleteButtons() {
         let foodItem = cartItems[foodName];
         totalPrice -= foodItem.price * foodItem.inBasket;
         let foodIndex;
+
         food.forEach(function (food, i) {
-            if (food.name == foodItem.name) foodIndex = i;
+            if (food.name === foodItem.name) foodIndex = i;
         });
+
         foodItem.inBasket = 0;
         food[foodIndex] = foodItem;
         delete cartItems[foodName];

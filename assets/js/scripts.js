@@ -7,6 +7,15 @@ $(function () {
     });
 });
 
+//jQuery - closes nav when link is clicked
+
+$(function () {
+    $('.nav-link').on('click', function () {
+        $('.toggle').toggleClass('open');
+        $('.nav-list').toggleClass('open');
+    });
+});
+
 // jQuery - toggle shopping cart modal when clicking cart icon
 
 $(function () {
@@ -57,11 +66,3 @@ AOS.init({
     duration: 2000,
 });
 
-//jQuery - closes nav when link is clicked
-
-$(function () {
-    $('.nav-link').on('click', function () {
-        $('.toggle').toggleClass('open');
-        $('.nav-list').toggleClass('open');
-    });
-});
