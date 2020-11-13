@@ -90,7 +90,7 @@ h1 {
     display: -webkit-box;
     display: flex;
     position: fixed;
-    right: 7px;
+    right: 5px;
     top: 15px;
     z-index: 1000;
 }
@@ -168,7 +168,7 @@ h1 {
     display: flex;
     font-size: 1.2rem;
     position: fixed;
-    right: 8px;
+    right: 6px;
     top: 60px;
     z-index: 100;
 }
@@ -183,7 +183,7 @@ h1 {
     display: flex;
     font-size: 1.2rem;
     position: fixed;
-    right: 8px;
+    right: 6px;
     top: 100px;
     z-index: 100;
 }
@@ -204,7 +204,7 @@ h1 {
     display: -webkit-box;
     display: flex;
     position: fixed;
-    right: 7px;
+    right: 5px;
     top: 250px;
     z-index: 100;
 }
@@ -215,7 +215,7 @@ h1 {
     display: -webkit-box;
     display: flex;
     position: fixed;
-    right: 7px;
+    right: 5px;
     top: 285px;
     z-index: 100;
 }
@@ -226,7 +226,7 @@ h1 {
     display: -webkit-box;
     display: flex;
     position: fixed;
-    right: 7px;
+    right: 5px;
     top: 320px;
     z-index: 100;
 }
@@ -237,7 +237,7 @@ h1 {
     display: -webkit-box;
     display: flex;
     position: fixed;
-    right: 7px;
+    right: 5px;
     top: 355px;
     z-index: 100;
 }
@@ -309,16 +309,16 @@ h1 {
     padding-top: 50px;
 }
 
-.about-us-images {
+.about-images {
     padding: 15px;
 }
 
-.about-us-heading {
+.about-heading {
     font-weight: 500;
     letter-spacing: 2px;
 }
 
-.about-us-text {
+.about-text {
     font-family: "Raleway", sans-serif;
     font-size: 0.8rem;
     font-style: italic;
@@ -474,7 +474,7 @@ hr.line-light-menu {
     width: 100%;
 }
 
-.reservations-sub-headings h5 {
+.reservations-sub-headings h4 {
     text-decoration: underline;
 }
 
@@ -707,7 +707,7 @@ hr.line-light-address {
         padding-top: 50px;
     }
 
-    .home-sub-heading h5 {
+    .home-sub-heading h2 {
         font-size: 1rem;
         letter-spacing: 12px;
     }
@@ -719,9 +719,13 @@ hr.line-light-address {
         font-weight: 400;
     }
 
-    .home-sub-heading h5 {
+    .home-sub-heading h2 {
         font-size: 1.2rem;
         letter-spacing: 15px;
+    }
+
+    .about-text {
+        width: 300px;
     }
 
     .contact-form {
@@ -749,6 +753,14 @@ hr.line-light-address {
     .basket-form {
         font-size: 1rem;
     }
+
+    .instagram, .twitter, .facebook, .linkedin, .hamburger-toggle {
+        right: 7px;
+    }
+
+    .dark-mode-switch, .shopping-basket-icon {
+        right: 8px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -757,7 +769,7 @@ hr.line-light-address {
         font-weight: 600;
     }
 
-    .home-sub-heading h5 {
+    .home-sub-heading h2 {
         font-size: 1.8rem;
         letter-spacing: 14px;
     }
@@ -801,7 +813,7 @@ hr.line-light-address {
         letter-spacing: 15px;
     }
 
-    .home-sub-heading h5 {
+    .home-sub-heading h2 {
         font-size: 1.8rem;
         letter-spacing: 12px;
     }
@@ -813,7 +825,7 @@ hr.line-light-address {
         letter-spacing: 15px;
     }
 
-    .home-sub-heading h5 {
+    .home-sub-heading h2 {
         font-size: 1.6rem;
         letter-spacing: 11px;
     }
