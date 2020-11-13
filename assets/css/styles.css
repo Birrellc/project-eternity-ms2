@@ -519,10 +519,10 @@ hr.line-light-address {
 }
 
 .contact-section-light {
-    background-size: cover;
     background: -o-linear-gradient(top, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/contactbg.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
+    background-size: cover;
     height: 120vh;
     overflow-y: auto;
     padding-top: 20px;
@@ -530,10 +530,10 @@ hr.line-light-address {
 }
 
 .contact-section-dark {
-    background-size: cover;
     background: -o-linear-gradient(top, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/contact-us-dark.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
+    background-size: cover;
     height: 120vh;
     overflow-y: auto;
     padding-top: 20px;
@@ -662,6 +662,34 @@ hr.line-light-address {
 .basket-form {
     font-size: 0.8rem;
     padding: 20px;
+}
+
+/* 404 ERROR PAGE */
+
+.error-page-hero-container {
+    background: url("../images/404-hero-background.jpg") center no-repeat;
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+.error-text{
+    color: #a9927d;
+    text-align: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.error-text h2 {
+    font-size: 5rem;
+}
+
+.error-page-subtext{
+    color:#a9927d;
 }
 
 /* MEDIA QUERIES*/
