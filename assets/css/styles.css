@@ -426,6 +426,7 @@ h1 {
     font-family: "Raleway", sans-serif;
     font-size: 0.8rem;
     font-style: italic;
+    letter-spacing: 2px;
 }
 
 hr.line-light-menu {
