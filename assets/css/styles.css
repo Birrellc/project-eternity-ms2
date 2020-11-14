@@ -467,8 +467,8 @@ hr.line-light-menu {
 .map {
     border: 0;
     height: 350px;
-    margin-top: 50px;
     margin: auto;
+    padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
@@ -529,10 +529,6 @@ hr.line-light-address {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/contactbg.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background-size: cover;
-    height: 120vh;
-    overflow-y: auto;
-    padding-top: 20px;
-    width: 100%;
 }
 
 /* Switched the background image to one chosen for dark mode*/
@@ -542,6 +538,9 @@ hr.line-light-address {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/contact-us-dark.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
     background-size: cover;
+}
+
+.contact-section{
     height: 120vh;
     overflow-y: auto;
     padding-top: 20px;
