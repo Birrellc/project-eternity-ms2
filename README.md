@@ -1,6 +1,4 @@
-# Eternity
-
----
+# Eternity Restaurant 
 
 ![picture](assets/images/readme-images/eternity-logo.png)
 
@@ -22,8 +20,6 @@
 
 ## Lighthouse Score
 
----
-
 ### Desktop
 
 ![picture](assets/images/readme-images/lighthouse-desktop.png)
@@ -36,8 +32,6 @@
 
 ## Description
 
----
-
 _this is a fictitious business created for my milestone project 2 with the code institute_.
 
 A luxury minimalist restaurant website designed to convey a fine dining experience with high-quality food and service. The user of this website will have a taste for high-quality foods delivered in a sophisticated environment while eating out but also have the option to eat from home with an online delivery service which I decided to use as that's how many restaurants are managing to survive due to the current pandemic.
@@ -47,8 +41,6 @@ _Frontend only - backend databases for reservation and the payment system for th
 ---
 
 ## Table of Contents
-
----
 
 - [UX](#ux)
   - [Wireframes](#wireframes)
@@ -93,8 +85,6 @@ _Frontend only - backend databases for reservation and the payment system for th
 
 ## UX
 
----
-
 ### Wireframes
 
 The completed wireframes for this project can be accessed by clicking [Wireframes](https://github.com/Birrellc/ms2-ci/tree/master/assets/wireframes).
@@ -102,8 +92,6 @@ The completed wireframes for this project can be accessed by clicking [Wireframe
 ---
 
 ### User Stories
-
----
 
 #### User:
 
@@ -113,8 +101,6 @@ The completed wireframes for this project can be accessed by clicking [Wireframe
 - As a user, I would like the option to book a table online and by telephone so I can make a reservation in whichever manner is convenient to me.
 - As a user, I would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out. (coronavirus 2020)
 - As a user, I would like to have information about the history of the restaurant available on the website.
-
----
 
 #### Owner:
 
@@ -213,8 +199,6 @@ The purpose of the website created is to entice more customers to the restaurant
 
 - Inspiration for the surface design of the website came from [Pinterest - Food & Restaurant UI/UX](https://www.pinterest.co.uk/sdgates/web-food-restaurant-ui-ux/)
 
----
-
 #### Color Scheme
 
 - My color scheme inspiration came from an article about restaurant website color schemes [Website](https://abhijitrawool.com/restaurant-website-color-palettes/)
@@ -223,13 +207,9 @@ The purpose of the website created is to entice more customers to the restaurant
 
 - I picked this color scheme as it supported the website theme of the restaurant which is minimalist & luxury, also with a contrast of light and dark colors allows me to use just one palette for both my light and dark themes on the website.
 
----
-
 #### Site Images
 
 - All of my images were taken from [Pexels](https://pexels.com) with a contrast of light and dark images to interchange for my light and dark mode themes, luxury food items for my menu, clean stylish indoor and outdoor images of restaurants for my dividers \(this is used to display restaurant environment to users\) and also images of food being prepared and served to generate interest from the user.
-
----
 
 #### Fonts
 
@@ -238,8 +218,6 @@ The purpose of the website created is to entice more customers to the restaurant
 ---
 
 ## Features
-
----
 
 ### Website Features
 
@@ -251,8 +229,6 @@ The purpose of the website created is to entice more customers to the restaurant
 - Social Media - Social media icons will be present on all pages.
 - Light / Dark mode - Dark mode option is available due to the growing trend of preference.
 
----
-
 ### Features to be Implemented in the Future
 
 - Fully functioning booking form database system to replace the form in place at the moment.
@@ -263,19 +239,16 @@ The purpose of the website created is to entice more customers to the restaurant
 - Improve on the features already in place to be more optimal e.g the time and date part of the booking form could self-made instead of relying on a plugin.
 
 (I have set in place unused classes on many HTML elements to make it easier for any future styling idea changes)
+
 ---
 
 ## Technologies
-
----
 
 ### Languages
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
-
----
 
 ### Libraries Frameworks & Plugins
 
@@ -286,16 +259,12 @@ The purpose of the website created is to entice more customers to the restaurant
 - [TempusDominus Time & Date Plugin](https://tempusdominus.github.io/bootstrap-4/)
 - [Animate On Scroll](https://michalsnik.github.io/aos/)
 
----
-
 ### Workspace
 
 - [VSCode](https://code.visualstudio.com/)
 - [Gitpod](https://www.gitpod.io/)
 - [Git](https://git-scm.com/)
 - [GitHub](https://github.com/)
-
----
 
 ### External Resources
 
@@ -328,15 +297,11 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ## Testing
 
----
-
 Testing is done in its own section [Here](assets/testing/testing.md).
 
 ---
 
 ## Project Barriers
-
----
 
 ### Solved
 
@@ -368,8 +333,6 @@ padding-bottom: 15px;
 
 to my CSS file which has provided the spacing between the items required instead.
 
----
-
 ### Unsolved
 
 - **SOLVED** ~~Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left where items were before and I am currently still trying to figure the best way to remove them while retaining the delete button functionality.~~
@@ -384,16 +347,12 @@ to my CSS file which has provided the spacing between the items required instead
 
 ## Version Control
 
----
-
 - Git was used for version control.
 - Branches were only merged once when using IDE on two different devices.
 
 ---
 
 ## Deployment
-
----
 
 ### Deploy
 
@@ -410,8 +369,6 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud-based
 - This will then publish the project to GitHub Pages and display the URL of the live website. (may have to refresh and scroll back to this section to see the URL)
 - The deployed website version will be tracked to your last commit so if you have made changes without committing and pushing them to GitHub those changes will not be live.
 
----
-
 ### Clone
 
 - The code itself can be cloned or downloaded to your local pc for editing also.
@@ -426,21 +383,15 @@ Nearly all of the code was written on VSCode, a local IDE, Gitpod, a cloud-based
 
 ## Credits
 
----
-
 - First Credits go to my mentor Felipe Alarcon for guidance and advice on how to get this project ready for submission.
 - Code institute for providing the content and support to help learn and develop my skills.
 - Code Institute slack community members for help, ideas & feedback from code reviews.
 - Michael Prothero for taking the time to let me bounce ideas and offer general support with my project.
 - [Udemy Javascript Course](https://www.udemy.com/course/the-complete-javascript-course) & [FreeCodeCamp](https://www.freecodecamp.org/) courses also helped provide understanding of ES6.
 
----
-
 ### Media
 
 - All Images on this project were taken from [Pexels](https://https://www.pexels.com/)
-
----
 
 ### Credited Code
 

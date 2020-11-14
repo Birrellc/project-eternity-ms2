@@ -13,14 +13,10 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-fixed.png/)
 - Using the preview feature of my IDE I have found that the corrected code has caused an issue with the position of my "\\<hr>" element for my contact page which will now have to be adjusted via CSS.
 
----
-
 ### CSS
 
 - I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - No Errors received [No Error Found Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/css-validator-1.png/)
-
----
 
 ### JAVASCRIPT
 
@@ -28,14 +24,10 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - All functions were then further tested collectively by pushing live to my deployed page to see if any issues appeared on the live version or if any of the functions caused issues with each other.
 - By combining these processes of I have been able to track issues created via my code through the commit log of my repository allowing the ability to navigate back through code to identify any errors and if necessary rolling back the code which I did on at least 1 occasion.
 
----
-
 ### SPEED TEST
 
 - I ran a speed test on the live GitHub page of my website via [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - The results received we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before the project is fully live [Speed test results](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/initial-speed-test.png)
-
----
 
 ### RESPONSIVE TEST
 
@@ -87,7 +79,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 | Shopping Cart Modal | Click X icon beside product name          | Delete item from basket                                                 | PASS   |
 | Shopping Cart Modal | Click \- or \+ beside product in quantity | Increase or decrease the quantity of product depending which is clicked | PASS   |
 | Shopping Cart Modal | Refresh page with products in basket      | Products remain in basket                                               | PASS   |
-| 404 Page            | Click home button on 404 error page       | Takes user back to the home page of the website                         | PASS   |
+| 404 Page            | Click Home button on 404 error page       | Takes user back to the Home page of the website                         | PASS   |
 
 ---
 
@@ -171,14 +163,14 @@ which I also resorted to the use of [Stack Overflow](https://stackoverflow.com/)
 ##### BOOKING FORM
 
 - Filled out **Booking Form** information then clicked submit - emails were sent correctly to customer & owner [Customer Email](../images/testing-images/booking-customer.png) [Owner Email](../images/testing-images/booking-owner.png)
-- When the button to submit the the form is pressed the text changes to **submitting!** until the form completes its submit.
+- When the button to submit the form is pressed the text changes to **submitting!** until the form completes its submit.
 - When the emails we're sent the button text changes to **Submitted** & disabled for 2.5 seconds then changed back to **Submit** to prevent spam.
 - Clicked Date & Time - Was unable to select booking times and dates outside of opening hours and days accomplished by using & [TempusDominus Time & Date Plugin](https://tempusdominus.github.io/bootstrap-4/)
 
 ##### CONTACT FORM
 
 - Filled **Contact Form** information then clicked submit - email was sent correctly to the owner [Contact Form Email](../images/testing-images/contact-email.png).
-- When the button to submit the the form is pressed the text changes to **submitting!** until the form completes its submit.
+- When the button to submit the form is pressed the text changes to **submitting!** until the form completes its submit.
 - When the emails we're sent the button text changes to **Submitted** & disabled for 2.5 seconds then changed back to **Submit** to prevent spam.
 
 ---
@@ -217,19 +209,20 @@ Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [G
 
 ### USER STORY TESTING
 
+#### User Story #1
 - **As a user of this website I would like to be able to browse what food is available before going to the premises so that I would not be wasting my time if there was no options I wanted.**
 
 ![picture](../images/testing-images/user-story-one.gif)
 
 In order for the user to browse the food that is available at the restaurant they should:
 
-1. Click the Navigation Icon at the top right of the screen
-2. Select Menu
-3. Scroll to browse the food on mobile & other smaller screen devices / On desktop the Menu is visible on one screen as two rows of 4 images.
+1. Click the **Navigation Icon** at the top right of the screen
+2. Select **Menu**
+3. Scroll to browse the food on mobile & other smaller screen devices / On desktop the **Menu** is visible on one screen as two rows of 4 images.
 
-Alternatively the user could scroll down to the menu section.
+Alternatively the user could scroll down to the **menu** section.
 
----
+#### User Story #2
 
 - **As a user, I want to be able to submit feedback to the restaurant of any suggestions, complaints or just to receive more information by email and phone in case my issue is urgent or not so urgent.**
 
@@ -245,18 +238,20 @@ or
 
 1. Click the **Navigation Icon** at the top right of the screen
 2. Select **Reservations**
-3. Click on either the Email Address or Telephone number Depending which you prefer.
+3. Click on either the **Email Address** or **Telephone number** Depending which you prefer.
 
 Alternatively the user could scroll down to each section.
 
-- As a user, I want to be able to see what kind of environment the restaurant has through images to see if its the kind of place I would feel comfortable or to see if there is an outdoor area in case I choose to eat here in the summer.
+#### User Story #3
+
+- **As a user, I want to be able to see what kind of environment the restaurant has through images to see if its the kind of place I would feel comfortable or to see if there is an outdoor area in case I choose to eat here in the summer.**
 
 ![picture](../images/testing-images/user-story-three.gif)
 
-The user will be able to view the restaurant environment through images that are spread throughout the website for example divider \#1 shows the inside of the restaurant where as
-divider \#2 shows the outside, About us has two images showing a brief of food being prepared and also an image showing how food is served.
+The user will be able to view the restaurant environment through images that are spread throughout the website for example **Divider \#1** shows the inside of the restaurant where as
+**Divider \#2** shows the outside, the **About** Page  has two images showing a brief of food being prepared and also an image showing how food is served.
 
----
+#### User Story #3
 
 - **As a user, I would like the option to book a table online and by telephone so I can make a reservation in whichever manner is convenient to me.**
 
@@ -269,9 +264,9 @@ the user will be able to book a table online by filling out a booking form or al
 3. Click on either the Email Address or Telephone number Depending which you prefer.
 4. Click the **Book Now** button and fill out the form when it pops up (form was tested further in the Final Testing -> Javascript -> EmailJS section of this document).
 
-Alternatively the user could scroll down to this section or if you wish to use the booking form click the **Book Now** button located on the home page.
+Alternatively the user could scroll down to this section or if you wish to use the booking form click the **Book Now** button located on the **Home page.**
 
----
+#### User Story #4
 
 - **As a user, I would like to be able to order food online for delivery due to the current state of pandemic and not being comfortable eating out. (coronavirus 2020)**
 
@@ -281,8 +276,8 @@ The user will be able to order food online by selecting items from the menu and 
 
 1. Click the **Navigation Icon** at the top right of the screen.
 2. Select **Menu**.
-3. Click the **Add To Basket** buttons under the food images to add them to your shopping cart.
-4. Click either the **View Basket** at the bottom of the **Menu** page or click the shopping cart icon in the top right area.
+3. Click the **Add To Basket** buttons under the food images to add them to your **Shopping Basket**.
+4. Click either the **View Basket** at the bottom of the **Menu** page or click the **Shopping Basket** icon in the top right area.
 5. Increase or decrease the quantity of each item you like and if you want to remove something click the "X" to the left of the product name.
 6. Fill out the form with your details and then click Checkout.
 
@@ -290,7 +285,7 @@ The user will be able to order food online by selecting items from the menu and 
 
 **_NOTE - The ability to add items to the basket is functional, same with removing or increasing / decreasing the quantity but due to not having the capable skills yet the form does not direct to a paywall or store the data provided in the form, All that happens is the moment is the form data is posted to the code institute form dump which checks that the data is submitted - The database and paywall feature will be added as my skills develop later in the course_.**
 
----
+#### User Story #5
 
 - **As a user, I would like to have information about the history of the restaurant available on the website.**
 
