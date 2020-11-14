@@ -51,7 +51,8 @@ let food = [{
     }
 ];
 
-// This adds onClick events to each food item in the list
+// Changed all but the first two lines of code from the for loop below in the tutorial
+// This adds onClick events to each food item by use of the menu buttons and an array - this function also calls the function below and adds the item to the basket.
 
 for (let i = 0; i < addToBasket.length; i++) {
     addToBasket[i].addEventListener("click", e => { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
@@ -64,24 +65,8 @@ for (let i = 0; i < addToBasket.length; i++) {
     });
 }
 
-// Iterates object to be pushed into updateModal Function allowing items to be added
-
-for (const key in storedBasketItems) {
-    if (storedBasketItems.hasOwnProperty(key)) { //credit for this line of code - https://stackoverflow.com/a/64688795/14580125
-        // get corresponding food index
-        food.forEach(function (food, i) { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
-            if (food.name === storedBasketItems[key].name) foodIndex = i;
-        });
-
-        if (!basketItem.includes(foodIndex)) {
-            basketItem.push(foodIndex);
-            food[foodIndex].inBasket = storedBasketItems[key].inBasket;
-            updateModal(foodIndex);
-        }
-    }
-}
-
-// This adds item to basket
+// Very minor changes to this code from the tutorial code (small changes made to make this function work with my other changes elsewhere)
+// This function is used to update the basket with new items and call the totalCost function
 
 function updateStoreBasket(food, itemIndex) {
     let basketProducts = localStorage.getItem("foodInBasket");
@@ -110,6 +95,27 @@ function updateStoreBasket(food, itemIndex) {
     updateModal(itemIndex);
 }
 
+// Function Completely changed from tutorial code
+// Iterates object to be pushed into updateModal Function allowing items to be added
+
+for (const key in storedBasketItems) {
+    if (storedBasketItems.hasOwnProperty(key)) { //credit for this line of code - https://stackoverflow.com/a/64688795/14580125
+        // get corresponding food index
+        food.forEach(function (food, i) { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
+            if (food.name === storedBasketItems[key].name) foodIndex = i;
+        });
+
+        if (!basketItem.includes(foodIndex)) {
+            basketItem.push(foodIndex);
+            food[foodIndex].inBasket = storedBasketItems[key].inBasket;
+            updateModal(foodIndex);
+        }
+    }
+}
+
+// Slightly modified from tutorial code (condensed and made changes to make my code work with my other changes elsewhere)
+// Calculates the total cost of the food in the basket
+
 function totalCost(food) {
     let currentBasketPrice = localStorage.getItem("totalPrice");
     // If we have a current Basket price
@@ -123,7 +129,7 @@ function totalCost(food) {
 }
 
 // Recieve object from Storage and assign variables to div classes - Template
-
+// Not part of tutorial code - i did not create this either - credit below
 // Credit for this function - https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript
 
 function getBasketData() {
@@ -139,7 +145,7 @@ function getBasketData() {
 }
 
 // push objects from localStorage array to the DOM
-
+// Moderately modified from tutorial code
 // Partial Credit (modified it again) for this function - https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript
 
 function updateModal(itemIndex) {
@@ -172,6 +178,7 @@ function updateModal(itemIndex) {
     }
 }
 
+// Not Part of tutorial
 // Allows access of the individual parentNodes by pushing into an array
 
 Element.prototype.parents = function () {
@@ -183,6 +190,9 @@ Element.prototype.parents = function () {
     }
     return parents;
 };
+
+// Completely changed from tutorial code - i chose to do "if else" statements instead of a for loop
+// Allows the user to change the quanitity of the product they want and also updates the users changes to local storage
 
 document.querySelector(".quantity").addEventListener("click", function (e) {
     // Get index of the item of which the quantity icons were clicked
@@ -227,6 +237,8 @@ document.querySelector(".quantity").addEventListener("click", function (e) {
     ).innerHTML = `<div class="total-Price">£ ${totalPrice}</div>`;
 });
 
+
+// Heavily Changed from the function in the tutorial
 // Function for deleting items in basket through use of a Font awesome icon
 
 function deleteButtons() {
@@ -259,7 +271,9 @@ function deleteButtons() {
 
 deleteButtons();
 
+// Not part of tutorial
 // targeting function used to allow deletion of elements created
+
 function addEventListenerByClass(event, className, callback) {
     document.addEventListener(event, function (e) {
         if (e.target && e.target.classList.contains(className)) {
