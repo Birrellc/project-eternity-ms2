@@ -597,7 +597,6 @@ hr.line-light-address {
 /* BOTH MODALS*/
 
 .modal-dialog {
-    color: #0a0908;
     padding: 0px;
     text-align: center;
 }
@@ -611,15 +610,10 @@ hr.line-light-address {
 }
 
 .close:hover {
-    color: #f2f4f3;
+    color: #a9927d;
 }
 
 /* BOOKING MODAL*/
-
-.booking-modal {
-    background-color: #0a0908;
-    color: #a9927d
-}
 
 .booking-modal-text {
     font-family: "Cairo", sans-serif;
@@ -634,15 +628,13 @@ hr.line-light-address {
 /* BASKET MODAL*/
 
 .basket-modal {
-    background-color: #0a0908;
-    color: #a9927d;
     font-family: "Raleway", sans-serif;
     font-size: 0.7rem !important;
     letter-spacing: 0px;
     padding: 5px;
 }
 
-.shopping-basket-body {
+.basket-body {
     padding: 0;
 }
 
@@ -650,7 +642,11 @@ hr.line-light-address {
     font-size: 0.8rem;
 }
 
-.basket-data {
+.basket-data-light {
+    color: #49111c;
+}
+
+.basket-data-dark {
     color: #f2f4f3;
 }
 
@@ -660,7 +656,7 @@ hr.line-light-address {
     padding-bottom: 15px;
 }
 
-.basket-subheading-left,
+.basket-col-heading-left,
 .product {
     text-align: left;
 }

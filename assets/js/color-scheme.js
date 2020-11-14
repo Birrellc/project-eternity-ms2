@@ -5,7 +5,9 @@ $(".dark-mode-switch").on('click', function () {
         $("#divider-1").removeClass("divider-bg-1-dark");
         $("#divider-2").removeClass("divider-bg-2-dark");
         $(".card").removeClass("card-dark");
-        $("#contact").removeClass("contact-section-dark");
+        $("#contact").removeClass("contact-section-dark")
+        $(".modal-content").removeClass("dark-mode");
+        $(".basket-data-light").removeClass("basket-data-dark");
         localStorage.removeItem("darkMode");
     } else {
         $("body").addClass("dark-mode");
@@ -14,6 +16,8 @@ $(".dark-mode-switch").on('click', function () {
         $("#divider-2").addClass("divider-bg-2-dark");
         $(".card").addClass("card-dark");
         $("#contact").addClass("contact-section-dark");
+        $(".modal-content").addClass("dark-mode")
+        $(".basket-data-light").addClass("basket-data-dark");
         localStorage.setItem("darkMode", true);
     }
 });
@@ -27,6 +31,9 @@ onload = function () {
         $("#divider-2").addClass("divider-bg-2-dark");
         $(".card").addClass("card-dark");
         $("#contact").addClass("contact-section-dark");
+        $(".modal-content").addClass("dark-mode")
+        $(".modal-content").addClass("dark-mode");
+        $(".basket-data-light").addClass("basket-data-dark");
         localStorage.setItem("darkMode", true);
     }
 };
