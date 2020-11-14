@@ -1,7 +1,7 @@
 /* This code was created with the help of a tutorial which has been used as a reference guide throughout,
-that being said the code has been modified from the original
-And no function remains the same as in the original code */
-// Tutorial link = https://www.youtube.com/watch?v=B20Getj_Zk4
+that being said the code has been modified from the original and no function remains exactly the same as
+in the original code with some being changed more than others.
+Tutorial link = https://www.youtube.com/watch?v=B20Getj_Zk4 */
 
 let addToBasket = document.querySelectorAll(".menu-btn");
 let foodIndex = 0;
@@ -105,7 +105,7 @@ function updateStoreBasket(food, itemIndex) {
                 [food.name]: food
             };
         }
-        // Regardless if the item was there before or not we want to increase the quantity by 1
+        // Regardless if the item was there before or not then increase the quantity by 1
         basketProducts[food.name].inBasket += 1;
         totalCost(food);
     } else {
@@ -147,7 +147,7 @@ function getBasketData() {
     };
 }
 
-// push objects from localstorage array into dynamic div's on the DOM
+// push objects from localStorage array to the DOM
 
 // Partial Credit (modified it again) for this function - https://stackoverflow.com/questions/64308378/best-way-to-break-up-a-function-javascript
 
