@@ -9,8 +9,8 @@ This project has been tested throughout with the use of preview, DevTools, manua
 ### HTML
 
 - I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
-- And received 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-errors.png/)
-- 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-fixed.png/)
+- And received 8 errors/warnings [Error's Image](../images/testing-images/html-validator-errors.png/)
+- 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](../images/testing-images/html-validator-fixed.png/)
 - Using the preview feature of my IDE I have found that the corrected code has caused an issue with the position of my "\\<hr>" element for my contact page which will now have to be adjusted via CSS.
 
 ---
@@ -18,7 +18,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 ### CSS
 
 - I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- No Errors received [No Error Found Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/css-validator-1.png/)
+- No Errors received [No Error Found Image](../images/testing-images/css-validator-1.png/)
 
 ---
 
@@ -33,7 +33,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 ### SPEED TEST
 
 - I ran a speed test on the live GitHub page of my website via [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-- The results received we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before the project is fully live [Speed test results](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/initial-speed-test.png)
+- The results received we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before the project is fully live [Speed test results](../images/testing-imagesinitial-speed-test.png)
 
 ---
 
@@ -94,8 +94,8 @@ This project has been tested throughout with the use of preview, DevTools, manua
 ### HTML
 
 - I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
-- And received 8 errors/warnings [Error's Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-before.png/)
-- 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-final-after.png/)
+- And received 8 errors/warnings [Error's Image](../images/testing-imageshtml-validator-final-before.png/)
+- 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](../images/testing-imageshtml-validator-final-after.png/)
 - Using the preview feature of my IDE I have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
 - Forms - All have are validated with the _required_ feature to stop submission without key information e.g - Email Address or Name / Which has been tested.
 - Buttons - All work correctly - Tested by clicking each button on the website.

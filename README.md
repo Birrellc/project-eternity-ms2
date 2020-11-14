@@ -160,8 +160,8 @@ The purpose of the website created is to entice more customers to the restaurant
 - Offer an easy to use the online booking form to allow users to reserve a table quickly and efficiently to increase sales & provide phone booking for people who prefer.
 - Display social media for proofing and trust from potential customers.
 - Design an easy to use website with a minimalism approach to help entice customers through less distractions [Source](https://pos.toasttab.com/blog/on-the-line/restaurant-design-minimalist-design)
-- Design mobile responsive website - 81% of customers have searched for a restaurant on a mobile device [Source](https://blogs.constantcontact.com/restaurants-most-searched-industry-by-consumers-on-mobile-devices-and-other-hot-topics/)
-- Incorporate an online menu to increase business sales - (51% of customers use a restaurant's website to order food [Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/readme-images/online-orders-stats.png) [Source](https://pos.toasttab.com/resources/restaurant-success-industry-report))
+- Design mobile responsive website - 81% of customers have searched for a restaurant on a mobile device (Source no longer available)
+- Incorporate an online menu to increase business sales - (51% of customers use a restaurant's website to order food [Image](assets/images/readme-images/online-orders-stats.png), [Source](https://pos.toasttab.com/resources/restaurant-success-industry-report))
 - Provide an area for feedback, suggestions & questions through a contact form.
 - Display the restaurant environment through images displayed throughout the website.
 - Display key information for increasing customer interest with location map, address, and opening hours.
@@ -297,7 +297,7 @@ The purpose of the website created is to entice more customers to the restaurant
 
 ## Testing
 
-Testing is done in its own section [Here](assets/testing/testing.md).
+Testing is done in its own section [Here](assets/docs/testing.md).
 
 ---
 
