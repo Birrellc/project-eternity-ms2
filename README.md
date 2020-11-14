@@ -2,11 +2,11 @@
 
 ---
 
-[LIVE DEPLOYMENT OF WEBSITE](https://birrellc.github.io/Eternity-MS2/)
+![picture](assets/images/readme-images/eternity-logo.png)
 
 ---
 
-![picture](assets/images/readme-images/eternity-logo.png)
+[LIVE DEPLOYMENT OF WEBSITE](https://birrellc.github.io/Eternity-MS2/)
 
 ---
 
@@ -20,7 +20,23 @@
 
 ---
 
+## Lighthouse Score
+
+---
+
+### Desktop
+
+![picture](assets/images/readme-images/lighthouse-desktop.png)
+
+### Mobile
+
+![picture](assets/images/readme-images/lighthouse-mobile.png)
+
+---
+
 ## Description
+
+---
 
 _this is a fictitious business created for my milestone project 2 with the code institute_.
 
@@ -31,6 +47,8 @@ _Frontend only - backend databases for reservation and the payment system for th
 ---
 
 ## Table of Contents
+
+---
 
 - [UX](#ux)
   - [Wireframes](#wireframes)
