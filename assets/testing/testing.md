@@ -13,10 +13,14 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/html-validator-fixed.png/)
 - Using the preview feature of my IDE I have found that the corrected code has caused an issue with the position of my "\\<hr>" element for my contact page which will now have to be adjusted via CSS.
 
+---
+
 ### CSS
 
 - I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - No Errors received [No Error Found Image](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/css-validator-1.png/)
+
+---
 
 ### JAVASCRIPT
 
@@ -24,10 +28,14 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - All functions were then further tested collectively by pushing live to my deployed page to see if any issues appeared on the live version or if any of the functions caused issues with each other.
 - By combining these processes of I have been able to track issues created via my code through the commit log of my repository allowing the ability to navigate back through code to identify any errors and if necessary rolling back the code which I did on at least 1 occasion.
 
+---
+
 ### SPEED TEST
 
 - I ran a speed test on the live GitHub page of my website via [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - The results received we're poor and the website will need to be improved for speed by reducing image file sizing and better optimizing before the project is fully live [Speed test results](https://github.com/Birrellc/Eternity-MS2/tree/master/assets/images/testing-images/initial-speed-test.png)
+
+---
 
 ### RESPONSIVE TEST
 
