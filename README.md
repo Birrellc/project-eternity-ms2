@@ -244,6 +244,7 @@ The purpose of the website created is to entice more customers to the restaurant
 - Alternative system to emailJS for sending emails.
 - Improve on the features already in place to be more optimal e.g the time and date part of the booking form could self-made instead of relying on a plugin.
 
+(I have set in place unused classes on many HTML elements to make it easier for any future styling idea changes)
 ---
 
 ## Technologies
