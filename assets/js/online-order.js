@@ -57,7 +57,7 @@ for (let i = 0; i < addToBasket.length; i++) {
     addToBasket[i].addEventListener("click", e => { //False positive for warning in JSHINT https://stackoverflow.com/a/64688795/14580125
         if (!basketItem.includes(i)) {
             basketItem.push(i);
-            addItemToBasket(food[i], i);
+            updateStoreBasket(food[i], i);
         } else {
             return;
         }
@@ -82,15 +82,6 @@ for (const key in storedBasketItems) {
 }
 
 // This adds item to basket
-
-function addItemToBasket(food, itemIndex) {
-    let menuNumbers = localStorage.getItem("addItemToBasket");
-    menuNumbers = parseInt(menuNumbers);
-    if (menuNumbers) {
-        localStorage.setItem("addItemToBasket", +1);
-    }
-    updateStoreBasket(food, itemIndex);
-}
 
 function updateStoreBasket(food, itemIndex) {
     let basketProducts = localStorage.getItem("foodInBasket");
