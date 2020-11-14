@@ -268,9 +268,9 @@ h1 {
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
-    background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
+    background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg")  no-repeat;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg")  no-repeat;
+    background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg")  no-repeat;
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-box;
@@ -816,6 +816,12 @@ hr.line-light-address {
     .home-sub-heading h2 {
         font-size: 1.8rem;
         letter-spacing: 12px;
+    }
+
+    .home-dark{
+        background: -o-linear-gradient(right, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
+        background: -webkit-gradient(linear, right top, left top, from(rgba(10, 9, 8, 1)), to(transparent)), url("../images/background-dark-home.jpg") center no-repeat;
+        background: linear-gradient(to left, rgba(10, 9, 8, 1), transparent), url("../images/background-dark-home.jpg") center no-repeat;
     }
 }
 
