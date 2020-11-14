@@ -457,7 +457,7 @@ hr.line-light-menu {
     margin-top: 50px;
 }
 
-/*Reservations*/
+/*RESERVATIONS*/
 
 .reservations {
     padding-bottom: 50px;
@@ -522,6 +522,8 @@ hr.line-light-address {
     font-size: 1.8rem;
 }
 
+/* Switched the background image to one chosen for light mode*/
+
 .contact-section-light {
     background: -o-linear-gradient(top, rgba(242, 244, 243, 1), transparent), url("../images/contactbg.jpg") center no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 244, 243, 1)), to(transparent)), url("../images/contactbg.jpg") center no-repeat;
@@ -532,6 +534,8 @@ hr.line-light-address {
     padding-top: 20px;
     width: 100%;
 }
+
+/* Switched the background image to one chosen for dark mode*/
 
 .contact-section-dark {
     background: -o-linear-gradient(top, rgba(10, 9, 8, 1), transparent), url("../images/contact-us-dark.jpg") center no-repeat;
