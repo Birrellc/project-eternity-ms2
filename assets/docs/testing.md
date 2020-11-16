@@ -327,6 +327,8 @@ Alternatively the user could scroll down to this section.
 
 - I have also tested the website on a desktop view of 1920x1080 pixels which worked fine.
 
+- Dark Mode background image for **Home** the glass on the left side may be cut off half way on tablet resolutions but has been done and left like that deliberately to provide a light contrast to the dark opposite side effect from the linear gradient direction.
+
 Full list of tested resolutions with & without [Responsivley App](https://responsively.app/):
 
 1. iPhone 5/5se 320px
