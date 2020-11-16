@@ -2,6 +2,8 @@
 
 This project has been tested throughout with the use of preview, DevTools, manual testing and also the website was deployed on GitHub pages very early in development to allow live testing after each commit was made.
 
+**Last Test Date - 16/11/2020**
+
 ---
 
 ## MID STAGE TESTING REVIEW
@@ -101,6 +103,8 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - Buttons - All work correctly - Tested by clicking each button on the website.
 - Map - Clicked Map was able to move the view around, zoom in and out & also able to view a larger map on Google and get directions.
 - Social Media Links - I clicked each link individually which opened a new browser tab to the correct targeted addresses for each link.
+- Validation - 16/11/2020 - On retest of HTML validation I found a duplicate ID error which has been fixed by changing "messageContact" to "messageBasket" in the appropriate form.
+- Validation - 16/11/2020 - On retest of HTML validation I received warnings for using "aria labels" on my \\<i> elements that I used for toggling "dark mode, shopping basket and navigation" - I have left these in as technically these are links to a degree as these icons are responsible for performing an action and i wish to make make these accessible to screen readers.
 
 ---
 
@@ -109,6 +113,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - I ran my code through [Auto Prefixer CSS](https://autoprefixer.github.io) to make sure my CSS has all the correct vendor prefixes.
 - I ran my styles.css code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and received no errors.
 - I applied a red border to all my elements to check for any overflow issues & there are none.
+- Validation - 16/11/2020 - still no errors.
 
 ---
 
@@ -130,6 +135,8 @@ _The body of a for in should be wrapped in an if statement to filter unwanted pr
 
 which I also resorted to the use of [Stack Overflow](https://stackoverflow.com/) to fix which lead to me correcting my code [Here](https://stackoverflow.com/a/64688795/14580125) credit has been given on that line of code.
 [JSHINT WARNING IMAGE](../images/testing-images/jshint.png)
+
+- Validation - 16/11/2020 - Semi colons missing in color-scheme.js file have now been added.
 
 #### NAVIGATION
 
@@ -213,11 +220,14 @@ Speed Tests have been performed by using [GT Metrix](https://gtmetrix.com/) & [G
 - To improve my page scale to an A I would have to use a server to cache my images and also using less plugins for example [Tempus Dominus](https://tempusdominus.github.io/bootstrap-4/) to save on page loading times.
 - After I ran a desktop speed test on [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) just to double-check and received a score of "95" [Here](../images/testing-images/google-speedtest.png)
 
+- **WARNING** - **Speed test results can vary due to the loading of external resources for example Bootstrap.**
+
 ---
 
 ### USER STORY TESTING
 
 #### User Story #1
+
 - **As a user of this website I would like to be able to browse what food is available before going to the premises so that I would not be wasting my time if there was no options I wanted.**
 
 ![picture](../images/testing-images/user-story-one.gif)
@@ -257,7 +267,7 @@ Alternatively the user could scroll down to each section.
 ![picture](../images/testing-images/user-story-three.gif)
 
 The user will be able to view the restaurant environment through images that are spread throughout the website for example **Divider \#1** shows the inside of the restaurant where as
-**Divider \#2** shows the outside, the **About** Page  has two images showing a brief of food being prepared and also an image showing how food is served.
+**Divider \#2** shows the outside, the **About** Page has two images showing a brief of food being prepared and also an image showing how food is served.
 
 #### User Story #3
 
