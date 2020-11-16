@@ -28,10 +28,7 @@ i {
     color: #5e503f;
 }
 
-i:hover {
-    color: #49111c;
-}
-
+a:focus i:hover,
 a:hover {
     color: #49111c;
 }
@@ -540,7 +537,7 @@ hr.line-light-address {
     background-size: cover;
 }
 
-.contact-section{
+.contact-section {
     height: 120vh;
     overflow-y: auto;
     padding-top: 20px;
@@ -754,11 +751,16 @@ hr.line-light-address {
         font-size: 1rem;
     }
 
-    .instagram, .twitter, .facebook, .linkedin, .hamburger-toggle {
+    .instagram,
+    .twitter,
+    .facebook,
+    .linkedin,
+    .hamburger-toggle {
         right: 7px;
     }
 
-    .dark-mode-switch, .shopping-basket-icon {
+    .dark-mode-switch,
+    .shopping-basket-icon {
         right: 8px;
     }
 }
