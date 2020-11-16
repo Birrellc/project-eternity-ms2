@@ -290,6 +290,7 @@ The purpose of the website created is to entice more customers to the restaurant
 - [Udemy Javascript Course](https://www.udemy.com/course/the-complete-javascript-course) - Used to develop further understanding of JavaScript.
 - [Grammarly(unofficial)](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) - A plugin for VSCode which I used to check the grammar and spelling for my README.md & testing.md docs.
 - [BrowserStack](https://www.browserstack.com) - Used to test my website with the Safari browser.
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse) - Used to check accessabilty and SEO scores for the website.
 - [Code Institute](https://codeinstitute.net/) - Main source of coding knowledge.
 - Code institute Slack Community - Used for inspiration for my website.
 
