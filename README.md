@@ -303,6 +303,8 @@ Testing is done in its own section [Here](assets/docs/testing.md).
 
 ## Project Barriers
 
+This section is also repeated in the testing.md document under the name of "Bugs".
+
 ### Solved
 
 - Slow Loading Speed - I found that when running speed tests my website scored poorly on speed and in order to fix this I compressed my images and also re-scaled the menu images so that the website itself wasn't wasting resources re-scaling each image itself. I also found that if I cache images I could improve my website speed more but due to hosting on GitHub I cannot use server image caching to improve more.

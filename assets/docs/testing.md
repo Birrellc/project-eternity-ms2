@@ -330,3 +330,45 @@ Full list of tested resolutions with & without [Responsivley App](https://respon
 9. Desktop 1920px
 
 ---
+
+## BUGS
+
+### SOLVED
+
+- Slow Loading Speed - I found that when running speed tests my website scored poorly on speed and in order to fix this I compressed my images and also re-scaled the menu images so that the website itself wasn't wasting resources re-scaling each image itself. I also found that if I cache images I could improve my website speed more but due to hosting on GitHub I cannot use server image caching to improve more.
+
+- Animation Page overflow - After adding my animations to my website I found there to be huge overflow issues created. I identified the issue by applying a "1px red border" to all my elements in an attempt to find the leak. I managed to overcome this issue by adding "overflow-x:hidden" to my HTML & Body elements with the use of CSS.
+
+- Google Map API not displaying correct information - To fix this problem after trying various ways to fix I eventually took the example code from the documentation and just switched the coordinates to suit my needs. **No longer using Google Maps API switched to Iframe**
+
+- Issues with TotalCost function calculation - I fixed the problem where the total cost was being calculated incorrectly with an if, else statement that would save the current cart price in order for my total cost to be added. Identifying the issue was managed by using console.log to see when the variable was being called & also using breakpoints with dev tools to find out what information was stored in the variable at certain points in the code.
+
+- Only one cart item adding to cart - I fixed this issue by having my objects pushed into an array after being taken out of storage so they could then be pushed to my cart when selected.
+
+- Shopping Cart error - _Uncaught TypeError: Cannot read property 'name' of undefined
+  at HTMLDivElement._ ` cartItems = { ...cartItems, [item.name]: item };`
+  This error only displays occasionally and the shopping cart retains its functionality even when this error appears in the console. Unsure of the cause of this issue so far.
+
+This bug has now been solved by implementing: `if (!item) { return; }`
+
+to the beginning of the on click event listener function for adjusting the quantity.
+
+- Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left where items were before and I am currently still trying to figure the best way to remove them while retaining the delete button functionality.
+
+This bug has now been solved by removing the \\<br> tags from being dynamically injected when products are added to the basket and instead added
+
+product-name, .product-price, .product-quantity {
+padding-bottom: 15px;
+}
+
+to my CSS file which has provided the spacing between the items required instead.
+
+### UNSOLVED
+
+- **SOLVED** ~~Shopping Cart unintentional spaces remain - When products are deleted unintentional spacing is left where items were before and I am currently still trying to figure the best way to remove them while retaining the delete button functionality.~~
+
+- **SOLVED** ~~Shopping Cart error - _Uncaught TypeError: Cannot read property 'name' of undefined
+  at HTMLDivElement._ ` cartItems = { ...cartItems, [item.name]: item };`
+  This error only displays occasionally and the shopping cart retains its functionality even when this error appears in the console. Unsure of the cause of this issue so far.~~
+
+- Shopping Cart Checkout / login - What I want to be able to do is create a login system so that when users make an order the details are saved to their account and also implement a payment system so that when the checkout form button is submitted the order for the customer will be placed and the shopping cart data will be saved to the customer's account. **FEATURE NOT YET IMPLEMENTED DUE TO BEING BEYOND CURRENT SKILL LEVEL**
