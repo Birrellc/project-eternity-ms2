@@ -605,6 +605,11 @@ hr.line-light-address {
     margin: -2rem -1rem -1rem auto;
 }
 
+.booking-modal-head, .basket-modal-head {
+    font-family: "Cairo", sans-serif !important;
+    font-weight: 600 !important;
+}
+
 .close:hover {
     color: #a9927d;
 }
@@ -614,11 +619,6 @@ hr.line-light-address {
 .booking-modal-text {
     font-family: "Cairo", sans-serif;
     font-weight: 400;
-}
-
-.booking-modal-head {
-    font-family: "Cairo", sans-serif;
-    font-weight: 600;
 }
 
 /* BASKET MODAL*/
@@ -633,6 +633,10 @@ hr.line-light-address {
 .basket-body {
     padding: 0;
 }
+
+.basket-modal-head {
+    font-size: 1.25rem !important;
+ }
 
 .basket-modal h5 {
     font-size: 0.8rem;
