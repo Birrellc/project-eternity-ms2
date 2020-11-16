@@ -477,7 +477,8 @@
 
                     <!--Credit - for the initial foundation for the form below - https://getbootstrap.com/docs/4.0/examples/checkout/ -->
 
-                    <form class="basket-form" method="POST" action="https://formdump.codeinstitute.net/">
+                    <form class="basket-form" method="POST" action="https://formdump.codeinstitute.net/" target="_blank"
+                        rel="noopener noreferrer">
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <label for="fullNameBasket">Full Name:</label>
@@ -560,8 +561,18 @@
                                     placeholder="***" required>
                             </div>
                         </div>
-                        <div class="modal-footer col-12 border-top-0 justify-content-between">
-                            <button type="submit" class="btn">Checkout</button>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="messageContact">Message:</label>
+                                <textarea class="form-control" id="messageContact" rows="3" name="messageContact"
+                                    placeholder="Add allergy or notes here (min-characters: 15)" minlength="15"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="modal-footer col-12 border-top-0 justify-content-between">
+                                <button type="submit" class="btn">Checkout</button>
+                            </div>
                         </div>
                     </form>
                 </div>
