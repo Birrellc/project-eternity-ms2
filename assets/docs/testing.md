@@ -13,7 +13,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - I ran my index.html code through [W3C HTML Validator](https://validator.w3.org)
 - And received 8 errors/warnings [Error's Image](../images/testing-images/html-validator-errors.png/)
 - 1 by 1 each error has been located and corrected and the results now display 0 errors / warnings [Error's Fixed Image](../images/testing-images/html-validator-fixed.png/)
-- Using the preview feature of my IDE I have found that the corrected code has caused an issue with the position of my "\\<hr>" element for my contact page which will now have to be adjusted via CSS.
+- Using the preview feature of my IDE I have found that the corrected code has caused an issue with the position of my "hr" element for my contact page which will now have to be adjusted via CSS.
 
 ---
 
