@@ -104,7 +104,7 @@ This project has been tested throughout with the use of preview, DevTools, manua
 - Map - Clicked Map was able to move the view around, zoom in and out & also able to view a larger map on Google and get directions.
 - Social Media Links - I clicked each link individually which opened a new browser tab to the correct targeted addresses for each link.
 - Validation - 16/11/2020 - On retest of HTML validation I found a duplicate ID error which has been fixed by changing "messageContact" to "messageBasket" in the appropriate form.
-- Validation - 16/11/2020 - On retest of HTML validation I received warnings for using "aria labels" on my \\<i> elements that I used for toggling "dark mode, shopping basket and navigation" - I have left these in as technically these are links to a degree as these icons are responsible for performing an action and i wish to make make these accessible to screen readers.
+- Validation - 16/11/2020 - On retest of HTML validation I received warnings for using "aria labels" on my elements that I used for toggling "dark mode, shopping basket and navigation" - I have left these in as technically these are links to a degree as these icons are responsible for performing an action and i wish to make make these accessible to screen readers.
 
 ---
 
